@@ -5,6 +5,17 @@ import Header from '../components/Header';
 import Button from '../components/Button';
 import Paragraph from '../components/Paragraph';
 import { Navigation } from '../types';
+import { IconButton, Colors } from 'react-native-paper';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+
+const MyComponent = () => (
+  <MaterialCommunityIcons
+    name="camera"
+    color={Colors.red500}
+    size={20}
+    onPress={() => console.log('Pressed')}
+  />
+);
 
 type Props = {
   navigation: Navigation;
@@ -13,6 +24,7 @@ type Props = {
 const HomeScreen = ({ navigation }: Props) => (
   <Background>
     <Logo />
+    <MyComponent />
     <Header>Login Template</Header>
 
     <Paragraph>
