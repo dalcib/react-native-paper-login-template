@@ -1,16 +1,27 @@
 import React from 'react';
-import { Provider } from 'react-native-paper';
+import { Provider as PaperProvider } from 'react-native-paper';
 import { NavigationContainer } from '@react-navigation/native';
 import 'setimmediate';
 import App from './navigators/Root';
-import { theme } from './core/theme';
+import { ThemeProvider, ThemeContext } from './core/theme';
 
-const Main = () => (
-  <Provider theme={theme}>
-    <NavigationContainer>
-      <App />
-    </NavigationContainer>
-  </Provider>
-);
+const Main = () => {
+  return (
+    <ThemeProvider>
+      <ThemeContext.Consumer>
+        {({ toggleTheme, isThemeDark, theme }) => (
+          <PaperProvider theme={theme}>
+            <NavigationContainer
+              linking={{ enabled: true, prefixes: ['public'] }}
+              theme={theme}
+            >
+              <App />
+            </NavigationContainer>
+          </PaperProvider>
+        )}
+      </ThemeContext.Consumer>
+    </ThemeProvider>
+  );
+};
 
 export default Main;

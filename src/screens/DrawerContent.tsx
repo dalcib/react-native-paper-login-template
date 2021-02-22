@@ -3,6 +3,7 @@ import {
   DrawerContentComponentProps,
   DrawerContentOptions,
   DrawerContentScrollView,
+  DrawerNavigationProp,
   DrawerItem,
 } from '@react-navigation/drawer';
 import React from 'react';
@@ -20,15 +21,15 @@ import {
 } from 'react-native-paper';
 import Animated from 'react-native-reanimated';
 
-import { PreferencesContext } from './../core/preferencesContext';
+import { ThemeContext } from './../core/theme';
 
-type Props = DrawerContentComponentProps<DrawerNavigationProp>;
+type Props = DrawerContentComponentProps<
+  DrawerNavigationProp<Record<string, object>>
+>;
 
 export function DrawerContent(props: Props) {
-  const paperTheme = useTheme();
-  const { rtl, theme, toggleRTL, toggleTheme } = React.useContext(
-    PreferencesContext
-  );
+  const theme = useTheme();
+  const { toggleTheme } = React.useContext(ThemeContext);
 
   const translateX = Animated.interpolate(props.progress, {
     inputRange: [0, 0.5, 0.7, 0.8, 1],
@@ -42,7 +43,7 @@ export function DrawerContent(props: Props) {
         style={[
           styles.drawerContent,
           {
-            backgroundColor: paperTheme.colors.surface,
+            backgroundColor: theme.colors.surface,
             transform: [{ translateX }],
           },
         ]}
@@ -115,15 +116,7 @@ export function DrawerContent(props: Props) {
             <View style={styles.preference}>
               <Text>Dark Theme</Text>
               <View pointerEvents="none">
-                <Switch value={theme === 'dark'} />
-              </View>
-            </View>
-          </TouchableRipple>
-          <TouchableRipple onPress={toggleRTL}>
-            <View style={styles.preference}>
-              <Text>RTL</Text>
-              <View pointerEvents="none">
-                <Switch value={rtl === 'right'} />
+                <Switch value={theme.dark} />
               </View>
             </View>
           </TouchableRipple>

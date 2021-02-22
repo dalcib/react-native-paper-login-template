@@ -33,12 +33,12 @@ require('esbuild')
       }),
     ],
     incremental: !prod,
-    publicPath: 'static',
+    //publicPath: 'static',
   })
   .then(async (result) => {
     //result.stop();
     console.log('...');
-    const files = await fs.readdir(resolve('public'));
+    /*     const files = await fs.readdir(resolve('public'));
     const newfiles = files
       .filter((elem) => ['.png', '.ttf'].includes(parse(elem).ext))
       .forEach(async (file) => {
@@ -46,6 +46,6 @@ require('esbuild')
           resolve('public', file),
           resolve('public/static', file)
         );
-      });
+      }); */
   })
   .catch(() => process.exit(1));
