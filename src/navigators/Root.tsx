@@ -7,7 +7,8 @@ import {
   RegisterScreen,
   ForgotPasswordScreen,
   Dashboard,
-} from './screens';
+} from '../screens';
+import { DrawerNavigator } from './Drawer';
 
 const RootStack = createStackNavigator();
 
@@ -21,7 +22,7 @@ const RootStackScreen = () => {
         name="ForgotPasswordScreen"
         component={ForgotPasswordScreen}
       />
-      <RootStack.Screen name="Dashboard" component={Dashboard} />
+      <RootStack.Screen name="Dashboard" component={DrawerNavigator} />
     </RootStack.Navigator>
   );
 };

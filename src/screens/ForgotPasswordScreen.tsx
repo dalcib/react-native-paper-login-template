@@ -8,7 +8,7 @@ import Header from '../components/Header';
 import TextInput from '../components/TextInput';
 import { theme } from '../core/theme';
 import Button from '../components/Button';
-import { Navigation } from '../types';
+import { Navigation } from '../navigators/types';
 
 type Props = {
   navigation: Navigation;
@@ -40,7 +40,7 @@ const ForgotPasswordScreen = ({ navigation }: Props) => {
         label="E-mail address"
         returnKeyType="done"
         value={email.value}
-        onChangeText={text => setEmail({ value: text, error: '' })}
+        onChangeText={(text) => setEmail({ value: text, error: '' })}
         error={!!email.error}
         errorText={email.error}
         autoCapitalize="none"

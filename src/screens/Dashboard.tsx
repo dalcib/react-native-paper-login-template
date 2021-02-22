@@ -4,7 +4,7 @@ import Logo from '../components/Logo';
 import Header from '../components/Header';
 import Paragraph from '../components/Paragraph';
 import Button from '../components/Button';
-import { Navigation } from '../types';
+import { Navigation } from '../navigators/types';
 
 type Props = {
   navigation: Navigation;

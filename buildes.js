@@ -5,7 +5,7 @@ const { parse, resolve } = require('path');
 
 require('esbuild')
   .build({
-    entryPoints: ['./node_modules/expo/AppEntry.js'],
+    entryPoints: ['./src/index.js'],
     outfile: './public/bundle.js',
     tsconfig: 'tsconfig.json',
     define: {
@@ -29,7 +29,7 @@ require('esbuild')
     logLevel: 'error',
     plugins: [
       vectorIcons({
-        MaterialCommunityIcons: ['camera'],
+        MaterialCommunityIcons: ['camera', 'menu'],
       }),
     ],
     incremental: !prod,

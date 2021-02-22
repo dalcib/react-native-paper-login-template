@@ -4,7 +4,7 @@ import Logo from '../components/Logo';
 import Header from '../components/Header';
 import Button from '../components/Button';
 import Paragraph from '../components/Paragraph';
-import { Navigation } from '../types';
+import { Navigation } from '../navigators/types';
 import { IconButton, Colors } from 'react-native-paper';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
