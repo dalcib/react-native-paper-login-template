@@ -1,13 +1,12 @@
-var { readFile } = require('fs').promises;
-var { parse, join } = require('path');
 var prod = !(process.argv[2] === 'dev');
+var vectorIcons = require('./plugin');
+var fs = require('fs').promises;
+const { parse, resolve } = require('path');
 
 require('esbuild')
   .build({
     entryPoints: ['./node_modules/expo/AppEntry.js'],
-    bundle: true,
     outfile: './public/bundle.js',
-    format: 'esm',
     tsconfig: 'tsconfig.json',
     define: {
       'process.env.NODE_ENV': prod ? '"production"' : '"development"',
@@ -16,73 +15,37 @@ require('esbuild')
     },
     loader: { '.png': 'file', '.ttf': 'file', '.js': 'jsx' },
     resolveExtensions: [".web.tsx", ".web.ts", ".web.jsx", ".web.js", ".tsx", ".ts", ".jsx", ".js"], //prettier-ignore
+    format: 'esm',
+    bundle: true,
     minify: prod,
     sourcemap: prod,
-    watch: !prod,
-    /*    ? false
+    watch: prod
+      ? false
       : {
           onRebuild(error, result) {
             console.log(error ? error : '...');
           },
-        } */
+        },
     logLevel: 'error',
     plugins: [
-      {
-        name: 'example',
-        setup(build) {
-          build.onLoad(
-            {
-              filter: /@expo.*glyphmaps.*json/,
-            },
-            async (args) => {
-              //console.log(args);
-              let result = '{}';
-              const iconSet = parse(args.path).name;
-              if (conf.hasOwnProperty(iconSet)) {
-                const source = await readFile(args.path, 'utf8');
-                const glyphmap = JSON.parse(source);
-                result = JSON.stringify(
-                  Object.fromEntries(
-                    Object.entries(glyphmap).filter(([name, icon]) =>
-                      conf[iconSet].includes(name)
-                    )
-                  )
-                );
-                //console.log(result);
-              }
-              return { contents: `export default ${result}` };
-            }
-          );
-        },
-      },
+      vectorIcons({
+        MaterialCommunityIcons: ['camera'],
+      }),
     ],
     incremental: !prod,
-    //metafile: 'meta.json',
+    publicPath: 'static',
   })
-  /*   .then((result) => {
-    result.stop();
-  }); */
+  .then(async (result) => {
+    //result.stop();
+    console.log('...');
+    const files = await fs.readdir(resolve('public'));
+    const newfiles = files
+      .filter((elem) => ['.png', '.ttf'].includes(parse(elem).ext))
+      .forEach(async (file) => {
+        await fs.rename(
+          resolve('public', file),
+          resolve('public/static', file)
+        );
+      });
+  })
   .catch(() => process.exit(1));
-
-const glyphmaps = [
-  'AntDesign',
-  'Entypo',
-  'EvilIcons',
-  'Feather',
-  'FontAwesome',
-  'FontAwesome5Free',
-  'FontAwesome5Pro',
-  'Fontisto',
-  'Foundation',
-  'Ionicons',
-  'MaterialCommunityIcons',
-  'MaterialIcons',
-  'Octicons',
-  'SimpleLineIcons',
-  'Zocial',
-];
-
-const conf = {
-  MaterialCommunityIcons: ['camera'],
-  AntDesign: ['stepbackward'],
-};
