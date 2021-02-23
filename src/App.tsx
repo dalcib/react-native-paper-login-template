@@ -1,9 +1,9 @@
-import React from 'react';
-import { Provider as PaperProvider } from 'react-native-paper';
-import { NavigationContainer } from '@react-navigation/native';
-import 'setimmediate';
-import App from './navigators/Root';
-import { ThemeProvider, ThemeContext } from './core/theme';
+import React from 'react'
+import { Provider as PaperProvider } from 'react-native-paper'
+import { NavigationContainer } from '@react-navigation/native'
+import 'setimmediate'
+import App from './navigators/Root'
+import { ThemeProvider, ThemeContext } from './core/theme'
 
 const Main = () => {
   return (
@@ -11,17 +11,14 @@ const Main = () => {
       <ThemeContext.Consumer>
         {({ toggleTheme, isThemeDark, theme }) => (
           <PaperProvider theme={theme}>
-            <NavigationContainer
-              linking={{ enabled: true, prefixes: ['public'] }}
-              theme={theme}
-            >
+            <NavigationContainer linking={{ enabled: true, prefixes: ['public'] }} theme={theme}>
               <App />
             </NavigationContainer>
           </PaperProvider>
         )}
       </ThemeContext.Consumer>
     </ThemeProvider>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main

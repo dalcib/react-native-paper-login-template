@@ -1,32 +1,32 @@
-import React, { memo, useState } from 'react';
-import { Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { emailValidator } from '../core/utils';
-import Background from '../components/Background';
-import BackButton from '../components/BackButton';
-import Logo from '../components/Logo';
-import Header from '../components/Header';
-import TextInput from '../components/TextInput';
-import { theme } from '../core/theme';
-import Button from '../components/Button';
-import { Navigation } from '../navigators/types';
+import React, { memo, useState } from 'react'
+import { Text, StyleSheet, TouchableOpacity } from 'react-native'
+import { emailValidator } from '../core/utils'
+import Background from '../components/Background'
+import BackButton from '../components/BackButton'
+import Logo from '../components/Logo'
+import Header from '../components/Header'
+import TextInput from '../components/TextInput'
+import { theme } from '../core/theme'
+import Button from '../components/Button'
+import { Navigation } from '../navigators/types'
 
 type Props = {
-  navigation: Navigation;
-};
+  navigation: Navigation
+}
 
 const ForgotPasswordScreen = ({ navigation }: Props) => {
-  const [email, setEmail] = useState({ value: '', error: '' });
+  const [email, setEmail] = useState({ value: '', error: '' })
 
   const _onSendPressed = () => {
-    const emailError = emailValidator(email.value);
+    const emailError = emailValidator(email.value)
 
     if (emailError) {
-      setEmail({ ...email, error: emailError });
-      return;
+      setEmail({ ...email, error: emailError })
+      return
     }
 
-    navigation.navigate('LoginScreen');
-  };
+    navigation.navigate('LoginScreen')
+  }
 
   return (
     <Background>
@@ -53,15 +53,12 @@ const ForgotPasswordScreen = ({ navigation }: Props) => {
         Send Reset Instructions
       </Button>
 
-      <TouchableOpacity
-        style={styles.back}
-        onPress={() => navigation.navigate('LoginScreen')}
-      >
+      <TouchableOpacity style={styles.back} onPress={() => navigation.navigate('LoginScreen')}>
         <Text style={styles.label}>← Back to login</Text>
       </TouchableOpacity>
     </Background>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   back: {
@@ -75,6 +72,6 @@ const styles = StyleSheet.create({
     color: theme.colors.secondary,
     width: '100%',
   },
-});
+})
 
-export default memo(ForgotPasswordScreen);
+export default memo(ForgotPasswordScreen)

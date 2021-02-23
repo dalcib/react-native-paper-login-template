@@ -1,18 +1,18 @@
-import React from 'react';
-import { TouchableOpacity, Text } from 'react-native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { DrawerNavigationProp } from '@react-navigation/drawer';
-import { Appbar, Avatar, useTheme } from 'react-native-paper';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import React from 'react'
+import { TouchableOpacity, Text } from 'react-native'
+import { createStackNavigator } from '@react-navigation/stack'
+import { DrawerNavigationProp } from '@react-navigation/drawer'
+import { Appbar, Avatar, useTheme } from 'react-native-paper'
+import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 //import { BottomTabs } from './bottomTabs';
-import Dashboard from './../screens/Dashboard';
-import { StackNavigatorParamlist } from './types';
+import Dashboard from './../screens/Dashboard'
+import { StackNavigatorParamlist } from './types'
 
-const Stack = createStackNavigator<StackNavigatorParamlist>();
+const Stack = createStackNavigator<StackNavigatorParamlist>()
 
 export const StackNavigator = () => {
-  const theme = useTheme();
+  const theme = useTheme()
 
   return (
     <Stack.Navigator
@@ -20,25 +20,22 @@ export const StackNavigator = () => {
       headerMode="screen"
       screenOptions={{
         header: ({ scene, previous, navigation }) => {
-          const { options } = scene.descriptor;
+          const { options } = scene.descriptor
           const title =
             options.headerTitle !== undefined
               ? options.headerTitle
               : options.title !== undefined
               ? options.title
-              : scene.route.name;
+              : scene.route.name
 
           return (
-            <Appbar.Header
-              theme={{ colors: { primary: theme.colors.surface } }}
-            >
+            <Appbar.Header theme={{ colors: { primary: theme.colors.surface } }}>
               <TouchableOpacity
                 style={{ marginLeft: 10 }}
                 onPress={() => {
-                  console.log('fffffffffffffffffff');
-                  ((navigation as any) as DrawerNavigationProp<{}>).openDrawer();
-                }}
-              >
+                  console.log('fffffffffffffffffff')
+                  ;((navigation as any) as DrawerNavigationProp<{}>).openDrawer()
+                }}>
                 <Avatar.Icon size={40} icon="menu" />
               </TouchableOpacity>
 
@@ -51,10 +48,9 @@ export const StackNavigator = () => {
                 }}
               />
             </Appbar.Header>
-          );
+          )
         },
-      }}
-    >
+      }}>
       {/*       <Stack.Screen
         name="FeedList"
         component={BottomTabs}
@@ -66,11 +62,7 @@ export const StackNavigator = () => {
           return { headerTitle: routeName };
         }}
       /> */}
-      <Stack.Screen
-        name="Details"
-        component={Dashboard}
-        options={{ headerTitle: 'Dashboard!' }}
-      />
+      <Stack.Screen name="Details" component={Dashboard} options={{ headerTitle: 'Dashboard!' }} />
     </Stack.Navigator>
-  );
-};
+  )
+}

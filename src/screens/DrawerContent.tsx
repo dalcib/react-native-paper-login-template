@@ -1,13 +1,13 @@
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons'
 import {
   DrawerContentComponentProps,
   DrawerContentOptions,
   DrawerContentScrollView,
   DrawerNavigationProp,
   DrawerItem,
-} from '@react-navigation/drawer';
-import React from 'react';
-import { StyleSheet, TouchableOpacity, View } from 'react-native';
+} from '@react-navigation/drawer'
+import React from 'react'
+import { StyleSheet, TouchableOpacity, View } from 'react-native'
 import {
   Avatar,
   Caption,
@@ -18,23 +18,21 @@ import {
   Title,
   TouchableRipple,
   useTheme,
-} from 'react-native-paper';
-import Animated from 'react-native-reanimated';
+} from 'react-native-paper'
+import Animated from 'react-native-reanimated'
 
-import { ThemeContext } from './../core/theme';
+import { ThemeContext } from './../core/theme'
 
-type Props = DrawerContentComponentProps<
-  DrawerNavigationProp<Record<string, object>>
->;
+type Props = DrawerContentComponentProps<DrawerNavigationProp<Record<string, object>>>
 
 export function DrawerContent(props: Props) {
-  const theme = useTheme();
-  const { toggleTheme } = React.useContext(ThemeContext);
+  const theme = useTheme()
+  const { toggleTheme } = React.useContext(ThemeContext)
 
   const translateX = Animated.interpolate(props.progress, {
     inputRange: [0, 0.5, 0.7, 0.8, 1],
     outputRange: [-100, -85, -70, -45, 0],
-  });
+  })
 
   return (
     <DrawerContentScrollView {...props}>
@@ -46,19 +44,16 @@ export function DrawerContent(props: Props) {
             backgroundColor: theme.colors.surface,
             transform: [{ translateX }],
           },
-        ]}
-      >
+        ]}>
         <View style={styles.userInfoSection}>
           <TouchableOpacity
             style={{ marginLeft: 10 }}
             onPress={() => {
-              props.navigation.toggleDrawer();
-            }}
-          >
+              props.navigation.toggleDrawer()
+            }}>
             <Avatar.Image
               source={{
-                uri:
-                  'https://pbs.twimg.com/profile_images/952545910990495744/b59hSXUd_400x400.jpg',
+                uri: 'https://pbs.twimg.com/profile_images/952545910990495744/b59hSXUd_400x400.jpg',
               }}
               size={50}
             />
@@ -67,15 +62,11 @@ export function DrawerContent(props: Props) {
           <Caption style={styles.caption}>@trensik</Caption>
           <View style={styles.row}>
             <View style={styles.section}>
-              <Paragraph style={[styles.paragraph, styles.caption]}>
-                202
-              </Paragraph>
+              <Paragraph style={[styles.paragraph, styles.caption]}>202</Paragraph>
               <Caption style={styles.caption}>Obserwuje</Caption>
             </View>
             <View style={styles.section}>
-              <Paragraph style={[styles.paragraph, styles.caption]}>
-                159
-              </Paragraph>
+              <Paragraph style={[styles.paragraph, styles.caption]}>159</Paragraph>
               <Caption style={styles.caption}>Obserwujący</Caption>
             </View>
           </View>
@@ -83,11 +74,7 @@ export function DrawerContent(props: Props) {
         <Drawer.Section style={styles.drawerSection}>
           <DrawerItem
             icon={({ color, size }) => (
-              <MaterialCommunityIcons
-                name="account-outline"
-                color={color}
-                size={size}
-              />
+              <MaterialCommunityIcons name="account-outline" color={color} size={size} />
             )}
             label="Profile"
             onPress={() => {}}
@@ -101,11 +88,7 @@ export function DrawerContent(props: Props) {
           />
           <DrawerItem
             icon={({ color, size }) => (
-              <MaterialCommunityIcons
-                name="bookmark-outline"
-                color={color}
-                size={size}
-              />
+              <MaterialCommunityIcons name="bookmark-outline" color={color} size={size} />
             )}
             label="Bookmarks"
             onPress={() => {}}
@@ -123,7 +106,7 @@ export function DrawerContent(props: Props) {
         </Drawer.Section>
       </Animated.View>
     </DrawerContentScrollView>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -164,4 +147,4 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     paddingHorizontal: 16,
   },
-});
+})

@@ -1,42 +1,38 @@
-import React, { memo, useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import Background from '../components/Background';
-import Logo from '../components/Logo';
-import Header from '../components/Header';
-import Button from '../components/Button';
-import TextInput from '../components/TextInput';
-import BackButton from '../components/BackButton';
-import { theme } from '../core/theme';
-import { Navigation } from '../navigators/types';
-import {
-  emailValidator,
-  passwordValidator,
-  nameValidator,
-} from '../core/utils';
+import React, { memo, useState } from 'react'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import Background from '../components/Background'
+import Logo from '../components/Logo'
+import Header from '../components/Header'
+import Button from '../components/Button'
+import TextInput from '../components/TextInput'
+import BackButton from '../components/BackButton'
+import { theme } from '../core/theme'
+import { Navigation } from '../navigators/types'
+import { emailValidator, passwordValidator, nameValidator } from '../core/utils'
 
 type Props = {
-  navigation: Navigation;
-};
+  navigation: Navigation
+}
 
 const RegisterScreen = ({ navigation }: Props) => {
-  const [name, setName] = useState({ value: '', error: '' });
-  const [email, setEmail] = useState({ value: '', error: '' });
-  const [password, setPassword] = useState({ value: '', error: '' });
+  const [name, setName] = useState({ value: '', error: '' })
+  const [email, setEmail] = useState({ value: '', error: '' })
+  const [password, setPassword] = useState({ value: '', error: '' })
 
   const _onSignUpPressed = () => {
-    const nameError = nameValidator(name.value);
-    const emailError = emailValidator(email.value);
-    const passwordError = passwordValidator(password.value);
+    const nameError = nameValidator(name.value)
+    const emailError = emailValidator(email.value)
+    const passwordError = passwordValidator(password.value)
 
     if (emailError || passwordError || nameError) {
-      setName({ ...name, error: nameError });
-      setEmail({ ...email, error: emailError });
-      setPassword({ ...password, error: passwordError });
-      return;
+      setName({ ...name, error: nameError })
+      setEmail({ ...email, error: emailError })
+      setPassword({ ...password, error: passwordError })
+      return
     }
 
-    navigation.navigate('Dashboard');
-  };
+    navigation.navigate('Dashboard')
+  }
 
   return (
     <Background>
@@ -89,8 +85,8 @@ const RegisterScreen = ({ navigation }: Props) => {
         </TouchableOpacity>
       </View>
     </Background>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   label: {
@@ -107,6 +103,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: theme.colors.primary,
   },
-});
+})
 
-export default memo(RegisterScreen);
+export default memo(RegisterScreen)

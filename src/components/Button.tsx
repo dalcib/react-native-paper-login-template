@@ -1,11 +1,11 @@
-import React, { memo } from 'react';
-import { StyleSheet } from 'react-native';
-import { Button as PaperButton, useTheme } from 'react-native-paper';
+import React, { memo } from 'react'
+import { StyleSheet } from 'react-native'
+import { Button as PaperButton, useTheme } from 'react-native-paper'
 
-type Props = React.ComponentProps<typeof PaperButton>;
+type Props = React.ComponentProps<typeof PaperButton>
 
 const Button = ({ mode, style, children, ...props }: Props) => {
-  const theme = useTheme();
+  const theme = useTheme()
   return (
     <PaperButton
       style={[
@@ -15,12 +15,11 @@ const Button = ({ mode, style, children, ...props }: Props) => {
       ]}
       labelStyle={styles.text}
       mode={mode}
-      {...props}
-    >
+      {...props}>
       {children}
     </PaperButton>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   button: {
@@ -32,6 +31,6 @@ const styles = StyleSheet.create({
     fontSize: 15,
     lineHeight: 26,
   },
-});
+})
 
-export default memo(Button);
+export default memo(Button)

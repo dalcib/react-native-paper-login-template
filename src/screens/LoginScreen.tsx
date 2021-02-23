@@ -1,35 +1,35 @@
-import React, { memo, useState } from 'react';
-import { TouchableOpacity, StyleSheet, Text, View } from 'react-native';
-import Background from '../components/Background';
-import Logo from '../components/Logo';
-import Header from '../components/Header';
-import Button from '../components/Button';
-import TextInput from '../components/TextInput';
-import BackButton from '../components/BackButton';
-import { theme } from '../core/theme';
-import { emailValidator, passwordValidator } from '../core/utils';
-import { Navigation } from '../navigators/types';
+import React, { memo, useState } from 'react'
+import { TouchableOpacity, StyleSheet, Text, View } from 'react-native'
+import Background from '../components/Background'
+import Logo from '../components/Logo'
+import Header from '../components/Header'
+import Button from '../components/Button'
+import TextInput from '../components/TextInput'
+import BackButton from '../components/BackButton'
+import { theme } from '../core/theme'
+import { emailValidator, passwordValidator } from '../core/utils'
+import { Navigation } from '../navigators/types'
 
 type Props = {
-  navigation: Navigation;
-};
+  navigation: Navigation
+}
 
 const LoginScreen = ({ navigation }: Props) => {
-  const [email, setEmail] = useState({ value: '', error: '' });
-  const [password, setPassword] = useState({ value: '', error: '' });
+  const [email, setEmail] = useState({ value: '', error: '' })
+  const [password, setPassword] = useState({ value: '', error: '' })
 
   const _onLoginPressed = () => {
-    const emailError = emailValidator(email.value);
-    const passwordError = passwordValidator(password.value);
+    const emailError = emailValidator(email.value)
+    const passwordError = passwordValidator(password.value)
 
     if (emailError || passwordError) {
-      setEmail({ ...email, error: emailError });
-      setPassword({ ...password, error: passwordError });
-      return;
+      setEmail({ ...email, error: emailError })
+      setPassword({ ...password, error: passwordError })
+      return
     }
 
-    navigation.navigate('Dashboard');
-  };
+    navigation.navigate('Dashboard')
+  }
 
   return (
     <Background>
@@ -63,9 +63,7 @@ const LoginScreen = ({ navigation }: Props) => {
       />
 
       <View style={styles.forgotPassword}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('ForgotPasswordScreen')}
-        >
+        <TouchableOpacity onPress={() => navigation.navigate('ForgotPasswordScreen')}>
           <Text style={styles.label}>Forgot your password?</Text>
         </TouchableOpacity>
       </View>
@@ -81,8 +79,8 @@ const LoginScreen = ({ navigation }: Props) => {
         </TouchableOpacity>
       </View>
     </Background>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   forgotPassword: {
@@ -101,6 +99,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: theme.colors.primary,
   },
-});
+})
 
-export default memo(LoginScreen);
+export default memo(LoginScreen)

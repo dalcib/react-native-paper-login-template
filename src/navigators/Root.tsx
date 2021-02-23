@@ -1,5 +1,5 @@
-import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
+import React from 'react'
+import { createStackNavigator } from '@react-navigation/stack'
 
 import {
   HomeScreen,
@@ -7,10 +7,10 @@ import {
   RegisterScreen,
   ForgotPasswordScreen,
   Dashboard,
-} from '../screens';
-import { DrawerNavigator } from './Drawer';
+} from '../screens'
+import { DrawerNavigator } from './Drawer'
 
-const RootStack = createStackNavigator();
+const RootStack = createStackNavigator()
 
 const RootStackScreen = () => {
   return (
@@ -18,13 +18,10 @@ const RootStackScreen = () => {
       <RootStack.Screen name="HomeScreen" component={HomeScreen} />
       <RootStack.Screen name="LoginScreen" component={LoginScreen} />
       <RootStack.Screen name="RegisterScreen" component={RegisterScreen} />
-      <RootStack.Screen
-        name="ForgotPasswordScreen"
-        component={ForgotPasswordScreen}
-      />
+      <RootStack.Screen name="ForgotPasswordScreen" component={ForgotPasswordScreen} />
       <RootStack.Screen name="Dashboard" component={DrawerNavigator} />
     </RootStack.Navigator>
-  );
-};
+  )
+}
 
-export default RootStackScreen;
+export default RootStackScreen
