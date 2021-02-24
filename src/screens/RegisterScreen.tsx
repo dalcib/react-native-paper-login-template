@@ -1,5 +1,5 @@
 import React, { memo, useState } from 'react'
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, Pressable } from 'react-native'
 import Background from '../components/Background'
 import Logo from '../components/Logo'
 import Header from '../components/Header'
@@ -80,9 +80,11 @@ const RegisterScreen = ({ navigation }: Props) => {
 
       <View style={styles.row}>
         <Text style={styles.label}>Already have an account? </Text>
-        <TouchableOpacity onPress={() => navigation.navigate('LoginScreen')}>
+        <Pressable
+          onPress={() => navigation.navigate('LoginScreen')}
+          style={({ pressed }) => [{ opacity: pressed ? 0.6 : 1 }]}>
           <Text style={styles.link}>Login</Text>
-        </TouchableOpacity>
+        </Pressable>
       </View>
     </Background>
   )

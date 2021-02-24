@@ -15,11 +15,11 @@ const RootStack = createStackNavigator()
 const RootStackScreen = () => {
   return (
     <RootStack.Navigator headerMode="none">
+      <RootStack.Screen name="Dashboard" component={DrawerNavigator} />
       <RootStack.Screen name="HomeScreen" component={HomeScreen} />
       <RootStack.Screen name="LoginScreen" component={LoginScreen} />
       <RootStack.Screen name="RegisterScreen" component={RegisterScreen} />
       <RootStack.Screen name="ForgotPasswordScreen" component={ForgotPasswordScreen} />
-      <RootStack.Screen name="Dashboard" component={DrawerNavigator} />
     </RootStack.Navigator>
   )
 }

@@ -21,4 +21,8 @@ https://regex101.com/
 
 matchAll
 <.*icon="(.*?)"\/?>?
+<.*tabBarIcon="(.*?)"\/?>?
 <Icon.*name="(.*?)"\/?>?
+
+tabBarIcon="(.*?)"
+<.*?Icon.*name="(.*?)"\/?>? 

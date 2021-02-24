@@ -11,7 +11,9 @@ const Main = () => {
       <ThemeContext.Consumer>
         {({ toggleTheme, isThemeDark, theme }) => (
           <PaperProvider theme={theme}>
-            <NavigationContainer linking={{ enabled: true, prefixes: ['public'] }} theme={theme}>
+            <NavigationContainer
+              linking={{ enabled: true, prefixes: ['http://127.0.0.1:5501/public'] }}
+              theme={theme}>
               <App />
             </NavigationContainer>
           </PaperProvider>

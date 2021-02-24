@@ -1,9 +1,8 @@
 import React from 'react'
-import { TouchableOpacity, Text } from 'react-native'
+import { Pressable } from 'react-native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { DrawerNavigationProp } from '@react-navigation/drawer'
 import { Appbar, Avatar, useTheme } from 'react-native-paper'
-import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 //import { BottomTabs } from './bottomTabs';
 import Dashboard from './../screens/Dashboard'
@@ -30,14 +29,11 @@ export const StackNavigator = () => {
 
           return (
             <Appbar.Header theme={{ colors: { primary: theme.colors.surface } }}>
-              <TouchableOpacity
-                style={{ marginLeft: 10 }}
-                onPress={() => {
-                  console.log('fffffffffffffffffff')
-                  ;((navigation as any) as DrawerNavigationProp<{}>).openDrawer()
-                }}>
+              <Pressable
+                style={({ pressed }) => [{ marginLeft: 10, opacity: pressed ? 0.6 : 1 }]}
+                onPress={() => ((navigation as any) as DrawerNavigationProp<{}>).openDrawer()}>
                 <Avatar.Icon size={40} icon="menu" />
-              </TouchableOpacity>
+              </Pressable>
 
               <Appbar.Content
                 title={title}

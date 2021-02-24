@@ -1,7 +1,11 @@
-var prod = !(process.argv[2] === 'dev');
-var vectorIcons = require('./plugin');
-var fs = require('fs').promises;
-const { parse, resolve } = require('path');
+var prod = !(process.argv[2] === 'dev')
+var vectorIcons = require('./plugin')
+var fs = require('fs').promises
+const { parse, resolve } = require('path')
+
+const icons = {
+  MaterialCommunityIcons: ['camera', 'menu', 'account-outline', 'tune', 'bookmark-outline'],
+}
 
 require('esbuild')
   .build({
@@ -23,29 +27,26 @@ require('esbuild')
       ? false
       : {
           onRebuild(error, result) {
-            console.log(error ? error : '...');
+            console.log(error ? error : '...')
           },
         },
     logLevel: 'error',
-    plugins: [
-      vectorIcons({
-        MaterialCommunityIcons: ['camera', 'menu'],
-      }),
-    ],
+    plugins: [vectorIcons(icons)],
     incremental: !prod,
     //publicPath: 'static',
   })
   .then(async (result) => {
     //result.stop();
-    console.log('...');
-    /*     const files = await fs.readdir(resolve('public'));
-    const newfiles = files
-      .filter((elem) => ['.png', '.ttf'].includes(parse(elem).ext))
-      .forEach(async (file) => {
-        await fs.rename(
-          resolve('public', file),
-          resolve('public/static', file)
-        );
-      }); */
+    console.log('...')
   })
-  .catch(() => process.exit(1));
+  .catch(() => process.exit(1))
+
+/*     const files = await fs.readdir(resolve('public'));
+  const newfiles = files
+    .filter((elem) => ['.png', '.ttf'].includes(parse(elem).ext))
+    .forEach(async (file) => {
+      await fs.rename(
+        resolve('public', file),
+        resolve('public/static', file)
+      );
+    }); */

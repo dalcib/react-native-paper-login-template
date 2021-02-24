@@ -1,13 +1,12 @@
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import {
   DrawerContentComponentProps,
-  DrawerContentOptions,
   DrawerContentScrollView,
   DrawerNavigationProp,
   DrawerItem,
 } from '@react-navigation/drawer'
 import React from 'react'
-import { StyleSheet, TouchableOpacity, View } from 'react-native'
+import { StyleSheet, Pressable, View } from 'react-native'
 import {
   Avatar,
   Caption,
@@ -46,8 +45,8 @@ export function DrawerContent(props: Props) {
           },
         ]}>
         <View style={styles.userInfoSection}>
-          <TouchableOpacity
-            style={{ marginLeft: 10 }}
+          <Pressable
+            style={({ pressed }) => [{ marginLeft: 10, opacity: pressed ? 0.6 : 1 }]}
             onPress={() => {
               props.navigation.toggleDrawer()
             }}>
@@ -57,7 +56,7 @@ export function DrawerContent(props: Props) {
               }}
               size={50}
             />
-          </TouchableOpacity>
+          </Pressable>
           <Title style={styles.title}>Dawid Urbaniak</Title>
           <Caption style={styles.caption}>@trensik</Caption>
           <View style={styles.row}>
@@ -108,6 +107,11 @@ export function DrawerContent(props: Props) {
     </DrawerContentScrollView>
   )
 }
+
+//<TabBar tabBarIcon="search" size={40} />
+//<TabBar tabBarIcon={"search"} size={40} />
+//<TabBar color="blue" tabBarIcon={"search"} size={40} />
+//<Icon name="search"/>
 
 const styles = StyleSheet.create({
   drawerContent: {

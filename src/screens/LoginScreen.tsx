@@ -1,5 +1,5 @@
 import React, { memo, useState } from 'react'
-import { TouchableOpacity, StyleSheet, Text, View } from 'react-native'
+import { Pressable, StyleSheet, Text, View } from 'react-native'
 import Background from '../components/Background'
 import Logo from '../components/Logo'
 import Header from '../components/Header'
@@ -63,9 +63,11 @@ const LoginScreen = ({ navigation }: Props) => {
       />
 
       <View style={styles.forgotPassword}>
-        <TouchableOpacity onPress={() => navigation.navigate('ForgotPasswordScreen')}>
+        <Pressable
+          onPress={() => navigation.navigate('ForgotPasswordScreen')}
+          style={({ pressed }) => [{ opacity: pressed ? 0.6 : 1 }, styles.label]}>
           <Text style={styles.label}>Forgot your password?</Text>
-        </TouchableOpacity>
+        </Pressable>
       </View>
 
       <Button mode="contained" onPress={_onLoginPressed}>
@@ -74,9 +76,11 @@ const LoginScreen = ({ navigation }: Props) => {
 
       <View style={styles.row}>
         <Text style={styles.label}>Don’t have an account? </Text>
-        <TouchableOpacity onPress={() => navigation.navigate('RegisterScreen')}>
+        <Pressable
+          onPress={() => navigation.navigate('RegisterScreen')}
+          style={({ pressed }) => [{ opacity: pressed ? 0.6 : 1 }, styles.label]}>
           <Text style={styles.link}>Sign up</Text>
-        </TouchableOpacity>
+        </Pressable>
       </View>
     </Background>
   )

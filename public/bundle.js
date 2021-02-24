@@ -43361,7 +43361,7 @@ function createIconSet_default(glyphMap, fontName, expoAssetId, fontStyle) {
 var MaterialCommunityIcons_default = "MaterialCommunityIcons.QCSDDVWU.ttf";
 
 // node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/glyphmaps/MaterialCommunityIcons.json
-var MaterialCommunityIcons_default2 = {camera: 983296, menu: 983900};
+var MaterialCommunityIcons_default2 = {"account-outline": 983059, "bookmark-outline": 983235, camera: 983296, menu: 983900, tune: 984622};
 
 // node_modules/@expo/vector-icons/build/MaterialCommunityIcons.js
 var MaterialCommunityIcons_default3 = createIconSet_default(MaterialCommunityIcons_default2, "material-community", MaterialCommunityIcons_default);
@@ -54472,9 +54472,14 @@ function getStatusBarHeight2(skipAndroid) {
 }
 
 // src/components/BackButton.tsx
-var BackButton = ({goBack: goBack2}) => /* @__PURE__ */ import_react53.default.createElement(import_react_native78.TouchableOpacity, {
+var BackButton = ({goBack: goBack2}) => /* @__PURE__ */ import_react53.default.createElement(import_react_native78.Pressable, {
   onPress: goBack2,
-  style: styles67.container
+  style: ({pressed}) => [
+    {
+      opacity: pressed ? 0.6 : 1
+    },
+    styles67.container
+  ]
 }, /* @__PURE__ */ import_react53.default.createElement(import_react_native78.Image, {
   style: styles67.image,
   source: require_arrow_back()
@@ -54549,8 +54554,9 @@ var LoginScreen = ({navigation}) => {
     secureTextEntry: true
   }), /* @__PURE__ */ import_react54.default.createElement(import_react_native79.View, {
     style: styles68.forgotPassword
-  }, /* @__PURE__ */ import_react54.default.createElement(import_react_native79.TouchableOpacity, {
-    onPress: () => navigation.navigate("ForgotPasswordScreen")
+  }, /* @__PURE__ */ import_react54.default.createElement(import_react_native79.Pressable, {
+    onPress: () => navigation.navigate("ForgotPasswordScreen"),
+    style: ({pressed}) => [{opacity: pressed ? 0.6 : 1}, styles68.label]
   }, /* @__PURE__ */ import_react54.default.createElement(import_react_native79.Text, {
     style: styles68.label
   }, "Forgot your password?"))), /* @__PURE__ */ import_react54.default.createElement(Button_default3, {
@@ -54560,8 +54566,9 @@ var LoginScreen = ({navigation}) => {
     style: styles68.row
   }, /* @__PURE__ */ import_react54.default.createElement(import_react_native79.Text, {
     style: styles68.label
-  }, "Don\u2019t have an account? "), /* @__PURE__ */ import_react54.default.createElement(import_react_native79.TouchableOpacity, {
-    onPress: () => navigation.navigate("RegisterScreen")
+  }, "Don\u2019t have an account? "), /* @__PURE__ */ import_react54.default.createElement(import_react_native79.Pressable, {
+    onPress: () => navigation.navigate("RegisterScreen"),
+    style: ({pressed}) => [{opacity: pressed ? 0.6 : 1}, styles68.label]
   }, /* @__PURE__ */ import_react54.default.createElement(import_react_native79.Text, {
     style: styles68.link
   }, "Sign up"))));
@@ -54641,8 +54648,9 @@ var RegisterScreen = ({navigation}) => {
     style: styles69.row
   }, /* @__PURE__ */ import_react55.default.createElement(import_react_native80.Text, {
     style: styles69.label
-  }, "Already have an account? "), /* @__PURE__ */ import_react55.default.createElement(import_react_native80.TouchableOpacity, {
-    onPress: () => navigation.navigate("LoginScreen")
+  }, "Already have an account? "), /* @__PURE__ */ import_react55.default.createElement(import_react_native80.Pressable, {
+    onPress: () => navigation.navigate("LoginScreen"),
+    style: ({pressed}) => [{opacity: pressed ? 0.6 : 1}]
   }, /* @__PURE__ */ import_react55.default.createElement(import_react_native80.Text, {
     style: styles69.link
   }, "Login"))));
@@ -54695,8 +54703,8 @@ var ForgotPasswordScreen = ({navigation}) => {
     mode: "contained",
     onPress: _onSendPressed,
     style: styles70.button
-  }, "Send Reset Instructions"), /* @__PURE__ */ import_react56.default.createElement(import_react_native81.TouchableOpacity, {
-    style: styles70.back,
+  }, "Send Reset Instructions"), /* @__PURE__ */ import_react56.default.createElement(import_react_native81.Pressable, {
+    style: ({pressed}) => [{opacity: pressed ? 0.6 : 1}, styles70.back],
     onPress: () => navigation.navigate("LoginScreen")
   }, /* @__PURE__ */ import_react56.default.createElement(import_react_native81.Text, {
     style: styles70.label
@@ -59010,8 +59018,8 @@ function DrawerContent2(props) {
     ]
   }, /* @__PURE__ */ import_react62.default.createElement(import_react_native103.View, {
     style: styles78.userInfoSection
-  }, /* @__PURE__ */ import_react62.default.createElement(import_react_native103.TouchableOpacity, {
-    style: {marginLeft: 10},
+  }, /* @__PURE__ */ import_react62.default.createElement(import_react_native103.Pressable, {
+    style: ({pressed}) => [{marginLeft: 10, opacity: pressed ? 0.6 : 1}],
     onPress: () => {
       props.navigation.toggleDrawer();
     }
@@ -59134,12 +59142,9 @@ var StackNavigator2 = () => {
         const title = options.headerTitle !== void 0 ? options.headerTitle : options.title !== void 0 ? options.title : scene.route.name;
         return /* @__PURE__ */ import_react63.default.createElement(Appbar_default2.Header, {
           theme: {colors: {primary: theme2.colors.surface}}
-        }, /* @__PURE__ */ import_react63.default.createElement(import_react_native104.TouchableOpacity, {
-          style: {marginLeft: 10},
-          onPress: () => {
-            console.log("fffffffffffffffffff");
-            navigation.openDrawer();
-          }
+        }, /* @__PURE__ */ import_react63.default.createElement(import_react_native104.Pressable, {
+          style: ({pressed}) => [{marginLeft: 10, opacity: pressed ? 0.6 : 1}],
+          onPress: () => navigation.openDrawer()
         }, /* @__PURE__ */ import_react63.default.createElement(Avatar_exports.Icon, {
           size: 40,
           icon: "menu"
@@ -59179,6 +59184,9 @@ var RootStackScreen = () => {
   return /* @__PURE__ */ import_react65.default.createElement(RootStack.Navigator, {
     headerMode: "none"
   }, /* @__PURE__ */ import_react65.default.createElement(RootStack.Screen, {
+    name: "Dashboard",
+    component: DrawerNavigator2
+  }), /* @__PURE__ */ import_react65.default.createElement(RootStack.Screen, {
     name: "HomeScreen",
     component: HomeScreen_default
   }), /* @__PURE__ */ import_react65.default.createElement(RootStack.Screen, {
@@ -59190,9 +59198,6 @@ var RootStackScreen = () => {
   }), /* @__PURE__ */ import_react65.default.createElement(RootStack.Screen, {
     name: "ForgotPasswordScreen",
     component: ForgotPasswordScreen_default
-  }), /* @__PURE__ */ import_react65.default.createElement(RootStack.Screen, {
-    name: "Dashboard",
-    component: DrawerNavigator2
   }));
 };
 var Root_default = RootStackScreen;
@@ -59202,7 +59207,7 @@ var Main = () => {
   return /* @__PURE__ */ import_react66.default.createElement(ThemeProvider3, null, /* @__PURE__ */ import_react66.default.createElement(ThemeContext2.Consumer, null, ({toggleTheme, isThemeDark, theme: theme2}) => /* @__PURE__ */ import_react66.default.createElement(Provider_default, {
     theme: theme2
   }, /* @__PURE__ */ import_react66.default.createElement(NavigationContainer_default, {
-    linking: {enabled: true, prefixes: ["public"]},
+    linking: {enabled: true, prefixes: ["http://127.0.0.1:5501/public"]},
     theme: theme2
   }, /* @__PURE__ */ import_react66.default.createElement(Root_default, null)))));
 };
