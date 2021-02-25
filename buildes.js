@@ -33,7 +33,7 @@ require('esbuild')
     format: 'esm',
     bundle: true,
     minify: prod,
-    sourcemap: prod,
+    sourcemap: true, //prod,
     watch: prod
       ? false
       : {
