@@ -1,7 +1,18 @@
 var prod = !(process.argv[2] === 'dev')
 var vectorIcons = require('./plugin')
-var fs = require('fs').promises
-const { parse, resolve } = require('path')
+var servor = require('servor')
+
+if (!prod) {
+  const instance = servor({
+    root: './public',
+    reload: true,
+    port: 8081,
+  })
+    .then((result, error) => {
+      if (error) console.log(result, error)
+    })
+    .catch(() => process.exit(1))
+}
 
 const icons = {
   MaterialCommunityIcons: ['camera', 'menu', 'account-outline', 'tune', 'bookmark-outline'],
@@ -33,9 +44,9 @@ require('esbuild')
     logLevel: 'error',
     plugins: [vectorIcons(icons)],
     incremental: !prod,
-    //publicPath: 'static',
+    publicPath: '/',
   })
-  .then(async (result) => {
+  .then((result) => {
     //result.stop();
     console.log('...')
   })

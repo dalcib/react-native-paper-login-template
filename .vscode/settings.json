@@ -1,7 +1,5 @@
 {
-  "liveFrame.url": "http://localhost:5501",
+  "liveFrame.url": "http://localhost:8081",
   "liveFrame.title": "Local Development",
-  "liveFrame.pane": "Beside",
-  "liveServer.settings.port": 5501,
-  "liveServer.settings.root": "/public"
+  "liveFrame.pane": "Beside"
 }
