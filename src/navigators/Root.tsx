@@ -9,6 +9,7 @@ import {
   Dashboard,
 } from '../screens'
 import { DrawerNavigator } from './Drawer'
+import Examples from './Example'
 
 const RootStack = createStackNavigator()
 
@@ -20,6 +21,7 @@ const RootStackScreen = () => {
       <RootStack.Screen name="LoginScreen" component={LoginScreen} />
       <RootStack.Screen name="RegisterScreen" component={RegisterScreen} />
       <RootStack.Screen name="ForgotPasswordScreen" component={ForgotPasswordScreen} />
+      <RootStack.Screen name="Examples" component={Examples} />
     </RootStack.Navigator>
   )
 }

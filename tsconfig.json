@@ -8,11 +8,6 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "baseUrl": ".",
-    "paths": {
-      "react-native": ["./node_modules/react-native-web/dist/index.js"],
-      "react-native-vector-icons/MaterialCommunityIcons": [
-        "./node_modules/@expo/vector-icons/MaterialCommunityIcons"
-      ]
-    }
+    "paths": {}
   }
 }
