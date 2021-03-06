@@ -25,9 +25,7 @@ var __exportStar = (target, module, desc) => {
   return target;
 };
 var __toModule = (module) => {
-  if (module && module.__esModule)
-    return module;
-  return __exportStar(__markAsModule(__defProp(module != null ? __create(__getProtoOf(module)) : {}, "default", {value: module, enumerable: true})), module);
+  return __exportStar(__markAsModule(__defProp(module != null ? __create(__getProtoOf(module)) : {}, "default", module && module.__esModule && "default" in module ? {get: () => module.default, enumerable: true} : {value: module, enumerable: true})), module);
 };
 
 // node_modules/object-assign/index.js
@@ -3588,7 +3586,7 @@ var require_scheduler_tracing_development = __commonJS((exports) => {
             }
           }
         }
-        wrapped.cancel = function cancel2() {
+        wrapped.cancel = function cancel3() {
           subscriber = exports.__subscriberRef.current;
           try {
             if (subscriber !== null) {
@@ -25304,7 +25302,7 @@ var require_fontfaceobserver_standalone = __commonJS((exports, module) => {
 // node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/lib/react-native.web.js
 var require_react_native_web = __commonJS((exports) => {
   __markAsModule(exports);
-  __exportStar(exports, __toModule(require_dist()));
+  __exportStar(exports, require_dist());
 });
 
 // node_modules/lodash.isstring/index.js
@@ -25967,14 +25965,14 @@ var require_lodash3 = __commonJS((exports, module) => {
 var require_MaterialCommunityIcons = __commonJS((exports) => {
   __markAsModule(exports);
   __export(exports, {
-    default: () => MaterialCommunityIcons_default3
+    default: () => MaterialCommunityIcons_default2
   });
-  var MaterialCommunityIcons_default3 = MaterialCommunityIcons_default2;
+  var MaterialCommunityIcons_default2 = MaterialCommunityIcons_default;
 });
 
 // node_modules/react-native-paper/lib/module/assets/back-chevron.png
 var require_back_chevron = __commonJS((exports, module) => {
-  module.exports = "/back-chevron.JA374TVW.png";
+  module.exports = "/assets/back-chevron-JA374TVW.png";
 });
 
 // node_modules/@react-navigation/native/node_modules/react-is/cjs/react-is.development.js
@@ -26795,32 +26793,32 @@ var require_commonjs = __commonJS((exports) => {
 
 // node_modules/@react-navigation/stack/lib/module/views/assets/back-icon.png
 var require_back_icon = __commonJS((exports, module) => {
-  module.exports = "/back-icon.DBPL4PAY.png";
+  module.exports = "/assets/back-icon-DBPL4PAY.png";
 });
 
 // node_modules/@react-navigation/stack/lib/module/views/assets/back-icon-mask.png
 var require_back_icon_mask = __commonJS((exports, module) => {
-  module.exports = "/back-icon-mask.77OE5VDT.png";
+  module.exports = "/assets/back-icon-mask-77OE5VDT.png";
 });
 
 // src/assets/background_dot.png
 var require_background_dot = __commonJS((exports, module) => {
-  module.exports = "/background_dot.5MSGVFWW.png";
+  module.exports = "/assets/background_dot-5MSGVFWW.png";
 });
 
 // src/assets/logo.png
 var require_logo = __commonJS((exports, module) => {
-  module.exports = "/logo.OUIKRVNU.png";
+  module.exports = "/assets/logo-OUIKRVNU.png";
 });
 
 // src/assets/arrow_back.png
 var require_arrow_back = __commonJS((exports, module) => {
-  module.exports = "/arrow_back.ZWNGDALQ.png";
+  module.exports = "/assets/arrow_back-ZWNGDALQ.png";
 });
 
 // node_modules/@react-navigation/drawer/lib/module/views/assets/toggle-drawer-icon.png
 var require_toggle_drawer_icon = __commonJS((exports, module) => {
-  module.exports = "/toggle-drawer-icon.3FSG7IXR.png";
+  module.exports = "/assets/toggle-drawer-icon-3FSG7IXR.png";
 });
 
 // node_modules/fbjs/lib/invariant.js
@@ -26949,42 +26947,42 @@ var require_areEqual = __commonJS((exports, module) => {
 
 // src/assets/avatar.png
 var require_avatar = __commonJS((exports, module) => {
-  module.exports = "/avatar.MC3KDE5V.png";
+  module.exports = "/assets/avatar-MC3KDE5V.png";
 });
 
 // src/assets/email-icon.png
 var require_email_icon = __commonJS((exports, module) => {
-  module.exports = "/email-icon.7BEZT6DG.png";
+  module.exports = "/assets/email-icon-7BEZT6DG.png";
 });
 
 // src/assets/favorite.png
 var require_favorite = __commonJS((exports, module) => {
-  module.exports = "/favorite.RELK7QWK.png";
+  module.exports = "/assets/favorite-RELK7QWK.png";
 });
 
 // src/assets/chameleon.jpg
 var require_chameleon = __commonJS((exports, module) => {
-  module.exports = "/chameleon.2Q3XZ5FT.jpg";
+  module.exports = "/assets/chameleon-2Q3XZ5FT.jpg";
 });
 
 // src/assets/wrecked-ship.jpg
 var require_wrecked_ship = __commonJS((exports, module) => {
-  module.exports = "/wrecked-ship.B64AIDPM.jpg";
+  module.exports = "/assets/wrecked-ship-B64AIDPM.jpg";
 });
 
 // src/assets/forest.jpg
 var require_forest = __commonJS((exports, module) => {
-  module.exports = "/forest.KK322T75.jpg";
+  module.exports = "/assets/forest-KK322T75.jpg";
 });
 
 // src/assets/strawberries.jpg
 var require_strawberries = __commonJS((exports, module) => {
-  module.exports = "/strawberries.Y23DJZSO.jpg";
+  module.exports = "/assets/strawberries-Y23DJZSO.jpg";
 });
 
 // src/assets/city.jpg
 var require_city = __commonJS((exports, module) => {
-  module.exports = "/city.FICWNFWM.jpg";
+  module.exports = "/assets/city-FICWNFWM.jpg";
 });
 
 // node_modules/expo/build/launch/registerRootComponent.web.js
@@ -27178,7 +27176,7 @@ var processColor = function processColor2(color39) {
   if (color39 === void 0 || color39 === null) {
     return color39;
   }
-  var int32Color = import_normalize_css_color.default(color39);
+  var int32Color = (0, import_normalize_css_color.default)(color39);
   if (int32Color === void 0 || int32Color === null) {
     return void 0;
   }
@@ -27467,7 +27465,7 @@ function flattenStyle(style) {
     return void 0;
   }
   if (true) {
-    import_invariant.default(style !== true, "style may be false but not true");
+    (0, import_invariant.default)(style !== true, "style may be false but not true");
   }
   if (!Array.isArray(style)) {
     return getStyle(style);
@@ -28000,7 +27998,7 @@ var static_default = {
 };
 
 // node_modules/react-native-web/dist/modules/prefixStyles/index.js
-var prefixAll = import_createPrefixer.default(static_default);
+var prefixAll = (0, import_createPrefixer.default)(static_default);
 var prefixStyles_default = prefixAll;
 var prefixInlineStyles = function prefixInlineStyles2(style) {
   var prefixedStyles = prefixAll(style);
@@ -28194,7 +28192,7 @@ function createDeclarationBlock(style) {
   var domStyle = prefixStyles_default(createReactDOMStyle_default(style));
   var declarationsString = Object.keys(domStyle).map(function(property) {
     var value = domStyle[property];
-    var prop = import_hyphenate_style_name.default(property);
+    var prop = (0, import_hyphenate_style_name.default)(property);
     if (Array.isArray(value)) {
       return value.map(function(v) {
         return prop + ":" + v;
@@ -28626,7 +28624,7 @@ var invalidShortforms = {
   textDecoration: true
 };
 function error(message) {
-  import_warning.default(false, message);
+  (0, import_warning.default)(false, message);
 }
 function validate(key, styles156) {
   var obj = styles156[key];
@@ -29037,7 +29035,7 @@ var import_react_dom = __toModule(require_react_dom());
 var findNodeHandle = function findNodeHandle2(component) {
   var node;
   try {
-    node = import_react_dom.findDOMNode(component);
+    node = (0, import_react_dom.findDOMNode)(component);
   } catch (e) {
   }
   return node;
@@ -29327,7 +29325,7 @@ var EventSubscriptionVendor = /* @__PURE__ */ function() {
   }
   var _proto = EventSubscriptionVendor2.prototype;
   _proto.addSubscription = function addSubscription(eventType, subscription) {
-    import_invariant2.default(subscription.subscriber === this, "The subscriber of the subscription is incorrectly set.");
+    (0, import_invariant2.default)(subscription.subscriber === this, "The subscriber of the subscription is incorrectly set.");
     if (!this._subscriptionsForType[eventType]) {
       this._subscriptionsForType[eventType] = [];
     }
@@ -29387,11 +29385,11 @@ var EventEmitter = /* @__PURE__ */ function() {
     this._subscriber.removeAllSubscriptions(eventType);
   };
   _proto.removeCurrentListener = function removeCurrentListener() {
-    import_invariant3.default(!!this._currentSubscription, "Not in an emitting cycle; there is no current subscription");
+    (0, import_invariant3.default)(!!this._currentSubscription, "Not in an emitting cycle; there is no current subscription");
     this.removeSubscription(this._currentSubscription);
   };
   _proto.removeSubscription = function removeSubscription(subscription) {
-    import_invariant3.default(subscription.emitter === this, "Subscription does not belong to this emitter.");
+    (0, import_invariant3.default)(subscription.emitter === this, "Subscription does not belong to this emitter.");
     this._subscriber.removeSubscription(subscription);
   };
   _proto.listeners = function listeners4(eventType) {
@@ -29517,7 +29515,7 @@ var NativeEventEmitter = /* @__PURE__ */ function(_EventEmitter) {
     return _EventEmitter.prototype.addListener.call(this, eventType, listener3, context);
   };
   _proto.removeAllListeners = function removeAllListeners2(eventType) {
-    import_invariant4.default(eventType, "eventType argument is required.");
+    (0, import_invariant4.default)(eventType, "eventType argument is required.");
     var count = this.listeners(eventType).length;
     if (this._nativeModule != null) {
       this._nativeModule.removeListeners(count);
@@ -29558,7 +29556,7 @@ var API = {
     queueConnections = true;
   },
   disableQueue: function disableQueue() {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     queueConnections = false;
     for (var q = 0, l = queue.length; q < l; q++) {
       var args = queue[q];
@@ -29567,19 +29565,19 @@ var API = {
     queue.length = 0;
   },
   createAnimatedNode: function createAnimatedNode(tag, config) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     NativeAnimatedModule_default.createAnimatedNode(tag, config);
   },
   startListeningToAnimatedNodeValue: function startListeningToAnimatedNodeValue(tag) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     NativeAnimatedModule_default.startListeningToAnimatedNodeValue(tag);
   },
   stopListeningToAnimatedNodeValue: function stopListeningToAnimatedNodeValue(tag) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     NativeAnimatedModule_default.stopListeningToAnimatedNodeValue(tag);
   },
   connectAnimatedNodes: function connectAnimatedNodes(parentTag, childTag) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     if (queueConnections) {
       queue.push([parentTag, childTag]);
       return;
@@ -29587,51 +29585,51 @@ var API = {
     NativeAnimatedModule_default.connectAnimatedNodes(parentTag, childTag);
   },
   disconnectAnimatedNodes: function disconnectAnimatedNodes(parentTag, childTag) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     NativeAnimatedModule_default.disconnectAnimatedNodes(parentTag, childTag);
   },
   startAnimatingNode: function startAnimatingNode(animationId, nodeTag, config, endCallback) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     NativeAnimatedModule_default.startAnimatingNode(animationId, nodeTag, config, endCallback);
   },
   stopAnimation: function stopAnimation(animationId) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     NativeAnimatedModule_default.stopAnimation(animationId);
   },
   setAnimatedNodeValue: function setAnimatedNodeValue(nodeTag, value) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     NativeAnimatedModule_default.setAnimatedNodeValue(nodeTag, value);
   },
   setAnimatedNodeOffset: function setAnimatedNodeOffset(nodeTag, offset) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     NativeAnimatedModule_default.setAnimatedNodeOffset(nodeTag, offset);
   },
   flattenAnimatedNodeOffset: function flattenAnimatedNodeOffset(nodeTag) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     NativeAnimatedModule_default.flattenAnimatedNodeOffset(nodeTag);
   },
   extractAnimatedNodeOffset: function extractAnimatedNodeOffset(nodeTag) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     NativeAnimatedModule_default.extractAnimatedNodeOffset(nodeTag);
   },
   connectAnimatedNodeToView: function connectAnimatedNodeToView(nodeTag, viewTag) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     NativeAnimatedModule_default.connectAnimatedNodeToView(nodeTag, viewTag);
   },
   disconnectAnimatedNodeFromView: function disconnectAnimatedNodeFromView(nodeTag, viewTag) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     NativeAnimatedModule_default.disconnectAnimatedNodeFromView(nodeTag, viewTag);
   },
   dropAnimatedNode: function dropAnimatedNode(tag) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     NativeAnimatedModule_default.dropAnimatedNode(tag);
   },
   addAnimatedEventToView: function addAnimatedEventToView(viewTag, eventName, eventMapping) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     NativeAnimatedModule_default.addAnimatedEventToView(viewTag, eventName, eventMapping);
   },
   removeAnimatedEventFromView: function removeAnimatedEventFromView(viewTag, eventName, animatedNodeTag) {
-    import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+    (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
     NativeAnimatedModule_default.removeAnimatedEventFromView(viewTag, eventName, animatedNodeTag);
   }
 };
@@ -29710,7 +29708,7 @@ function generateNewAnimationId() {
   return __nativeAnimationIdCount++;
 }
 function assertNativeAnimatedModule() {
-  import_invariant6.default(NativeAnimatedModule_default, "Native animated module is not available");
+  (0, import_invariant6.default)(NativeAnimatedModule_default, "Native animated module is not available");
 }
 function shouldUseNativeDriver(config) {
   if (config.useNativeDriver === true && !NativeAnimatedModule_default) {
@@ -29850,7 +29848,7 @@ var AnimatedNode = /* @__PURE__ */ function() {
   };
   _proto.__getNativeTag = function __getNativeTag() {
     NativeAnimatedHelper_default.assertNativeAnimatedModule();
-    import_invariant7.default(this.__isNative, 'Attempt to get native tag from node not marked as "native"');
+    (0, import_invariant7.default)(this.__isNative, 'Attempt to get native tag from node not marked as "native"');
     if (this.__nativeTag == null) {
       var nativeTag = NativeAnimatedHelper_default.generateNewNodeTag();
       this.__nativeTag = nativeTag;
@@ -30049,7 +30047,7 @@ function createInterpolation(config) {
   var inputRange = config.inputRange;
   checkInfiniteRange("inputRange", inputRange);
   checkValidInputRange(inputRange);
-  import_invariant8.default(inputRange.length === outputRange.length, "inputRange (" + inputRange.length + ") and outputRange (" + outputRange.length + ") must have the same length");
+  (0, import_invariant8.default)(inputRange.length === outputRange.length, "inputRange (" + inputRange.length + ") and outputRange (" + outputRange.length + ") must have the same length");
   var easing = config.easing || linear;
   var extrapolateLeft = "extend";
   if (config.extrapolateLeft !== void 0) {
@@ -30064,7 +30062,7 @@ function createInterpolation(config) {
     extrapolateRight = config.extrapolate;
   }
   return function(input) {
-    import_invariant8.default(typeof input === "number", "Cannot interpolation an input which is not a number");
+    (0, import_invariant8.default)(typeof input === "number", "Cannot interpolation an input which is not a number");
     var range = findRange(input, inputRange);
     return interpolate(input, inputRange[range], inputRange[range + 1], outputRange[range], outputRange[range + 1], easing, extrapolateLeft, extrapolateRight);
   };
@@ -30114,7 +30112,7 @@ function interpolate(input, inputMin, inputMax, outputMin, outputMax, easing, ex
   return result;
 }
 function colorToRgba(input) {
-  var int32Color = import_normalize_css_color2.default(input);
+  var int32Color = (0, import_normalize_css_color2.default)(input);
   if (int32Color === null) {
     return input;
   }
@@ -30128,7 +30126,7 @@ function colorToRgba(input) {
 var stringShapeRegex = /[+-]?(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?/g;
 function createInterpolationFromStringOutputRange(config) {
   var outputRange = config.outputRange;
-  import_invariant8.default(outputRange.length >= 2, "Bad output range");
+  (0, import_invariant8.default)(outputRange.length >= 2, "Bad output range");
   outputRange = outputRange.map(colorToRgba);
   checkPattern(outputRange);
   var outputRanges = outputRange[0].match(stringShapeRegex).map(function() {
@@ -30162,7 +30160,7 @@ function isRgbOrRgba(range) {
 function checkPattern(arr) {
   var pattern2 = arr[0].replace(stringShapeRegex, "");
   for (var i = 1; i < arr.length; ++i) {
-    import_invariant8.default(pattern2 === arr[i].replace(stringShapeRegex, ""), "invalid pattern " + arr[0] + " and " + arr[i]);
+    (0, import_invariant8.default)(pattern2 === arr[i].replace(stringShapeRegex, ""), "invalid pattern " + arr[0] + " and " + arr[i]);
   }
 }
 function findRange(input, inputRange) {
@@ -30175,14 +30173,14 @@ function findRange(input, inputRange) {
   return i - 1;
 }
 function checkValidInputRange(arr) {
-  import_invariant8.default(arr.length >= 2, "inputRange must have at least 2 elements");
+  (0, import_invariant8.default)(arr.length >= 2, "inputRange must have at least 2 elements");
   for (var i = 1; i < arr.length; ++i) {
-    import_invariant8.default(arr[i] >= arr[i - 1], "inputRange must be monotonically non-decreasing " + arr);
+    (0, import_invariant8.default)(arr[i] >= arr[i - 1], "inputRange must be monotonically non-decreasing " + arr);
   }
 }
 function checkInfiniteRange(name, arr) {
-  import_invariant8.default(arr.length >= 2, name + " must have at least 2 elements");
-  import_invariant8.default(arr.length !== 2 || arr[0] !== -Infinity || arr[1] !== Infinity, name + "cannot be ]-infinity;+infinity[ " + arr);
+  (0, import_invariant8.default)(arr.length >= 2, name + " must have at least 2 elements");
+  (0, import_invariant8.default)(arr.length !== 2 || arr[0] !== -Infinity || arr[1] !== Infinity, name + "cannot be ]-infinity;+infinity[ " + arr);
 }
 var AnimatedInterpolation = /* @__PURE__ */ function(_AnimatedWithChildren) {
   _inheritsLoose5(AnimatedInterpolation2, _AnimatedWithChildren);
@@ -30201,7 +30199,7 @@ var AnimatedInterpolation = /* @__PURE__ */ function(_AnimatedWithChildren) {
   };
   _proto.__getValue = function __getValue() {
     var parentValue = this._parent.__getValue();
-    import_invariant8.default(typeof parentValue === "number", "Cannot interpolate an input which is not a number.");
+    (0, import_invariant8.default)(typeof parentValue === "number", "Cannot interpolate an input which is not a number.");
     return this._interpolation(parentValue);
   };
   _proto.interpolate = function interpolate4(config) {
@@ -30278,7 +30276,7 @@ var InteractionManager = {
     return {
       then: promise.then.bind(promise),
       done: promise.then.bind(promise),
-      cancel: function cancel2() {
+      cancel: function cancel3() {
         cancelIdleCallback(handle);
       }
     };
@@ -30287,7 +30285,7 @@ var InteractionManager = {
     return 1;
   },
   clearInteractionHandle: function clearInteractionHandle(handle) {
-    import_invariant9.default(!!handle, "Must provide a handle to clear.");
+    (0, import_invariant9.default)(!!handle, "Must provide a handle to clear.");
   },
   addListener: function addListener() {
   }
@@ -30451,7 +30449,7 @@ function attachNativeEvent(viewRef, eventName, argMapping) {
       }
     }
   };
-  import_invariant10.default(argMapping[0] && argMapping[0].nativeEvent, "Native driven events only support animated values contained inside `nativeEvent`.");
+  (0, import_invariant10.default)(argMapping[0] && argMapping[0].nativeEvent, "Native driven events only support animated values contained inside `nativeEvent`.");
   traverse(argMapping[0].nativeEvent, []);
   var viewTag = findNodeHandle_default(viewRef);
   eventMappings.forEach(function(mapping) {
@@ -30492,11 +30490,11 @@ var AnimatedEvent = /* @__PURE__ */ function() {
     });
   };
   _proto.__attach = function __attach(viewRef, eventName) {
-    import_invariant10.default(this.__isNative, "Only native driven events need to be attached.");
+    (0, import_invariant10.default)(this.__isNative, "Only native driven events need to be attached.");
     this._attachedEvent = attachNativeEvent(viewRef, eventName, this._argMapping);
   };
   _proto.__detach = function __detach(viewTag, eventName) {
-    import_invariant10.default(this.__isNative, "Only native driven events need to be detached.");
+    (0, import_invariant10.default)(this.__isNative, "Only native driven events need to be detached.");
     this._attachedEvent && this._attachedEvent.detach();
   };
   _proto.__getHandler = function __getHandler() {
@@ -30536,11 +30534,11 @@ var AnimatedEvent = /* @__PURE__ */ function() {
   _proto._validateMapping = function _validateMapping() {
     var traverse = function traverse2(recMapping, recEvt, key) {
       if (typeof recEvt === "number") {
-        import_invariant10.default(recMapping instanceof AnimatedValue_default, "Bad mapping of type " + typeof recMapping + " for key " + key + ", event value must map to AnimatedValue");
+        (0, import_invariant10.default)(recMapping instanceof AnimatedValue_default, "Bad mapping of type " + typeof recMapping + " for key " + key + ", event value must map to AnimatedValue");
         return;
       }
-      import_invariant10.default(typeof recMapping === "object", "Bad mapping of type " + typeof recMapping + " for key " + key);
-      import_invariant10.default(typeof recEvt === "object", "Bad event of type " + typeof recEvt + " for key " + key);
+      (0, import_invariant10.default)(typeof recMapping === "object", "Bad mapping of type " + typeof recMapping + " for key " + key);
+      (0, import_invariant10.default)(typeof recEvt === "object", "Bad event of type " + typeof recEvt + " for key " + key);
       for (var mappingKey in recMapping) {
         traverse2(recMapping[mappingKey], recEvt[mappingKey], mappingKey);
       }
@@ -31229,15 +31227,15 @@ var AnimatedProps = /* @__PURE__ */ function(_AnimatedNode) {
     }
   };
   _proto.__connectAnimatedView = function __connectAnimatedView() {
-    import_invariant11.default(this.__isNative, 'Expected node to be marked as "native"');
+    (0, import_invariant11.default)(this.__isNative, 'Expected node to be marked as "native"');
     var nativeViewTag = findNodeHandle_default(this._animatedView);
-    import_invariant11.default(nativeViewTag != null, "Unable to locate attached view in the native tree");
+    (0, import_invariant11.default)(nativeViewTag != null, "Unable to locate attached view in the native tree");
     NativeAnimatedHelper_default.API.connectAnimatedNodeToView(this.__getNativeTag(), nativeViewTag);
   };
   _proto.__disconnectAnimatedView = function __disconnectAnimatedView() {
-    import_invariant11.default(this.__isNative, 'Expected node to be marked as "native"');
+    (0, import_invariant11.default)(this.__isNative, 'Expected node to be marked as "native"');
     var nativeViewTag = findNodeHandle_default(this._animatedView);
-    import_invariant11.default(nativeViewTag != null, "Unable to locate attached view in the native tree");
+    (0, import_invariant11.default)(nativeViewTag != null, "Unable to locate attached view in the native tree");
     NativeAnimatedHelper_default.API.disconnectAnimatedNodeFromView(this.__getNativeTag(), nativeViewTag);
   };
   _proto.__getNativeConfig = function __getNativeConfig() {
@@ -31448,7 +31446,7 @@ var AnimatedValueXY = /* @__PURE__ */ function(_AnimatedWithChildren) {
       _this.x = new AnimatedValue_default(value.x);
       _this.y = new AnimatedValue_default(value.y);
     } else {
-      import_invariant12.default(value.x instanceof AnimatedValue_default && value.y instanceof AnimatedValue_default, "AnimatedValueXY must be initialized with an object of numbers or AnimatedValues.");
+      (0, import_invariant12.default)(value.x instanceof AnimatedValue_default && value.y instanceof AnimatedValue_default, "AnimatedValueXY must be initialized with an object of numbers or AnimatedValues.");
       _this.x = value.x;
       _this.y = value.y;
     }
@@ -31729,13 +31727,13 @@ var SpringAnimation = /* @__PURE__ */ function(_Animation) {
     _this.__iterations = (_config$iterations = config.iterations) !== null && _config$iterations !== void 0 ? _config$iterations : 1;
     if (config.stiffness !== void 0 || config.damping !== void 0 || config.mass !== void 0) {
       var _config$stiffness, _config$damping, _config$mass;
-      import_invariant13.default(config.bounciness === void 0 && config.speed === void 0 && config.tension === void 0 && config.friction === void 0, "You can define one of bounciness/speed, tension/friction, or stiffness/damping/mass, but not more than one");
+      (0, import_invariant13.default)(config.bounciness === void 0 && config.speed === void 0 && config.tension === void 0 && config.friction === void 0, "You can define one of bounciness/speed, tension/friction, or stiffness/damping/mass, but not more than one");
       _this._stiffness = (_config$stiffness = config.stiffness) !== null && _config$stiffness !== void 0 ? _config$stiffness : 100;
       _this._damping = (_config$damping = config.damping) !== null && _config$damping !== void 0 ? _config$damping : 10;
       _this._mass = (_config$mass = config.mass) !== null && _config$mass !== void 0 ? _config$mass : 1;
     } else if (config.bounciness !== void 0 || config.speed !== void 0) {
       var _config$bounciness, _config$speed;
-      import_invariant13.default(config.tension === void 0 && config.friction === void 0 && config.stiffness === void 0 && config.damping === void 0 && config.mass === void 0, "You can define one of bounciness/speed, tension/friction, or stiffness/damping/mass, but not more than one");
+      (0, import_invariant13.default)(config.tension === void 0 && config.friction === void 0 && config.stiffness === void 0 && config.damping === void 0 && config.mass === void 0, "You can define one of bounciness/speed, tension/friction, or stiffness/damping/mass, but not more than one");
       var springConfig = SpringConfig_default.fromBouncinessAndSpeed((_config$bounciness = config.bounciness) !== null && _config$bounciness !== void 0 ? _config$bounciness : 8, (_config$speed = config.speed) !== null && _config$speed !== void 0 ? _config$speed : 12);
       _this._stiffness = springConfig.stiffness;
       _this._damping = springConfig.damping;
@@ -31747,9 +31745,9 @@ var SpringAnimation = /* @__PURE__ */ function(_Animation) {
       _this._damping = _springConfig.damping;
       _this._mass = 1;
     }
-    import_invariant13.default(_this._stiffness > 0, "Stiffness value must be greater than 0");
-    import_invariant13.default(_this._damping > 0, "Damping value must be greater than 0");
-    import_invariant13.default(_this._mass > 0, "Mass value must be greater than 0");
+    (0, import_invariant13.default)(_this._stiffness > 0, "Stiffness value must be greater than 0");
+    (0, import_invariant13.default)(_this._damping > 0, "Damping value must be greater than 0");
+    (0, import_invariant13.default)(_this._mass > 0, "Mass value must be greater than 0");
     return _this;
   }
   var _proto = SpringAnimation2.prototype;
@@ -32232,7 +32230,7 @@ function _setPrototypeOf21(o, p) {
   return _setPrototypeOf21(o, p);
 }
 function createAnimatedComponent(Component19, defaultProps4) {
-  import_invariant14.default(typeof Component19 !== "function" || Component19.prototype && Component19.prototype.isReactComponent, "`createAnimatedComponent` does not support stateless functional components; use a class component instead.");
+  (0, import_invariant14.default)(typeof Component19 !== "function" || Component19.prototype && Component19.prototype.isReactComponent, "`createAnimatedComponent` does not support stateless functional components; use a class component instead.");
   var AnimatedComponent = /* @__PURE__ */ function(_React$Component) {
     _inheritsLoose21(AnimatedComponent2, _React$Component);
     function AnimatedComponent2(props) {
@@ -33072,8 +33070,8 @@ function setNativeProps(node, nativeProps, classList2, pointerEvents, style, pre
 }
 function usePlatformMethods(_ref) {
   var classList2 = _ref.classList, pointerEvents = _ref.pointerEvents, style = _ref.style;
-  var previousStyleRef = import_react4.useRef(null);
-  var setNativePropsArgsRef = import_react4.useRef(null);
+  var previousStyleRef = (0, import_react4.useRef)(null);
+  var setNativePropsArgsRef = (0, import_react4.useRef)(null);
   setNativePropsArgsRef.current = {
     classList: classList2,
     pointerEvents,
@@ -33685,7 +33683,7 @@ function findWantsResponder(eventPaths, domEvent, responderEvent) {
     var shouldSetCallbackCaptureName = shouldSetCallbacks[0];
     var shouldSetCallbackBubbleName = shouldSetCallbacks[1];
     var bubbles = shouldSetCallbacks[2].bubbles;
-    var check = function check2(id3, node2, callbackName) {
+    var check2 = function check3(id3, node2, callbackName) {
       var config = getResponderConfig(id3);
       var shouldSetCallback = config[callbackName];
       if (shouldSetCallback != null) {
@@ -33703,7 +33701,7 @@ function findWantsResponder(eventPaths, domEvent, responderEvent) {
     for (var i = idPath.length - 1; i >= 0; i--) {
       var id2 = idPath[i];
       var node = nodePath[i];
-      var result = check(id2, node, shouldSetCallbackCaptureName);
+      var result = check2(id2, node, shouldSetCallbackCaptureName);
       if (result != null) {
         return result;
       }
@@ -33715,7 +33713,7 @@ function findWantsResponder(eventPaths, domEvent, responderEvent) {
       for (var _i = 0; _i < idPath.length; _i++) {
         var _id = idPath[_i];
         var _node = nodePath[_i];
-        var _result = check(_id, _node, shouldSetCallbackBubbleName);
+        var _result = check2(_id, _node, shouldSetCallbackBubbleName);
         if (_result != null) {
           return _result;
         }
@@ -33728,7 +33726,7 @@ function findWantsResponder(eventPaths, domEvent, responderEvent) {
       var _node2 = nodePath[0];
       var target = domEvent.target;
       if (target === _node2) {
-        return check(_id2, _node2, shouldSetCallbackBubbleName);
+        return check2(_id2, _node2, shouldSetCallbackBubbleName);
       }
     }
   }
@@ -33878,7 +33876,7 @@ function useResponderEvents(hostRef, config) {
 
 // node_modules/react-native-web/dist/exports/Text/TextAncestorContext.js
 var import_react5 = __toModule(require_react());
-var TextAncestorContext = /* @__PURE__ */ import_react5.createContext(false);
+var TextAncestorContext = /* @__PURE__ */ (0, import_react5.createContext)(false);
 var TextAncestorContext_default = TextAncestorContext;
 
 // node_modules/react-native-web/dist/exports/View/index.js
@@ -33929,7 +33927,7 @@ var forwardPropsList = _objectSpread8(_objectSpread8(_objectSpread8(_objectSprea
 var pickProps = function pickProps2(props) {
   return pick(props, forwardPropsList);
 };
-var View = /* @__PURE__ */ import_react6.forwardRef(function(props, forwardedRef) {
+var View = /* @__PURE__ */ (0, import_react6.forwardRef)(function(props, forwardedRef) {
   var hrefAttrs = props.hrefAttrs, onLayout = props.onLayout, onMoveShouldSetResponder = props.onMoveShouldSetResponder, onMoveShouldSetResponderCapture = props.onMoveShouldSetResponderCapture, onResponderEnd = props.onResponderEnd, onResponderGrant = props.onResponderGrant, onResponderMove = props.onResponderMove, onResponderReject = props.onResponderReject, onResponderRelease = props.onResponderRelease, onResponderStart = props.onResponderStart, onResponderTerminate = props.onResponderTerminate, onResponderTerminationRequest = props.onResponderTerminationRequest, onScrollShouldSetResponder = props.onScrollShouldSetResponder, onScrollShouldSetResponderCapture = props.onScrollShouldSetResponderCapture, onSelectionChangeShouldSetResponder = props.onSelectionChangeShouldSetResponder, onSelectionChangeShouldSetResponderCapture = props.onSelectionChangeShouldSetResponderCapture, onStartShouldSetResponder = props.onStartShouldSetResponder, onStartShouldSetResponderCapture = props.onStartShouldSetResponderCapture;
   if (true) {
     React7.Children.toArray(props.children).forEach(function(item) {
@@ -33938,8 +33936,8 @@ var View = /* @__PURE__ */ import_react6.forwardRef(function(props, forwardedRef
       }
     });
   }
-  var hasTextAncestor = import_react6.useContext(TextAncestorContext_default);
-  var hostRef = import_react6.useRef(null);
+  var hasTextAncestor = (0, import_react6.useContext)(TextAncestorContext_default);
+  var hostRef = (0, import_react6.useRef)(null);
   useElementLayout(hostRef, onLayout);
   useResponderEvents(hostRef, {
     onMoveShouldSetResponder,
@@ -34040,7 +34038,7 @@ var Batchinator = /* @__PURE__ */ function() {
       });
     }, this._delay);
     this._taskHandle = {
-      cancel: function cancel2() {
+      cancel: function cancel3() {
         return clearTimeout(timeoutHandle);
       }
     };
@@ -34108,7 +34106,7 @@ var _minSampleCount = 10;
 var _sampleRate = DEBUG ? 1 : null;
 var FillRateHelper = /* @__PURE__ */ function() {
   FillRateHelper2.addListener = function addListener3(callback) {
-    import_warning2.default(_sampleRate !== null, "Call `FillRateHelper.setSampleRate` before `addListener`.");
+    (0, import_warning2.default)(_sampleRate !== null, "Call `FillRateHelper.setSampleRate` before `addListener`.");
     _listeners.push(callback);
     return {
       remove: function remove() {
@@ -34138,7 +34136,7 @@ var FillRateHelper = /* @__PURE__ */ function() {
   _proto.activate = function activate() {
     if (this._enabled && this._samplesStartTime == null) {
       DEBUG && console.debug("FillRateHelper: activate");
-      this._samplesStartTime = import_performanceNow.default();
+      this._samplesStartTime = (0, import_performanceNow.default)();
     }
   };
   _proto.deactivateAndFlush = function deactivateAndFlush() {
@@ -34154,7 +34152,7 @@ var FillRateHelper = /* @__PURE__ */ function() {
       this._resetData();
       return;
     }
-    var total_time_spent = import_performanceNow.default() - start;
+    var total_time_spent = (0, import_performanceNow.default)() - start;
     var info = _objectSpread9(_objectSpread9({}, this._info), {}, {
       total_time_spent
     });
@@ -34190,7 +34188,7 @@ var FillRateHelper = /* @__PURE__ */ function() {
     this._info.pixels_sampled += Math.round(visibleLength);
     this._info.pixels_scrolled += Math.round(Math.abs(dOffset));
     var scrollSpeed = Math.round(Math.abs(velocity) * 1e3);
-    var now = import_performanceNow.default();
+    var now = (0, import_performanceNow.default)();
     if (this._anyBlankStartTime != null) {
       this._info.any_blank_ms += now - this._anyBlankStartTime;
     }
@@ -34333,13 +34331,13 @@ var Dimensions = /* @__PURE__ */ function() {
   function Dimensions11() {
   }
   Dimensions11.get = function get3(dimension) {
-    import_invariant15.default(dimensions[dimension], "No dimension set for key " + dimension);
+    (0, import_invariant15.default)(dimensions[dimension], "No dimension set for key " + dimension);
     return dimensions[dimension];
   };
   Dimensions11.set = function set3(initialDimensions) {
     if (initialDimensions) {
       if (import_ExecutionEnvironment12.canUseDOM) {
-        import_invariant15.default(false, "Dimensions cannot be set in the browser");
+        (0, import_invariant15.default)(false, "Dimensions cannot be set in the browser");
       } else {
         dimensions.screen = initialDimensions.screen;
         dimensions.window = initialDimensions.window;
@@ -34425,7 +34423,7 @@ var ScrollResponderMixin = {
     return this.scrollResponderIsAnimating();
   },
   scrollResponderHandleResponderReject: function scrollResponderHandleResponderReject() {
-    import_warning3.default(false, "ScrollView doesn't take rejection well - scrolls anyway");
+    (0, import_warning3.default)(false, "ScrollView doesn't take rejection well - scrolls anyway");
   },
   scrollResponderHandleTerminationRequest: function scrollResponderHandleTerminationRequest() {
     return !this.state.observedScrollSinceBecomingResponder;
@@ -34507,7 +34505,7 @@ var ScrollResponderMixin = {
   },
   scrollResponderZoomTo: function scrollResponderZoomTo(rect, animated) {
     if (Platform_default.OS !== "ios") {
-      import_invariant16.default("zoomToRect is not implemented");
+      (0, import_invariant16.default)("zoomToRect is not implemented");
     }
   },
   scrollResponderFlashScrollIndicators: function scrollResponderFlashScrollIndicators() {
@@ -34631,14 +34629,14 @@ function shouldEmitScrollEvent(lastTick, eventThrottle) {
   var timeSinceLastTick = Date.now() - lastTick;
   return eventThrottle > 0 && timeSinceLastTick >= eventThrottle;
 }
-var ScrollViewBase = /* @__PURE__ */ import_react8.forwardRef(function(props, forwardedRef) {
+var ScrollViewBase = /* @__PURE__ */ (0, import_react8.forwardRef)(function(props, forwardedRef) {
   var onScroll = props.onScroll, onTouchMove = props.onTouchMove, onWheel = props.onWheel, _props$scrollEnabled = props.scrollEnabled, scrollEnabled = _props$scrollEnabled === void 0 ? true : _props$scrollEnabled, _props$scrollEventThr = props.scrollEventThrottle, scrollEventThrottle = _props$scrollEventThr === void 0 ? 0 : _props$scrollEventThr, showsHorizontalScrollIndicator = props.showsHorizontalScrollIndicator, showsVerticalScrollIndicator = props.showsVerticalScrollIndicator, style = props.style, rest = _objectWithoutPropertiesLoose5(props, ["onScroll", "onTouchMove", "onWheel", "scrollEnabled", "scrollEventThrottle", "showsHorizontalScrollIndicator", "showsVerticalScrollIndicator", "style"]);
-  var scrollState = import_react8.useRef({
+  var scrollState = (0, import_react8.useRef)({
     isScrolling: false,
     scrollLastTick: 0
   });
-  var scrollTimeout = import_react8.useRef(null);
-  var scrollRef = import_react8.useRef(null);
+  var scrollTimeout = (0, import_react8.useRef)(null);
+  var scrollRef = (0, import_react8.useRef)(null);
   function createPreventableScrollHandler(handler) {
     return function(e) {
       if (scrollEnabled) {
@@ -34772,7 +34770,7 @@ function _objectWithoutPropertiesLoose6(source, excluded) {
   return target;
 }
 var emptyObject11 = {};
-var ScrollView = import_create_react_class.default({
+var ScrollView = (0, import_create_react_class.default)({
   displayName: "ScrollView",
   mixins: [ScrollResponder_default.Mixin],
   getInitialState: function getInitialState() {
@@ -34830,7 +34828,7 @@ var ScrollView = import_create_react_class.default({
       var childLayoutProps = ["alignItems", "justifyContent"].filter(function(prop) {
         return style && style[prop] !== void 0;
       });
-      import_invariant17.default(childLayoutProps.length === 0, "ScrollView child layout (" + JSON.stringify(childLayoutProps) + ") must be applied through the contentContainerStyle prop.");
+      (0, import_invariant17.default)(childLayoutProps.length === 0, "ScrollView child layout (" + JSON.stringify(childLayoutProps) + ") must be applied through the contentContainerStyle prop.");
     }
     var contentSizeChangeProps = {};
     if (onContentSizeChange) {
@@ -34877,7 +34875,7 @@ var ScrollView = import_create_react_class.default({
       onResponderReject: this.scrollResponderHandleResponderReject
     });
     var ScrollViewClass = ScrollViewBase_default;
-    import_invariant17.default(ScrollViewClass !== void 0, "ScrollViewClass must not be undefined");
+    (0, import_invariant17.default)(ScrollViewClass !== void 0, "ScrollViewClass must not be undefined");
     if (refreshControl) {
       return /* @__PURE__ */ import_react9.default.cloneElement(refreshControl, {
         style: props.style
@@ -35051,7 +35049,7 @@ var ViewabilityHelper = /* @__PURE__ */ function() {
     var _this$_config = this._config, itemVisiblePercentThreshold = _this$_config.itemVisiblePercentThreshold, viewAreaCoveragePercentThreshold = _this$_config.viewAreaCoveragePercentThreshold;
     var viewAreaMode = viewAreaCoveragePercentThreshold != null;
     var viewablePercentThreshold = viewAreaMode ? viewAreaCoveragePercentThreshold : itemVisiblePercentThreshold;
-    import_invariant18.default(viewablePercentThreshold != null && itemVisiblePercentThreshold != null !== (viewAreaCoveragePercentThreshold != null), "Must set exactly one of itemVisiblePercentThreshold or viewAreaCoveragePercentThreshold");
+    (0, import_invariant18.default)(viewablePercentThreshold != null && itemVisiblePercentThreshold != null !== (viewAreaCoveragePercentThreshold != null), "Must set exactly one of itemVisiblePercentThreshold or viewAreaCoveragePercentThreshold");
     var viewableIndices = [];
     if (itemCount === 0) {
       return viewableIndices;
@@ -35197,7 +35195,7 @@ function elementsThatOverlapOffsets(offsets, itemCount, getFrameMetrics) {
         out[kk] = ii;
         outLength++;
         if (kk === offsets.length - 1) {
-          import_invariant19.default(outLength === offsets.length, "bad offsets input, should be in increasing order: %s", JSON.stringify(offsets));
+          (0, import_invariant19.default)(outLength === offsets.length, "bad offsets input, should be in increasing order: %s", JSON.stringify(offsets));
           return out;
         }
       }
@@ -35413,9 +35411,9 @@ var VirtualizedList = /* @__PURE__ */ function(_React$PureComponent) {
   _proto.scrollToIndex = function scrollToIndex(params) {
     var _this$props = this.props, data2 = _this$props.data, horizontal = _this$props.horizontal, getItemCount = _this$props.getItemCount, getItemLayout = _this$props.getItemLayout, onScrollToIndexFailed = _this$props.onScrollToIndexFailed;
     var animated = params.animated, index = params.index, viewOffset = params.viewOffset, viewPosition = params.viewPosition;
-    import_invariant20.default(index >= 0 && index < getItemCount(data2), "scrollToIndex out of range: " + index + " vs " + (getItemCount(data2) - 1));
+    (0, import_invariant20.default)(index >= 0 && index < getItemCount(data2), "scrollToIndex out of range: " + index + " vs " + (getItemCount(data2) - 1));
     if (!getItemLayout && index > this._highestMeasuredFrameIndex) {
-      import_invariant20.default(!!onScrollToIndexFailed, "scrollToIndex should be used in conjunction with getItemLayout or onScrollToIndexFailed, otherwise there is no way to know the location of offscreen indices or handle failures.");
+      (0, import_invariant20.default)(!!onScrollToIndexFailed, "scrollToIndex should be used in conjunction with getItemLayout or onScrollToIndexFailed, otherwise there is no way to know the location of offscreen indices or handle failures.");
       onScrollToIndexFailed({
         averageItemLength: this._averageCellLength,
         highestMeasuredFrameIndex: this._highestMeasuredFrameIndex,
@@ -35594,7 +35592,7 @@ var VirtualizedList = /* @__PURE__ */ function(_React$PureComponent) {
       if (_this._isNestedWithSameOrientation()) {
         return /* @__PURE__ */ React11.createElement(View_default, props);
       } else if (onRefresh) {
-        import_invariant20.default(typeof props.refreshing === "boolean", "`refreshing` prop must be set as a boolean in order to use `onRefresh`, but got `" + JSON.stringify(props.refreshing) + "`");
+        (0, import_invariant20.default)(typeof props.refreshing === "boolean", "`refreshing` prop must be set as a boolean in order to use `onRefresh`, but got `" + JSON.stringify(props.refreshing) + "`");
         return /* @__PURE__ */ React11.createElement(ScrollView_default, _extends4({}, props, {
           refreshControl: props.refreshControl == null ? /* @__PURE__ */ React11.createElement(RefreshControl_default, {
             refreshing: props.refreshing,
@@ -35808,7 +35806,7 @@ var VirtualizedList = /* @__PURE__ */ function(_React$PureComponent) {
         return frame;
       } else {
         var getItemLayout = _this.props.getItemLayout;
-        import_invariant20.default(!getItemLayout, "Should not have to estimate frames when a measurement metrics function is provided");
+        (0, import_invariant20.default)(!getItemLayout, "Should not have to estimate frames when a measurement metrics function is provided");
         return {
           length: _this._averageCellLength,
           offset: _this._averageCellLength * index
@@ -35817,7 +35815,7 @@ var VirtualizedList = /* @__PURE__ */ function(_React$PureComponent) {
     };
     _this._getFrameMetrics = function(index) {
       var _this$props5 = _this.props, data2 = _this$props5.data, getItem = _this$props5.getItem, getItemCount = _this$props5.getItemCount, getItemLayout = _this$props5.getItemLayout, keyExtractor2 = _this$props5.keyExtractor;
-      import_invariant20.default(getItemCount(data2) > index, "Tried to get frame for out of range index " + index);
+      (0, import_invariant20.default)(getItemCount(data2) > index, "Tried to get frame for out of range index " + index);
       var item = getItem(data2, index);
       var frame = item && _this._frames[keyExtractor2(item, index)];
       if (!frame || frame.index !== index) {
@@ -35839,8 +35837,8 @@ var VirtualizedList = /* @__PURE__ */ function(_React$PureComponent) {
       }
       return frame;
     };
-    import_invariant20.default(!_props.onScroll || !_props.onScroll.__isNative, "Components based on VirtualizedList must be wrapped with Animated.createAnimatedComponent to support native onScroll events with useNativeDriver");
-    import_invariant20.default(_props.windowSize > 0, "VirtualizedList: The windowSize prop must be present and set to a value greater than 0.");
+    (0, import_invariant20.default)(!_props.onScroll || !_props.onScroll.__isNative, "Components based on VirtualizedList must be wrapped with Animated.createAnimatedComponent to support native onScroll events with useNativeDriver");
+    (0, import_invariant20.default)(_props.windowSize > 0, "VirtualizedList: The windowSize prop must be present and set to a value greater than 0.");
     _this._fillRateHelper = new FillRateHelper_default(_this._getFrameMetrics);
     _this._updateCellsToRenderBatcher = new Batchinator_default(_this._updateCellsToRender, _this.props.updateCellsBatchingPeriod);
     if (_this.props.viewabilityConfigCallbackPairs) {
@@ -35959,7 +35957,7 @@ var VirtualizedList = /* @__PURE__ */ function(_React$PureComponent) {
     var _this3 = this;
     if (__DEV__4) {
       var flatStyles = flattenStyle3(this.props.contentContainerStyle);
-      import_warning4.default(flatStyles == null || flatStyles.flexWrap !== "wrap", "`flexWrap: `wrap`` is not supported with the `VirtualizedList` components.Consider using `numColumns` with `FlatList` instead.");
+      (0, import_warning4.default)(flatStyles == null || flatStyles.flexWrap !== "wrap", "`flexWrap: `wrap`` is not supported with the `VirtualizedList` components.Consider using `numColumns` with `FlatList` instead.");
     }
     var _this$props7 = this.props, ListEmptyComponent = _this$props7.ListEmptyComponent, ListFooterComponent = _this$props7.ListFooterComponent, ListHeaderComponent = _this$props7.ListHeaderComponent;
     var _this$props8 = this.props, data2 = _this$props8.data, horizontal = _this$props8.horizontal;
@@ -36352,7 +36350,7 @@ var CellRenderer = /* @__PURE__ */ function(_React$Component) {
   _proto2.render = function render3() {
     var _this$props11 = this.props, CellRendererComponent = _this$props11.CellRendererComponent, ItemSeparatorComponent = _this$props11.ItemSeparatorComponent, fillRateHelper = _this$props11.fillRateHelper, horizontal = _this$props11.horizontal, item = _this$props11.item, index = _this$props11.index, inversionStyle = _this$props11.inversionStyle, parentProps = _this$props11.parentProps;
     var renderItem = parentProps.renderItem, getItemLayout = parentProps.getItemLayout;
-    import_invariant20.default(renderItem, "no renderItem!");
+    (0, import_invariant20.default)(renderItem, "no renderItem!");
     var element = renderItem({
       item,
       index,
@@ -36604,7 +36602,7 @@ var FlatList = /* @__PURE__ */ function(_React$PureComponent) {
     _this._keyExtractor = function(items2, index) {
       var _this$props = _this.props, keyExtractor2 = _this$props.keyExtractor, numColumns = _this$props.numColumns;
       if (numColumns > 1) {
-        import_invariant21.default(Array.isArray(items2), "FlatList: Encountered internal consistency error, expected each item to consist of an array with 1-%s columns; instead, received a single item.", numColumns);
+        (0, import_invariant21.default)(Array.isArray(items2), "FlatList: Encountered internal consistency error, expected each item to consist of an array with 1-%s columns; instead, received a single item.", numColumns);
         return items2.map(function(it, kk) {
           return keyExtractor2(it, index * numColumns + kk);
         }).join(":");
@@ -36616,7 +36614,7 @@ var FlatList = /* @__PURE__ */ function(_React$PureComponent) {
       var _this$props2 = _this.props, renderItem = _this$props2.renderItem, numColumns = _this$props2.numColumns, columnWrapperStyle = _this$props2.columnWrapperStyle;
       if (numColumns > 1) {
         var _item2 = info.item, _index = info.index;
-        import_invariant21.default(Array.isArray(_item2), "Expected array of items with numColumns > 1");
+        (0, import_invariant21.default)(Array.isArray(_item2), "Expected array of items with numColumns > 1");
         return /* @__PURE__ */ React12.createElement(View_default, {
           style: StyleSheet_default2.compose(styles5.row, columnWrapperStyle)
         }, _item2.map(function(it, kk) {
@@ -36650,26 +36648,26 @@ var FlatList = /* @__PURE__ */ function(_React$PureComponent) {
     return _this;
   }
   _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
-    import_invariant21.default(prevProps.numColumns === this.props.numColumns, "Changing numColumns on the fly is not supported. Change the key prop on FlatList when changing the number of columns to force a fresh render of the component.");
-    import_invariant21.default(prevProps.onViewableItemsChanged === this.props.onViewableItemsChanged, "Changing onViewableItemsChanged on the fly is not supported");
-    import_invariant21.default(!deepDiffer_default(prevProps.viewabilityConfig, this.props.viewabilityConfig), "Changing viewabilityConfig on the fly is not supported");
-    import_invariant21.default(prevProps.viewabilityConfigCallbackPairs === this.props.viewabilityConfigCallbackPairs, "Changing viewabilityConfigCallbackPairs on the fly is not supported");
+    (0, import_invariant21.default)(prevProps.numColumns === this.props.numColumns, "Changing numColumns on the fly is not supported. Change the key prop on FlatList when changing the number of columns to force a fresh render of the component.");
+    (0, import_invariant21.default)(prevProps.onViewableItemsChanged === this.props.onViewableItemsChanged, "Changing onViewableItemsChanged on the fly is not supported");
+    (0, import_invariant21.default)(!deepDiffer_default(prevProps.viewabilityConfig, this.props.viewabilityConfig), "Changing viewabilityConfig on the fly is not supported");
+    (0, import_invariant21.default)(prevProps.viewabilityConfigCallbackPairs === this.props.viewabilityConfigCallbackPairs, "Changing viewabilityConfigCallbackPairs on the fly is not supported");
     this._checkProps(this.props);
   };
   _proto._checkProps = function _checkProps(props) {
     var getItem = props.getItem, getItemCount = props.getItemCount, horizontal = props.horizontal, numColumns = props.numColumns, columnWrapperStyle = props.columnWrapperStyle, onViewableItemsChanged = props.onViewableItemsChanged, viewabilityConfigCallbackPairs = props.viewabilityConfigCallbackPairs;
-    import_invariant21.default(!getItem && !getItemCount, "FlatList does not support custom data formats.");
+    (0, import_invariant21.default)(!getItem && !getItemCount, "FlatList does not support custom data formats.");
     if (numColumns > 1) {
-      import_invariant21.default(!horizontal, "numColumns does not support horizontal.");
+      (0, import_invariant21.default)(!horizontal, "numColumns does not support horizontal.");
     } else {
-      import_invariant21.default(!columnWrapperStyle, "columnWrapperStyle not supported for single column lists");
+      (0, import_invariant21.default)(!columnWrapperStyle, "columnWrapperStyle not supported for single column lists");
     }
-    import_invariant21.default(!(onViewableItemsChanged && viewabilityConfigCallbackPairs), "FlatList does not support setting both onViewableItemsChanged and viewabilityConfigCallbackPairs.");
+    (0, import_invariant21.default)(!(onViewableItemsChanged && viewabilityConfigCallbackPairs), "FlatList does not support setting both onViewableItemsChanged and viewabilityConfigCallbackPairs.");
   };
   _proto._pushMultiColumnViewable = function _pushMultiColumnViewable(arr, v) {
     var _this$props3 = this.props, numColumns = _this$props3.numColumns, keyExtractor2 = _this$props3.keyExtractor;
     v.item.forEach(function(item, ii) {
-      import_invariant21.default(v.index != null, "Missing index!");
+      (0, import_invariant21.default)(v.index != null, "Missing index!");
       var index = v.index * numColumns + ii;
       arr.push(_objectSpread13(_objectSpread13({}, v), {}, {
         item,
@@ -37053,14 +37051,14 @@ function resolveAssetUri(source) {
   }
   return uri;
 }
-var Image = /* @__PURE__ */ import_react10.forwardRef(function(props, ref) {
+var Image = /* @__PURE__ */ (0, import_react10.forwardRef)(function(props, ref) {
   var accessibilityLabel = props.accessibilityLabel, blurRadius = props.blurRadius, defaultSource = props.defaultSource, draggable = props.draggable, onError = props.onError, onLayout = props.onLayout, onLoad = props.onLoad, onLoadEnd = props.onLoadEnd, onLoadStart = props.onLoadStart, pointerEvents = props.pointerEvents, source = props.source, style = props.style, rest = _objectWithoutPropertiesLoose7(props, ["accessibilityLabel", "blurRadius", "defaultSource", "draggable", "onError", "onLayout", "onLoad", "onLoadEnd", "onLoadStart", "pointerEvents", "source", "style"]);
   if (true) {
     if (props.children) {
       throw new Error("The <Image> component cannot contain children. If you want to render content on top of the image, consider using the <ImageBackground> component or absolute positioning.");
     }
   }
-  var _useState = import_react10.useState(function() {
+  var _useState = (0, import_react10.useState)(function() {
     var uri2 = resolveAssetUri(source);
     if (uri2 != null) {
       var isLoaded2 = ImageLoader_default.has(uri2);
@@ -37070,11 +37068,11 @@ var Image = /* @__PURE__ */ import_react10.forwardRef(function(props, ref) {
     }
     return IDLE;
   }), state = _useState[0], updateState = _useState[1];
-  var _useState2 = import_react10.useState({}), layout = _useState2[0], updateLayout = _useState2[1];
-  var hasTextAncestor = import_react10.useContext(TextAncestorContext_default);
-  var hiddenImageRef = import_react10.useRef(null);
-  var filterRef = import_react10.useRef(_filterId++);
-  var requestRef = import_react10.useRef(null);
+  var _useState2 = (0, import_react10.useState)({}), layout = _useState2[0], updateLayout = _useState2[1];
+  var hasTextAncestor = (0, import_react10.useContext)(TextAncestorContext_default);
+  var hiddenImageRef = (0, import_react10.useRef)(null);
+  var filterRef = (0, import_react10.useRef)(_filterId++);
+  var requestRef = (0, import_react10.useRef)(null);
   var shouldDisplaySource = state === LOADED || state === LOADING && defaultSource == null;
   var _getFlatStyle = getFlatStyle(style, blurRadius, filterRef.current), flatStyle = _getFlatStyle[0], _resizeMode = _getFlatStyle[1], filter2 = _getFlatStyle[2], tintColor = _getFlatStyle[3];
   var resizeMode = props.resizeMode || _resizeMode || "cover";
@@ -37110,7 +37108,7 @@ var Image = /* @__PURE__ */ import_react10.forwardRef(function(props, ref) {
     }
   }
   var uri = resolveAssetUri(source);
-  import_react10.useEffect(function() {
+  (0, import_react10.useEffect)(function() {
     abortPendingRequest();
     if (uri != null) {
       updateState(LOADING);
@@ -37331,7 +37329,7 @@ var VirtualizedSectionList = /* @__PURE__ */ function(_React$PureComponent) {
       return info && info.key || String(index);
     };
     _this._convertViewable = function(viewable) {
-      import_invariant22.default(viewable.index != null, "Received a broken ViewToken");
+      (0, import_invariant22.default)(viewable.index != null, "Received a broken ViewToken");
       var info = _this._subExtractor(viewable.index);
       if (!info) {
         return null;
@@ -37375,7 +37373,7 @@ var VirtualizedSectionList = /* @__PURE__ */ function(_React$PureComponent) {
       } else {
         var renderItem = info.section.renderItem || _this.props.renderItem;
         var SeparatorComponent = _this._getSeparatorComponent(index, info);
-        import_invariant22.default(renderItem, "no renderItem!");
+        (0, import_invariant22.default)(renderItem, "no renderItem!");
         return /* @__PURE__ */ React14.createElement(ItemWithSeparator, {
           SeparatorComponent,
           LeadingSeparatorComponent: infoIndex === 0 ? _this.props.SectionSeparatorComponent : void 0,
@@ -37798,10 +37796,10 @@ var forwardPropsList2 = _objectSpread17(_objectSpread17(_objectSpread17(_objectS
 var pickProps3 = function pickProps4(props) {
   return pick(props, forwardPropsList2);
 };
-var Text = /* @__PURE__ */ import_react11.forwardRef(function(props, forwardedRef) {
+var Text = /* @__PURE__ */ (0, import_react11.forwardRef)(function(props, forwardedRef) {
   var dir = props.dir, hrefAttrs = props.hrefAttrs, numberOfLines = props.numberOfLines, onClick = props.onClick, onLayout = props.onLayout, onPress = props.onPress, onMoveShouldSetResponder = props.onMoveShouldSetResponder, onMoveShouldSetResponderCapture = props.onMoveShouldSetResponderCapture, onResponderEnd = props.onResponderEnd, onResponderGrant = props.onResponderGrant, onResponderMove = props.onResponderMove, onResponderReject = props.onResponderReject, onResponderRelease = props.onResponderRelease, onResponderStart = props.onResponderStart, onResponderTerminate = props.onResponderTerminate, onResponderTerminationRequest = props.onResponderTerminationRequest, onScrollShouldSetResponder = props.onScrollShouldSetResponder, onScrollShouldSetResponderCapture = props.onScrollShouldSetResponderCapture, onSelectionChangeShouldSetResponder = props.onSelectionChangeShouldSetResponder, onSelectionChangeShouldSetResponderCapture = props.onSelectionChangeShouldSetResponderCapture, onStartShouldSetResponder = props.onStartShouldSetResponder, onStartShouldSetResponderCapture = props.onStartShouldSetResponderCapture, selectable = props.selectable;
-  var hasTextAncestor = import_react11.useContext(TextAncestorContext_default);
-  var hostRef = import_react11.useRef(null);
+  var hasTextAncestor = (0, import_react11.useContext)(TextAncestorContext_default);
+  var hostRef = (0, import_react11.useRef)(null);
   var classList2 = [classes4.text, hasTextAncestor === true && classes4.textHasAncestor, numberOfLines === 1 && classes4.textOneLine, numberOfLines != null && numberOfLines > 1 && classes4.textMultiLine];
   var style = [props.style, numberOfLines != null && numberOfLines > 1 && {
     WebkitLineClamp: numberOfLines
@@ -38005,7 +38003,7 @@ var import_invariant24 = __toModule(require_invariant());
 
 // node_modules/react-native-web/dist/exports/AppRegistry/AppContainer.js
 var import_react12 = __toModule(require_react());
-var RootTagContext = /* @__PURE__ */ import_react12.createContext(null);
+var RootTagContext = /* @__PURE__ */ (0, import_react12.createContext)(null);
 function AppContainer(props) {
   var children = props.children, WrapperComponent = props.WrapperComponent;
   var innerView = /* @__PURE__ */ import_react12.default.createElement(View_default, {
@@ -38050,7 +38048,7 @@ function _extends9() {
 function renderApplication(RootComponent, WrapperComponent, callback, options) {
   var shouldHydrate = options.hydrate, initialProps = options.initialProps, rootTag = options.rootTag;
   var renderFn = shouldHydrate ? import_react_dom2.hydrate : render_default;
-  import_invariant23.default(rootTag, "Expect to have a valid rootTag, instead got ", rootTag);
+  (0, import_invariant23.default)(rootTag, "Expect to have a valid rootTag, instead got ", rootTag);
   renderFn(/* @__PURE__ */ import_react13.default.createElement(AppContainer, {
     WrapperComponent,
     rootTag
@@ -38127,7 +38125,7 @@ var AppRegistry = /* @__PURE__ */ function() {
     return Object.keys(runnables);
   };
   AppRegistry3.getApplication = function getApplication2(appKey, appParameters) {
-    import_invariant24.default(runnables[appKey] && runnables[appKey].getApplication, "Application " + appKey + " has not been registered. This is either due to an import error during initialization or failure to call AppRegistry.registerComponent.");
+    (0, import_invariant24.default)(runnables[appKey] && runnables[appKey].getApplication, "Application " + appKey + " has not been registered. This is either due to an import error during initialization or failure to call AppRegistry.registerComponent.");
     return runnables[appKey].getApplication(appParameters);
   };
   AppRegistry3.registerComponent = function registerComponent(appKey, componentProvider) {
@@ -38151,7 +38149,7 @@ var AppRegistry = /* @__PURE__ */ function() {
       if (run) {
         AppRegistry3.registerRunnable(appKey, run);
       } else {
-        import_invariant24.default(component, "No component provider passed in");
+        (0, import_invariant24.default)(component, "No component provider passed in");
         AppRegistry3.registerComponent(appKey, component);
       }
     });
@@ -38169,7 +38167,7 @@ var AppRegistry = /* @__PURE__ */ function() {
       params.rootTag = "#" + params.rootTag.id;
       console.log('Running application "' + appKey + '" with appParams:\n', params, "\nDevelopment-level warnings: " + (isDevelopment ? "ON" : "OFF") + "." + ("\nPerformance optimizations: " + (isDevelopment ? "OFF" : "ON") + "."));
     }
-    import_invariant24.default(runnables[appKey] && runnables[appKey].run, 'Application "' + appKey + '" has not been registered. This is either due to an import error during initialization or failure to call AppRegistry.registerComponent.');
+    (0, import_invariant24.default)(runnables[appKey] && runnables[appKey].run, 'Application "' + appKey + '" has not been registered. This is either due to an import error during initialization or failure to call AppRegistry.registerComponent.');
     runnables[appKey].run(appParameters);
   };
   AppRegistry3.setComponentProviderInstrumentationHook = function setComponentProviderInstrumentationHook(hook) {
@@ -38219,7 +38217,7 @@ var AppState = /* @__PURE__ */ function() {
   }
   AppState2.addEventListener = function addEventListener3(type, handler) {
     if (AppState2.isAvailable) {
-      import_invariant25.default(EVENT_TYPES.indexOf(type) !== -1, 'Trying to subscribe to unknown event: "%s"', type);
+      (0, import_invariant25.default)(EVENT_TYPES.indexOf(type) !== -1, 'Trying to subscribe to unknown event: "%s"', type);
       if (type === "change") {
         var callback = function callback2() {
           return handler(AppState2.currentState);
@@ -38231,12 +38229,12 @@ var AppState = /* @__PURE__ */ function() {
   };
   AppState2.removeEventListener = function removeEventListener2(type, handler) {
     if (AppState2.isAvailable) {
-      import_invariant25.default(EVENT_TYPES.indexOf(type) !== -1, 'Trying to remove listener for unknown event: "%s"', type);
+      (0, import_invariant25.default)(EVENT_TYPES.indexOf(type) !== -1, 'Trying to remove listener for unknown event: "%s"', type);
       if (type === "change") {
-        var listenerIndex = import_array_find_index.default(listeners2, function(pair) {
+        var listenerIndex = (0, import_array_find_index.default)(listeners2, function(pair) {
           return pair[0] === handler;
         });
-        import_invariant25.default(listenerIndex !== -1, "Trying to remove AppState listener for unregistered handler");
+        (0, import_invariant25.default)(listenerIndex !== -1, "Trying to remove AppState listener for unregistered handler");
         var callback = listeners2[listenerIndex][1];
         document.removeEventListener(VISIBILITY_CHANGE_EVENT, callback, false);
         listeners2.splice(listenerIndex, 1);
@@ -38507,8 +38505,8 @@ var Linking = /* @__PURE__ */ function() {
     }
   };
   _proto._validateURL = function _validateURL(url) {
-    import_invariant26.default(typeof url === "string", "Invalid URL: should be a string. Was: " + url);
-    import_invariant26.default(url, "Invalid URL: cannot be empty");
+    (0, import_invariant26.default)(typeof url === "string", "Invalid URL: should be a string. Was: " + url);
+    (0, import_invariant26.default)(url, "Invalid URL: cannot be empty");
   };
   return Linking2;
 }();
@@ -38770,10 +38768,10 @@ var Share = /* @__PURE__ */ function() {
     if (options === void 0) {
       options = {};
     }
-    import_invariant27.default(typeof content === "object" && content !== null, "Content to share must be a valid object");
-    import_invariant27.default(typeof content.url === "string" || typeof content.message === "string", "At least one of URL and message is required");
-    import_invariant27.default(typeof options === "object" && options !== null, "Options must be a valid object");
-    import_invariant27.default(!content.title || typeof content.title === "string", "Invalid title: title should be a string.");
+    (0, import_invariant27.default)(typeof content === "object" && content !== null, "Content to share must be a valid object");
+    (0, import_invariant27.default)(typeof content.url === "string" || typeof content.message === "string", "At least one of URL and message is required");
+    (0, import_invariant27.default)(typeof options === "object" && options !== null, "Options must be a valid object");
+    (0, import_invariant27.default)(!content.title || typeof content.title === "string", "Invalid title: title should be a string.");
     if (window.navigator.share !== void 0) {
       return window.navigator.share({
         title: content.title,
@@ -38862,7 +38860,7 @@ var createSvgCircle = function createSvgCircle2(style) {
     style
   });
 };
-var ActivityIndicator = /* @__PURE__ */ import_react14.forwardRef(function(props, forwardedRef) {
+var ActivityIndicator = /* @__PURE__ */ (0, import_react14.forwardRef)(function(props, forwardedRef) {
   var _props$animating = props.animating, animating = _props$animating === void 0 ? true : _props$animating, _props$color = props.color, color39 = _props$color === void 0 ? "#1976D2" : _props$color, _props$hidesWhenStopp = props.hidesWhenStopped, hidesWhenStopped = _props$hidesWhenStopp === void 0 ? true : _props$hidesWhenStopp, _props$size = props.size, size = _props$size === void 0 ? "small" : _props$size, style = props.style, other = _objectWithoutPropertiesLoose8(props, ["animating", "color", "hidesWhenStopped", "size", "style"]);
   var svg = /* @__PURE__ */ import_react14.default.createElement("svg", {
     height: "100%",
@@ -39284,20 +39282,20 @@ function getTouchFromResponderEvent(event4) {
 var import_react15 = __toModule(require_react());
 "use strict";
 function usePressEvents(hostRef, config) {
-  var pressResponderRef = import_react15.useRef(null);
+  var pressResponderRef = (0, import_react15.useRef)(null);
   if (pressResponderRef.current == null) {
     pressResponderRef.current = new PressResponder(config);
   }
   var pressResponder = pressResponderRef.current;
-  import_react15.useEffect(function() {
+  (0, import_react15.useEffect)(function() {
     pressResponder.configure(config);
   }, [config, pressResponder]);
-  import_react15.useEffect(function() {
+  (0, import_react15.useEffect)(function() {
     return function() {
       pressResponder.reset();
     };
   }, [pressResponder]);
-  import_react15.useDebugValue(config);
+  (0, import_react15.useDebugValue)(config);
   return pressResponder.getEventHandlers();
 }
 
@@ -39333,21 +39331,21 @@ function _objectWithoutPropertiesLoose9(source, excluded) {
 }
 function TouchableOpacity(props, forwardedRef) {
   var activeOpacity = props.activeOpacity, delayPressIn = props.delayPressIn, delayPressOut = props.delayPressOut, delayLongPress = props.delayLongPress, disabled = props.disabled, focusable = props.focusable, onLongPress = props.onLongPress, onPress = props.onPress, onPressIn = props.onPressIn, onPressOut = props.onPressOut, rejectResponderTermination = props.rejectResponderTermination, style = props.style, rest = _objectWithoutPropertiesLoose9(props, ["activeOpacity", "delayPressIn", "delayPressOut", "delayLongPress", "disabled", "focusable", "onLongPress", "onPress", "onPressIn", "onPressOut", "rejectResponderTermination", "style"]);
-  var hostRef = import_react16.useRef(null);
+  var hostRef = (0, import_react16.useRef)(null);
   var setRef = useMergeRefs(forwardedRef, hostRef);
-  var _useState = import_react16.useState("0s"), duration = _useState[0], setDuration = _useState[1];
-  var _useState2 = import_react16.useState(null), opacityOverride = _useState2[0], setOpacityOverride = _useState2[1];
-  var setOpacityTo = import_react16.useCallback(function(value, duration2) {
+  var _useState = (0, import_react16.useState)("0s"), duration = _useState[0], setDuration = _useState[1];
+  var _useState2 = (0, import_react16.useState)(null), opacityOverride = _useState2[0], setOpacityOverride = _useState2[1];
+  var setOpacityTo = (0, import_react16.useCallback)(function(value, duration2) {
     setOpacityOverride(value);
     setDuration(duration2 ? duration2 / 1e3 + "s" : "0s");
   }, [setOpacityOverride, setDuration]);
-  var setOpacityActive = import_react16.useCallback(function(duration2) {
+  var setOpacityActive = (0, import_react16.useCallback)(function(duration2) {
     setOpacityTo(activeOpacity !== null && activeOpacity !== void 0 ? activeOpacity : 0.2, duration2);
   }, [activeOpacity, setOpacityTo]);
-  var setOpacityInactive = import_react16.useCallback(function(duration2) {
+  var setOpacityInactive = (0, import_react16.useCallback)(function(duration2) {
     setOpacityTo(null, duration2);
   }, [setOpacityTo]);
-  var pressConfig = import_react16.useMemo(function() {
+  var pressConfig = (0, import_react16.useMemo)(function() {
     return {
       cancelable: !rejectResponderTermination,
       disabled,
@@ -39506,7 +39504,7 @@ function _objectWithoutPropertiesLoose10(source, excluded) {
   }
   return target;
 }
-var CheckBox = /* @__PURE__ */ import_react17.forwardRef(function(props, forwardedRef) {
+var CheckBox = /* @__PURE__ */ (0, import_react17.forwardRef)(function(props, forwardedRef) {
   var color39 = props.color, disabled = props.disabled, onChange3 = props.onChange, onValueChange = props.onValueChange, style = props.style, value = props.value, other = _objectWithoutPropertiesLoose10(props, ["color", "disabled", "onChange", "onValueChange", "style", "value"]);
   function handleChange(event4) {
     var value2 = event4.nativeEvent.target.checked;
@@ -39619,7 +39617,7 @@ function _objectWithoutPropertiesLoose11(source, excluded) {
   return target;
 }
 var emptyObject13 = {};
-var ImageBackground = /* @__PURE__ */ import_react18.forwardRef(function(props, forwardedRef) {
+var ImageBackground = /* @__PURE__ */ (0, import_react18.forwardRef)(function(props, forwardedRef) {
   var children = props.children, _props$style = props.style, style = _props$style === void 0 ? emptyObject13 : _props$style, imageStyle = props.imageStyle, imageRef = props.imageRef, rest = _objectWithoutPropertiesLoose11(props, ["children", "style", "imageStyle", "imageRef"]);
   var _StyleSheet$flatten = StyleSheet_default2.flatten(style), height = _StyleSheet$flatten.height, width = _StyleSheet$flatten.width;
   return /* @__PURE__ */ React23.createElement(View_default, {
@@ -39723,7 +39721,7 @@ var import_ExecutionEnvironment17 = __toModule(require_ExecutionEnvironment());
 var import_react_dom4 = __toModule(require_react_dom());
 function ModalPortal(props) {
   var children = props.children;
-  var elementRef = import_react20.useRef(null);
+  var elementRef = (0, import_react20.useRef)(null);
   if (import_ExecutionEnvironment17.canUseDOM && !elementRef.current) {
     var element = document.createElement("div");
     if (element && document.body) {
@@ -39731,7 +39729,7 @@ function ModalPortal(props) {
       elementRef.current = element;
     }
   }
-  import_react20.useEffect(function() {
+  (0, import_react20.useEffect)(function() {
     if (import_ExecutionEnvironment17.canUseDOM) {
       return function() {
         if (document.body && elementRef.current) {
@@ -39759,10 +39757,10 @@ function getAnimationStyle(animationType, visible) {
 }
 function ModalAnimation(props) {
   var animationType = props.animationType, children = props.children, onDismiss = props.onDismiss, onShow = props.onShow, visible = props.visible;
-  var _useState = import_react21.useState(false), isRendering = _useState[0], setIsRendering = _useState[1];
-  var wasVisible = import_react21.useRef(false);
+  var _useState = (0, import_react21.useState)(false), isRendering = _useState[0], setIsRendering = _useState[1];
+  var wasVisible = (0, import_react21.useRef)(false);
   var isAnimated = animationType && animationType !== "none";
-  var animationEndCallback = import_react21.useCallback(function(e) {
+  var animationEndCallback = (0, import_react21.useCallback)(function(e) {
     if (e && e.currentTarget !== e.target) {
       return;
     }
@@ -39777,7 +39775,7 @@ function ModalAnimation(props) {
       }
     }
   }, [onDismiss, onShow, visible]);
-  import_react21.useEffect(function() {
+  (0, import_react21.useEffect)(function() {
     if (visible) {
       setIsRendering(true);
     }
@@ -39879,9 +39877,9 @@ var ModalAnimation_default = ModalAnimation;
 // node_modules/react-native-web/dist/exports/Modal/ModalContent.js
 var import_react22 = __toModule(require_react());
 var import_ExecutionEnvironment18 = __toModule(require_ExecutionEnvironment());
-var ModalContent = /* @__PURE__ */ import_react22.forwardRef(function(props, forwardedRef) {
+var ModalContent = /* @__PURE__ */ (0, import_react22.forwardRef)(function(props, forwardedRef) {
   var active = props.active, children = props.children, onRequestClose = props.onRequestClose, transparent = props.transparent;
-  import_react22.useEffect(function() {
+  (0, import_react22.useEffect)(function() {
     if (import_ExecutionEnvironment18.canUseDOM) {
       var closeOnEscape = function closeOnEscape2(e) {
         if (active && e.key === "Escape") {
@@ -39897,7 +39895,7 @@ var ModalContent = /* @__PURE__ */ import_react22.forwardRef(function(props, for
       };
     }
   }, [active, onRequestClose]);
-  var style = import_react22.useMemo(function() {
+  var style = (0, import_react22.useMemo)(function() {
     return [styles14.modal, transparent ? styles14.modalTransparent : styles14.modalOpaque];
   }, [transparent]);
   return /* @__PURE__ */ import_react22.default.createElement(View_default, {
@@ -39970,12 +39968,12 @@ function focusLastDescendant(element) {
 }
 var ModalFocusTrap = function ModalFocusTrap2(_ref) {
   var active = _ref.active, children = _ref.children;
-  var trapElementRef = import_react23.useRef();
-  var focusRef = import_react23.useRef({
+  var trapElementRef = (0, import_react23.useRef)();
+  var focusRef = (0, import_react23.useRef)({
     trapFocusInProgress: false,
     lastFocusedElement: null
   });
-  import_react23.useEffect(function() {
+  (0, import_react23.useEffect)(function() {
     if (import_ExecutionEnvironment19.canUseDOM) {
       var trapFocus = function trapFocus2() {
         if (trapElementRef.current == null || focusRef.current.trapFocusInProgress || !active) {
@@ -40004,7 +40002,7 @@ var ModalFocusTrap = function ModalFocusTrap2(_ref) {
       };
     }
   }, [active]);
-  import_react23.useEffect(function() {
+  (0, import_react23.useEffect)(function() {
     if (import_ExecutionEnvironment19.canUseDOM) {
       var lastFocusedElementOutsideTrap = document.activeElement;
       return function() {
@@ -40057,25 +40055,25 @@ function addActiveModal(modalId, listener3) {
   activeModalListeners[modalId] = listener3;
   notifyActiveModalListeners();
 }
-var Modal = /* @__PURE__ */ import_react24.forwardRef(function(props, forwardedRef) {
+var Modal = /* @__PURE__ */ (0, import_react24.forwardRef)(function(props, forwardedRef) {
   var animationType = props.animationType, children = props.children, onDismiss = props.onDismiss, onRequestClose = props.onRequestClose, onShow = props.onShow, transparent = props.transparent, _props$visible = props.visible, visible = _props$visible === void 0 ? true : _props$visible;
-  var modalId = import_react24.useMemo(function() {
+  var modalId = (0, import_react24.useMemo)(function() {
     return uniqueModalIdentifier++;
   }, []);
-  var _useState = import_react24.useState(false), isActive = _useState[0], setIsActive = _useState[1];
-  var onDismissCallback = import_react24.useCallback(function() {
+  var _useState = (0, import_react24.useState)(false), isActive = _useState[0], setIsActive = _useState[1];
+  var onDismissCallback = (0, import_react24.useCallback)(function() {
     removeActiveModal(modalId);
     if (onDismiss) {
       onDismiss();
     }
   }, [modalId, onDismiss]);
-  var onShowCallback = import_react24.useCallback(function() {
+  var onShowCallback = (0, import_react24.useCallback)(function() {
     addActiveModal(modalId, setIsActive);
     if (onShow) {
       onShow();
     }
   }, [modalId, onShow]);
-  import_react24.useEffect(function() {
+  (0, import_react24.useEffect)(function() {
     return function() {
       return removeActiveModal(modalId);
     };
@@ -40098,7 +40096,7 @@ var Modal_default = Modal;
 
 // node_modules/react-native-web/dist/exports/Picker/PickerItem.js
 function PickerItem(props) {
-  var color39 = props.color, label = props.label, testID = props.testID, value = props.value;
+  var color39 = props.color, label2 = props.label, testID = props.testID, value = props.value;
   var style = {
     color: color39
   };
@@ -40106,7 +40104,7 @@ function PickerItem(props) {
     style,
     testID,
     value
-  }, label);
+  }, label2);
 }
 
 // node_modules/react-native-web/dist/exports/Picker/index.js
@@ -40162,9 +40160,9 @@ function _objectWithoutPropertiesLoose13(source, excluded) {
   }
   return target;
 }
-var Picker = /* @__PURE__ */ import_react25.forwardRef(function(props, forwardedRef) {
+var Picker = /* @__PURE__ */ (0, import_react25.forwardRef)(function(props, forwardedRef) {
   var children = props.children, enabled = props.enabled, onValueChange = props.onValueChange, selectedValue = props.selectedValue, style = props.style, testID = props.testID, itemStyle = props.itemStyle, mode = props.mode, prompt = props.prompt, other = _objectWithoutPropertiesLoose13(props, ["children", "enabled", "onValueChange", "selectedValue", "style", "testID", "itemStyle", "mode", "prompt"]);
-  var hostRef = import_react25.useRef(null);
+  var hostRef = (0, import_react25.useRef)(null);
   function handleChange(e) {
     var _e$target = e.target, selectedIndex = _e$target.selectedIndex, value = _e$target.value;
     if (onValueChange) {
@@ -40607,9 +40605,9 @@ function Pressable(props, forwardedRef) {
   var _useForceableState = useForceableState(testOnly_hovered === true), hovered = _useForceableState[0], setHovered = _useForceableState[1];
   var _useForceableState2 = useForceableState(false), focused = _useForceableState2[0], setFocused = _useForceableState2[1];
   var _useForceableState3 = useForceableState(testOnly_pressed === true), pressed = _useForceableState3[0], setPressed = _useForceableState3[1];
-  var hostRef = import_react26.useRef(null);
+  var hostRef = (0, import_react26.useRef)(null);
   var setRef = useMergeRefs(forwardedRef, hostRef);
-  var pressConfig = import_react26.useMemo(function() {
+  var pressConfig = (0, import_react26.useMemo)(function() {
     return {
       delayLongPress,
       delayPressStart: delayPressIn,
@@ -40656,7 +40654,7 @@ function Pressable(props, forwardedRef) {
   }), typeof children === "function" ? children(interactionState) : children);
 }
 function useForceableState(forced) {
-  var _useState = import_react26.useState(false), bool = _useState[0], setBool = _useState[1];
+  var _useState = (0, import_react26.useState)(false), bool = _useState[0], setBool = _useState[1];
   return [bool || forced, setBool];
 }
 var styles17 = StyleSheet_default2.create({
@@ -40665,7 +40663,7 @@ var styles17 = StyleSheet_default2.create({
     touchAction: "manipulation"
   }
 });
-var MemoedPressable = /* @__PURE__ */ import_react26.memo(/* @__PURE__ */ import_react26.forwardRef(Pressable));
+var MemoedPressable = /* @__PURE__ */ (0, import_react26.memo)(/* @__PURE__ */ (0, import_react26.forwardRef)(Pressable));
 MemoedPressable.displayName = "Pressable";
 var Pressable_default = MemoedPressable;
 
@@ -40699,11 +40697,11 @@ function _objectWithoutPropertiesLoose15(source, excluded) {
   }
   return target;
 }
-var ProgressBar = /* @__PURE__ */ import_react27.forwardRef(function(props, ref) {
+var ProgressBar = /* @__PURE__ */ (0, import_react27.forwardRef)(function(props, ref) {
   var _props$color = props.color, color39 = _props$color === void 0 ? "#1976D2" : _props$color, _props$indeterminate = props.indeterminate, indeterminate = _props$indeterminate === void 0 ? false : _props$indeterminate, _props$progress = props.progress, progress = _props$progress === void 0 ? 0 : _props$progress, _props$trackColor = props.trackColor, trackColor = _props$trackColor === void 0 ? "transparent" : _props$trackColor, style = props.style, other = _objectWithoutPropertiesLoose15(props, ["color", "indeterminate", "progress", "trackColor", "style"]);
   var percentageProgress = progress * 100;
-  var progressRef = import_react27.useRef(null);
-  import_react27.useEffect(function() {
+  var progressRef = (0, import_react27.useRef)(null);
+  (0, import_react27.useEffect)(function() {
     var width = indeterminate ? "25%" : percentageProgress + "%";
     if (progressRef.current != null) {
       progressRef.current.setNativeProps({
@@ -40800,7 +40798,7 @@ var cssFunction = function() {
   }
   return "env";
 }();
-var SafeAreaView = /* @__PURE__ */ import_react28.forwardRef(function(props, ref) {
+var SafeAreaView = /* @__PURE__ */ (0, import_react28.forwardRef)(function(props, ref) {
   var style = props.style, rest = _objectWithoutPropertiesLoose16(props, ["style"]);
   return /* @__PURE__ */ import_react28.default.createElement(View_default, _extends17({}, rest, {
     ref,
@@ -40902,9 +40900,9 @@ function _objectWithoutPropertiesLoose17(source, excluded) {
 var emptyObject15 = {};
 var thumbDefaultBoxShadow = "0px 1px 3px rgba(0,0,0,0.5)";
 var thumbFocusedBoxShadow = thumbDefaultBoxShadow + ", 0 0 0 10px rgba(0,0,0,0.1)";
-var Switch = /* @__PURE__ */ import_react29.forwardRef(function(props, forwardedRef) {
+var Switch = /* @__PURE__ */ (0, import_react29.forwardRef)(function(props, forwardedRef) {
   var accessibilityLabel = props.accessibilityLabel, _props$activeThumbCol = props.activeThumbColor, activeThumbColor = _props$activeThumbCol === void 0 ? "#009688" : _props$activeThumbCol, _props$activeTrackCol = props.activeTrackColor, activeTrackColor = _props$activeTrackCol === void 0 ? "#A3D3CF" : _props$activeTrackCol, _props$disabled = props.disabled, disabled = _props$disabled === void 0 ? false : _props$disabled, onValueChange = props.onValueChange, _props$style = props.style, style = _props$style === void 0 ? emptyObject15 : _props$style, _props$thumbColor = props.thumbColor, thumbColor = _props$thumbColor === void 0 ? "#FAFAFA" : _props$thumbColor, _props$trackColor = props.trackColor, trackColor = _props$trackColor === void 0 ? "#939393" : _props$trackColor, _props$value = props.value, value = _props$value === void 0 ? false : _props$value, other = _objectWithoutPropertiesLoose17(props, ["accessibilityLabel", "activeThumbColor", "activeTrackColor", "disabled", "onValueChange", "style", "thumbColor", "trackColor", "value"]);
-  var thumbRef = import_react29.useRef(null);
+  var thumbRef = (0, import_react29.useRef)(null);
   function handleChange(event4) {
     if (onValueChange != null) {
       onValueChange(event4.nativeEvent.target.checked);
@@ -41094,7 +41092,7 @@ var pickProps5 = function pickProps6(props) {
 function isEventComposing(nativeEvent) {
   return nativeEvent.isComposing || nativeEvent.keyCode === 229;
 }
-var TextInput = /* @__PURE__ */ import_react30.forwardRef(function(props, forwardedRef) {
+var TextInput = /* @__PURE__ */ (0, import_react30.forwardRef)(function(props, forwardedRef) {
   var _props$autoCapitalize = props.autoCapitalize, autoCapitalize = _props$autoCapitalize === void 0 ? "sentences" : _props$autoCapitalize, autoComplete = props.autoComplete, autoCompleteType = props.autoCompleteType, _props$autoCorrect = props.autoCorrect, autoCorrect = _props$autoCorrect === void 0 ? true : _props$autoCorrect, blurOnSubmit = props.blurOnSubmit, clearTextOnFocus = props.clearTextOnFocus, dir = props.dir, _props$editable = props.editable, editable = _props$editable === void 0 ? true : _props$editable, _props$keyboardType = props.keyboardType, keyboardType = _props$keyboardType === void 0 ? "default" : _props$keyboardType, _props$multiline = props.multiline, multiline = _props$multiline === void 0 ? false : _props$multiline, _props$numberOfLines = props.numberOfLines, numberOfLines = _props$numberOfLines === void 0 ? 1 : _props$numberOfLines, onBlur = props.onBlur, onChange3 = props.onChange, onChangeText = props.onChangeText, onContentSizeChange = props.onContentSizeChange, onFocus = props.onFocus, onKeyPress = props.onKeyPress, onLayout = props.onLayout, onMoveShouldSetResponder = props.onMoveShouldSetResponder, onMoveShouldSetResponderCapture = props.onMoveShouldSetResponderCapture, onResponderEnd = props.onResponderEnd, onResponderGrant = props.onResponderGrant, onResponderMove = props.onResponderMove, onResponderReject = props.onResponderReject, onResponderRelease = props.onResponderRelease, onResponderStart = props.onResponderStart, onResponderTerminate = props.onResponderTerminate, onResponderTerminationRequest = props.onResponderTerminationRequest, onScrollShouldSetResponder = props.onScrollShouldSetResponder, onScrollShouldSetResponderCapture = props.onScrollShouldSetResponderCapture, onSelectionChange = props.onSelectionChange, onSelectionChangeShouldSetResponder = props.onSelectionChangeShouldSetResponder, onSelectionChangeShouldSetResponderCapture = props.onSelectionChangeShouldSetResponderCapture, onStartShouldSetResponder = props.onStartShouldSetResponder, onStartShouldSetResponderCapture = props.onStartShouldSetResponderCapture, onSubmitEditing = props.onSubmitEditing, placeholderTextColor = props.placeholderTextColor, returnKeyType = props.returnKeyType, _props$secureTextEntr = props.secureTextEntry, secureTextEntry = _props$secureTextEntr === void 0 ? false : _props$secureTextEntr, selection = props.selection, selectTextOnFocus = props.selectTextOnFocus, spellCheck = props.spellCheck;
   var type;
   var inputMode;
@@ -41125,12 +41123,12 @@ var TextInput = /* @__PURE__ */ import_react30.forwardRef(function(props, forwar
   if (secureTextEntry) {
     type = "password";
   }
-  var dimensions2 = import_react30.useRef({
+  var dimensions2 = (0, import_react30.useRef)({
     height: null,
     width: null
   });
-  var hostRef = import_react30.useRef(null);
-  var handleContentSizeChange = import_react30.useCallback(function() {
+  var hostRef = (0, import_react30.useRef)(null);
+  var handleContentSizeChange = (0, import_react30.useCallback)(function() {
     var node = hostRef.current;
     if (multiline && onContentSizeChange && node != null) {
       var newHeight = node.scrollHeight;
@@ -41149,7 +41147,7 @@ var TextInput = /* @__PURE__ */ import_react30.forwardRef(function(props, forwar
       }
     }
   }, [hostRef, multiline, onContentSizeChange]);
-  var imperativeRef = import_react30.useMemo(function() {
+  var imperativeRef = (0, import_react30.useMemo)(function() {
     return function(hostNode) {
       if (hostNode != null) {
         hostNode.clear = function() {
@@ -41857,7 +41855,7 @@ var Touchable = {
     for (var key in hitSlop) {
       debugHitSlopStyle[key] = -hitSlop[key];
     }
-    var normalizedColor = import_normalize_css_color3.default(color39);
+    var normalizedColor = (0, import_normalize_css_color3.default)(color39);
     if (typeof normalizedColor !== "number") {
       return null;
     }
@@ -41923,10 +41921,10 @@ function hasPressHandler(props) {
 }
 function TouchableHighlight(props, forwardedRef) {
   var activeOpacity = props.activeOpacity, children = props.children, delayPressIn = props.delayPressIn, delayPressOut = props.delayPressOut, delayLongPress = props.delayLongPress, disabled = props.disabled, focusable = props.focusable, onHideUnderlay = props.onHideUnderlay, onLongPress = props.onLongPress, onPress = props.onPress, onPressIn = props.onPressIn, onPressOut = props.onPressOut, onShowUnderlay = props.onShowUnderlay, rejectResponderTermination = props.rejectResponderTermination, style = props.style, testOnly_pressed = props.testOnly_pressed, underlayColor = props.underlayColor, rest = _objectWithoutPropertiesLoose19(props, ["activeOpacity", "children", "delayPressIn", "delayPressOut", "delayLongPress", "disabled", "focusable", "onHideUnderlay", "onLongPress", "onPress", "onPressIn", "onPressOut", "onShowUnderlay", "rejectResponderTermination", "style", "testOnly_pressed", "underlayColor"]);
-  var hostRef = import_react32.useRef(null);
+  var hostRef = (0, import_react32.useRef)(null);
   var setRef = useMergeRefs(forwardedRef, hostRef);
-  var _useState = import_react32.useState(testOnly_pressed === true ? createExtraStyles(activeOpacity, underlayColor) : null), extraStyles = _useState[0], setExtraStyles = _useState[1];
-  var showUnderlay = import_react32.useCallback(function() {
+  var _useState = (0, import_react32.useState)(testOnly_pressed === true ? createExtraStyles(activeOpacity, underlayColor) : null), extraStyles = _useState[0], setExtraStyles = _useState[1];
+  var showUnderlay = (0, import_react32.useCallback)(function() {
     if (!hasPressHandler(props)) {
       return;
     }
@@ -41935,7 +41933,7 @@ function TouchableHighlight(props, forwardedRef) {
       onShowUnderlay();
     }
   }, [activeOpacity, onShowUnderlay, props, underlayColor]);
-  var hideUnderlay = import_react32.useCallback(function() {
+  var hideUnderlay = (0, import_react32.useCallback)(function() {
     if (testOnly_pressed === true) {
       return;
     }
@@ -41946,7 +41944,7 @@ function TouchableHighlight(props, forwardedRef) {
       }
     }
   }, [onHideUnderlay, props, testOnly_pressed]);
-  var pressConfig = import_react32.useMemo(function() {
+  var pressConfig = (0, import_react32.useMemo)(function() {
     return {
       cancelable: !rejectResponderTermination,
       disabled,
@@ -42057,8 +42055,8 @@ var pickProps7 = function pickProps8(props) {
 };
 function TouchableWithoutFeedback(props, forwardedRef) {
   var delayPressIn = props.delayPressIn, delayPressOut = props.delayPressOut, delayLongPress = props.delayLongPress, disabled = props.disabled, focusable = props.focusable, onLongPress = props.onLongPress, onPress = props.onPress, onPressIn = props.onPressIn, onPressOut = props.onPressOut, rejectResponderTermination = props.rejectResponderTermination;
-  var hostRef = import_react34.useRef(null);
-  var pressConfig = import_react34.useMemo(function() {
+  var hostRef = (0, import_react34.useRef)(null);
+  var pressConfig = (0, import_react34.useMemo)(function() {
     return {
       cancelable: !rejectResponderTermination,
       disabled,
@@ -42165,10 +42163,10 @@ function useColorScheme() {
 var import_react36 = __toModule(require_react());
 "use strict";
 function useWindowDimensions() {
-  var _useState = import_react36.useState(function() {
+  var _useState = (0, import_react36.useState)(function() {
     return Dimensions.get("window");
   }), dims = _useState[0], setDims = _useState[1];
-  import_react36.useEffect(function() {
+  (0, import_react36.useEffect)(function() {
     function handleChange(_ref) {
       var window2 = _ref.window;
       setDims(window2);
@@ -42183,7 +42181,7 @@ function useWindowDimensions() {
 }
 
 // node_modules/expo/build/launch/registerRootComponent.web.js
-var import_react_native = __toModule(require_dist());
+var import_react_native = require_dist();
 
 // node_modules/expo-error-recovery/build/ExpoErrorRecovery.web.js
 var import_ExecutionEnvironment23 = __toModule(require_ExecutionEnvironment2());
@@ -42773,7 +42771,7 @@ var import_react_theme_provider = __toModule(require_lib());
 var import_color = __toModule(require_color());
 
 // node_modules/react-native-paper/lib/module/styles/fonts.js
-var import_react_native2 = __toModule(require_dist());
+var import_react_native2 = require_dist();
 var fontConfig = {
   web: {
     regular: {
@@ -42851,9 +42849,9 @@ var DefaultTheme = {
     text: black,
     onBackground: "#000000",
     onSurface: "#000000",
-    disabled: import_color.default(black).alpha(0.26).rgb().string(),
-    placeholder: import_color.default(black).alpha(0.54).rgb().string(),
-    backdrop: import_color.default(black).alpha(0.5).rgb().string(),
+    disabled: (0, import_color.default)(black).alpha(0.26).rgb().string(),
+    placeholder: (0, import_color.default)(black).alpha(0.54).rgb().string(),
+    backdrop: (0, import_color.default)(black).alpha(0.5).rgb().string(),
     notification: pinkA400
   },
   fonts: configureFonts(),
@@ -42868,18 +42866,18 @@ var {
   ThemeProvider,
   withTheme,
   useTheme
-} = import_react_theme_provider.createTheming(DefaultTheme_default);
+} = (0, import_react_theme_provider.createTheming)(DefaultTheme_default);
 
 // node_modules/react-native-paper/lib/module/core/Provider.js
 var React47 = __toModule(require_react());
-var import_react_native10 = __toModule(require_dist());
+var import_react_native10 = require_dist();
 
 // node_modules/react-native-paper/lib/module/core/settings.js
 var React44 = __toModule(require_react());
 
 // node_modules/react-native-paper/lib/module/components/MaterialCommunityIcon.js
 var React43 = __toModule(require_react());
-var import_react_native7 = __toModule(require_dist());
+var import_react_native7 = require_dist();
 function _extends20() {
   _extends20 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -43099,15 +43097,15 @@ async function loadFontInNamespaceAsync(fontFamily, source) {
 
 // node_modules/@expo/vector-icons/build/createIconSet.js
 var import_react39 = __toModule(require_react());
-var import_react_native6 = __toModule(require_dist());
+var import_react_native6 = require_dist();
 
 // node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/lib/create-icon-set.js
 var import_react38 = __toModule(require_react());
 var import_prop_types2 = __toModule(require_prop_types());
-var import_react_native5 = __toModule(require_react_native_web());
+var import_react_native5 = require_react_native_web();
 
 // node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/lib/ensure-native-module-available.js
-var import_react_native3 = __toModule(require_react_native_web());
+var import_react_native3 = require_react_native_web();
 var NativeIconAPI = import_react_native3.NativeModules.RNVectorIconsManager || import_react_native3.NativeModules.RNVectorIconsModule;
 function ensureNativeModuleAvailable() {
   if (!NativeIconAPI) {
@@ -43144,7 +43142,7 @@ var import_lodash = __toModule(require_lodash());
 var import_lodash2 = __toModule(require_lodash2());
 var import_lodash3 = __toModule(require_lodash3());
 var import_react37 = __toModule(require_react());
-var import_react_native4 = __toModule(require_react_native_web());
+var import_react_native4 = require_react_native_web();
 var styles22 = import_react_native4.StyleSheet.create({
   container: {
     flexDirection: "row",
@@ -43213,12 +43211,12 @@ function createIconButtonComponent(Icon2) {
     };
     render() {
       const {style, iconStyle, children, ...restProps} = this.props;
-      const iconProps = import_lodash3.default(restProps, TEXT_PROP_NAMES, "style", "name", "size", "color");
-      const touchableProps = import_lodash3.default(restProps, TOUCHABLE_PROP_NAMES);
-      const props = import_lodash2.default(restProps, Object.keys(iconProps), Object.keys(touchableProps), "iconStyle", "borderRadius", "backgroundColor");
+      const iconProps = (0, import_lodash3.default)(restProps, TEXT_PROP_NAMES, "style", "name", "size", "color");
+      const touchableProps = (0, import_lodash3.default)(restProps, TOUCHABLE_PROP_NAMES);
+      const props = (0, import_lodash2.default)(restProps, Object.keys(iconProps), Object.keys(touchableProps), "iconStyle", "borderRadius", "backgroundColor");
       iconProps.style = iconStyle ? [styles22.icon, iconStyle] : styles22.icon;
-      const colorStyle = import_lodash3.default(this.props, "color");
-      const blockStyle = import_lodash3.default(this.props, "backgroundColor", "borderRadius");
+      const colorStyle = (0, import_lodash3.default)(this.props, "color");
+      const blockStyle = (0, import_lodash3.default)(this.props, "backgroundColor", "borderRadius");
       return /* @__PURE__ */ import_react37.default.createElement(import_react_native4.TouchableHighlight, {
         style: [styles22.touchable, blockStyle],
         ...touchableProps
@@ -43227,7 +43225,7 @@ function createIconButtonComponent(Icon2) {
         ...props
       }, /* @__PURE__ */ import_react37.default.createElement(Icon2, {
         ...iconProps
-      }), import_lodash.default(children) ? /* @__PURE__ */ import_react37.default.createElement(import_react_native4.Text, {
+      }), (0, import_lodash.default)(children) ? /* @__PURE__ */ import_react37.default.createElement(import_react_native4.Text, {
         style: [styles22.text, colorStyle]
       }, children) : children));
     }
@@ -43293,7 +43291,7 @@ function createIconSet(glyphMap, fontFamily, fontFile, fontStyle) {
   function getImageSourceSync(name, size = DEFAULT_ICON_SIZE, color39 = DEFAULT_ICON_COLOR) {
     ensureNativeModuleAvailable();
     const glyph = resolveGlyph(name);
-    const processedColor = import_react_native5.processColor(color39);
+    const processedColor = (0, import_react_native5.processColor)(color39);
     const cacheKey = `${glyph}:${size}:${processedColor}`;
     if (imageSourceCache.has(cacheKey)) {
       return imageSourceCache.get(cacheKey);
@@ -43311,7 +43309,7 @@ function createIconSet(glyphMap, fontFamily, fontFile, fontStyle) {
   async function getImageSource(name, size = DEFAULT_ICON_SIZE, color39 = DEFAULT_ICON_COLOR) {
     ensureNativeModuleAvailable();
     const glyph = resolveGlyph(name);
-    const processedColor = import_react_native5.processColor(color39);
+    const processedColor = (0, import_react_native5.processColor)(color39);
     const cacheKey = `${glyph}:${size}:${processedColor}`;
     if (imageSourceCache.has(cacheKey)) {
       return imageSourceCache.get(cacheKey);
@@ -43397,14 +43395,127 @@ function createIconSet_default(glyphMap, fontName, expoAssetId, fontStyle) {
   }, _a.defaultProps = RNVIconComponent.defaultProps, _a.Button = createIconButtonComponent(_a), _a.glyphMap = glyphMap, _a.getRawGlyphMap = () => glyphMap, _a.getFontFamily = () => fontName, _a.loadFont = () => loadAsync(font), _a.font = font, _a;
 }
 
-// src/assets/materialdesignicons-light-webfont.ttf
-var materialdesignicons_light_webfont_default = "/materialdesignicons-light-webfont.B73GC4Z7.ttf";
+// src/assets/materialdesignicons-webfont.ttf
+var materialdesignicons_webfont_default = "/assets/materialdesignicons-webfont-KZKHNYT3.ttf";
 
-// node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/glyphmaps/MaterialCommunityIcons.json
-var MaterialCommunityIcons_default = {"account-outline": 61459, android: 61490, archive: 61500, "arrow-left": 61517, "arrow-up": 61533, bell: 61594, "bookmark-outline": 61635, calendar: 61677, camera: 61696, cancel: 63290, check: 61740, "checkbox-blank-outline": 61745, "checkbox-marked": 61746, "chevron-down": 61760, "chevron-left": 61761, "chevron-right": 61762, "chevron-up": 61763, city: 61766, close: 61782, "close-circle": 61785, "content-copy": 61839, "content-cut": 61840, "content-paste": 61842, delete: 61876, "dots-vertical": 61913, email: 61934, equal: 61948, eye: 61960, "eye-off": 61961, "file-pdf": 61989, folder: 62027, "format-bold": 62052, "format-color-text": 63134, "format-italic": 62071, "format-letter-case": 64308, "format-underline": 62087, heart: 62161, "heart-outline": 62165, "image-album": 62186, inbox: 63111, information: 62204, label: 62229, lock: 62270, magnify: 62281, menu: 62300, "minus-box": 62325, pause: 62436, plus: 62485, redo: 62542, reply: 62554, "shopping-music": 62619, star: 62670, "star-outline": 62674, tune: 63022, undo: 62796, "wallet-giftcard": 62853};
+// src/assets/materialdesignicons-webfont.json
+var account_outline = 59905;
+var android = 59906;
+var archive = 59907;
+var arrow_left = 59908;
+var arrow_up = 59909;
+var bell = 59910;
+var bookmark_outline = 59911;
+var calendar = 59912;
+var camera = 59913;
+var cancel2 = 59914;
+var check = 59915;
+var checkbox_blank_outline = 59916;
+var checkbox_marked = 59917;
+var chevron_down = 59918;
+var chevron_left = 59919;
+var chevron_right = 59920;
+var chevron_up = 59921;
+var city = 59922;
+var close = 59923;
+var close_circle = 59924;
+var content_copy = 59925;
+var content_cut = 59926;
+var content_paste = 59927;
+var delete2 = 59928;
+var dots_vertical = 59929;
+var email = 59930;
+var equal = 59931;
+var eye = 59932;
+var eye_off = 59933;
+var file_pdf = 59934;
+var folder = 59935;
+var format_bold = 59936;
+var format_color_text = 59937;
+var format_italic = 59938;
+var format_letter_case = 59939;
+var format_underline = 59940;
+var heart = 59941;
+var heart_outline = 59942;
+var image_album = 59943;
+var inbox = 59944;
+var information = 59945;
+var label = 59946;
+var lock = 59947;
+var magnify = 59948;
+var menu = 59949;
+var minus_box = 59950;
+var pause = 59951;
+var plus = 59952;
+var redo = 59953;
+var reply = 59954;
+var shopping_music = 59955;
+var star = 59956;
+var star_outline = 59957;
+var tune = 59958;
+var undo = 59959;
+var wallet_giftcard = 59960;
+var materialdesignicons_webfont_default2 = {
+  "account-outline": account_outline,
+  android,
+  archive,
+  "arrow-left": arrow_left,
+  "arrow-up": arrow_up,
+  bell,
+  "bookmark-outline": bookmark_outline,
+  calendar,
+  camera,
+  cancel: cancel2,
+  check,
+  "checkbox-blank-outline": checkbox_blank_outline,
+  "checkbox-marked": checkbox_marked,
+  "chevron-down": chevron_down,
+  "chevron-left": chevron_left,
+  "chevron-right": chevron_right,
+  "chevron-up": chevron_up,
+  city,
+  close,
+  "close-circle": close_circle,
+  "content-copy": content_copy,
+  "content-cut": content_cut,
+  "content-paste": content_paste,
+  delete: delete2,
+  "dots-vertical": dots_vertical,
+  email,
+  equal,
+  eye,
+  "eye-off": eye_off,
+  "file-pdf": file_pdf,
+  folder,
+  "format-bold": format_bold,
+  "format-color-text": format_color_text,
+  "format-italic": format_italic,
+  "format-letter-case": format_letter_case,
+  "format-underline": format_underline,
+  heart,
+  "heart-outline": heart_outline,
+  "image-album": image_album,
+  inbox,
+  information,
+  label,
+  lock,
+  magnify,
+  menu,
+  "minus-box": minus_box,
+  pause,
+  plus,
+  redo,
+  reply,
+  "shopping-music": shopping_music,
+  star,
+  "star-outline": star_outline,
+  tune,
+  undo,
+  "wallet-giftcard": wallet_giftcard
+};
 
 // node_modules/@expo/vector-icons/build/MaterialCommunityIcons.js
-var MaterialCommunityIcons_default2 = createIconSet_default(MaterialCommunityIcons_default, "material-community", materialdesignicons_light_webfont_default);
+var MaterialCommunityIcons_default = createIconSet_default(materialdesignicons_webfont_default2, "material-community", materialdesignicons_webfont_default);
 
 // node_modules/react-native-paper/lib/module/components/MaterialCommunityIcon.js
 try {
@@ -43478,11 +43589,11 @@ var {
 
 // node_modules/react-native-paper/lib/module/components/Portal/PortalHost.js
 var React46 = __toModule(require_react());
-var import_react_native9 = __toModule(require_dist());
+var import_react_native9 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/Portal/PortalManager.js
 var React45 = __toModule(require_react());
-var import_react_native8 = __toModule(require_dist());
+var import_react_native8 = require_dist();
 function _defineProperty25(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {value, enumerable: true, configurable: true, writable: true});
@@ -43654,9 +43765,9 @@ var DarkTheme = {
     onBackground: "#FFFFFF",
     onSurface: "#FFFFFF",
     text: white,
-    disabled: import_color2.default(white).alpha(0.38).rgb().string(),
-    placeholder: import_color2.default(white).alpha(0.54).rgb().string(),
-    backdrop: import_color2.default(black).alpha(0.5).rgb().string(),
+    disabled: (0, import_color2.default)(white).alpha(0.38).rgb().string(),
+    placeholder: (0, import_color2.default)(white).alpha(0.54).rgb().string(),
+    backdrop: (0, import_color2.default)(black).alpha(0.5).rgb().string(),
     notification: pinkA100
   }
 };
@@ -43725,7 +43836,7 @@ var Provider2 = ({
 var Provider_default = Provider2;
 
 // node_modules/react-native-paper/lib/module/styles/shadow.js
-var import_react_native11 = __toModule(require_dist());
+var import_react_native11 = require_dist();
 var SHADOW_COLOR = black;
 var SHADOW_OPACITY = 0.24;
 function shadow(elevation = 0) {
@@ -43778,7 +43889,7 @@ function shadow(elevation = 0) {
 
 // node_modules/react-native-paper/lib/module/styles/overlay.js
 var import_color3 = __toModule(require_color());
-var import_react_native12 = __toModule(require_dist());
+var import_react_native12 = require_dist();
 var isAnimatedValue = (it) => it instanceof import_react_native12.Animated.Value;
 function overlay(elevation, surfaceColor = DarkTheme_default.colors.surface) {
   if (isAnimatedValue(elevation)) {
@@ -43801,7 +43912,7 @@ function calculateColor(surfaceColor, elevation = 1) {
   } else {
     overlayTransparency = elevationOverlayTransparency[1];
   }
-  return import_color3.default(surfaceColor).mix(import_color3.default("white"), overlayTransparency * 0.01).hex();
+  return (0, import_color3.default)(surfaceColor).mix((0, import_color3.default)("white"), overlayTransparency * 0.01).hex();
 }
 var elevationOverlayTransparency = {
   1: 5,
@@ -43840,11 +43951,11 @@ __export(Avatar_exports, {
 
 // node_modules/react-native-paper/lib/module/components/Avatar/AvatarIcon.js
 var React49 = __toModule(require_react());
-var import_react_native14 = __toModule(require_dist());
+var import_react_native14 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/Icon.js
 var React48 = __toModule(require_react());
-var import_react_native13 = __toModule(require_dist());
+var import_react_native13 = require_dist();
 function _extends21() {
   _extends21 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -43921,7 +44032,7 @@ var Icon_default = withTheme(Icon);
 var import_color4 = __toModule(require_color());
 function getContrastingColor(input, light, dark) {
   if (typeof input === "string") {
-    return import_color4.default(input).isLight() ? dark : light;
+    return (0, import_color4.default)(input).isLight() ? dark : light;
   }
   return light;
 }
@@ -43979,7 +44090,7 @@ var AvatarIcon_default = withTheme(Avatar);
 
 // node_modules/react-native-paper/lib/module/components/Avatar/AvatarImage.js
 var React50 = __toModule(require_react());
-var import_react_native15 = __toModule(require_dist());
+var import_react_native15 = require_dist();
 function _extends23() {
   _extends23 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -44031,11 +44142,11 @@ var AvatarImage_default = withTheme(AvatarImage);
 
 // node_modules/react-native-paper/lib/module/components/Avatar/AvatarText.js
 var React52 = __toModule(require_react());
-var import_react_native17 = __toModule(require_dist());
+var import_react_native17 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/Typography/Text.js
 var React51 = __toModule(require_react());
-var import_react_native16 = __toModule(require_dist());
+var import_react_native16 = require_dist();
 function _extends24() {
   _extends24 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -44094,7 +44205,7 @@ function _extends25() {
 }
 var defaultSize3 = 64;
 var AvatarText = ({
-  label,
+  label: label2,
   size = defaultSize3,
   style,
   theme: theme2,
@@ -44121,7 +44232,7 @@ var AvatarText = ({
       lineHeight: size
     }, labelStyle],
     numberOfLines: 1
-  }, label));
+  }, label2));
 };
 AvatarText.displayName = "Avatar.Text";
 var styles27 = import_react_native17.StyleSheet.create({
@@ -44150,11 +44261,11 @@ __export(List_exports, {
 // node_modules/react-native-paper/lib/module/components/List/ListAccordion.js
 var import_color6 = __toModule(require_color());
 var React55 = __toModule(require_react());
-var import_react_native19 = __toModule(require_dist());
+var import_react_native19 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/TouchableRipple/TouchableRipple.js
 var React53 = __toModule(require_react());
-var import_react_native18 = __toModule(require_dist());
+var import_react_native18 = require_dist();
 var import_color5 = __toModule(require_color());
 function _extends26() {
   _extends26 = Object.assign || function(target) {
@@ -44192,7 +44303,7 @@ var TouchableRipple = ({
       dark,
       colors
     } = theme2;
-    const calculatedRippleColor = rippleColor || import_color5.default(colors.text).alpha(dark ? 0.32 : 0.2).rgb().string();
+    const calculatedRippleColor = rippleColor || (0, import_color5.default)(colors.text).alpha(dark ? 0.32 : 0.2).rgb().string();
     const button = e.currentTarget;
     const style2 = window.getComputedStyle(button);
     const dimensions2 = button.getBoundingClientRect();
@@ -44349,8 +44460,8 @@ var ListAccordion = ({
       setExpanded((expanded2) => !expanded2);
     }
   };
-  const titleColor = import_color6.default(theme2.colors.text).alpha(0.87).rgb().string();
-  const descriptionColor = import_color6.default(theme2.colors.text).alpha(0.54).rgb().string();
+  const titleColor = (0, import_color6.default)(theme2.colors.text).alpha(0.87).rgb().string();
+  const descriptionColor = (0, import_color6.default)(theme2.colors.text).alpha(0.54).rgb().string();
   const expandedInternal = expandedProp !== void 0 ? expandedProp : expanded;
   const groupContext = React55.useContext(ListAccordionGroupContext);
   if (groupContext !== null && !id2) {
@@ -44436,7 +44547,7 @@ var ListAccordion_default = withTheme(ListAccordion);
 
 // node_modules/react-native-paper/lib/module/components/List/ListIcon.js
 var React56 = __toModule(require_react());
-var import_react_native20 = __toModule(require_dist());
+var import_react_native20 = require_dist();
 var ICON_SIZE = 24;
 var ListIcon = ({
   icon,
@@ -44465,7 +44576,7 @@ var ListIcon_default = ListIcon;
 // node_modules/react-native-paper/lib/module/components/List/ListItem.js
 var import_color7 = __toModule(require_color());
 var React57 = __toModule(require_react());
-var import_react_native21 = __toModule(require_dist());
+var import_react_native21 = require_dist();
 function _extends27() {
   _extends27 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -44511,8 +44622,8 @@ var ListItem = ({
       }, descriptionStyle]
     }, description2);
   };
-  const titleColor = import_color7.default(theme2.colors.text).alpha(0.87).rgb().string();
-  const descriptionColor = import_color7.default(theme2.colors.text).alpha(0.54).rgb().string();
+  const titleColor = (0, import_color7.default)(theme2.colors.text).alpha(0.87).rgb().string();
+  const descriptionColor = (0, import_color7.default)(theme2.colors.text).alpha(0.54).rgb().string();
   return /* @__PURE__ */ React57.createElement(TouchableRipple_default, _extends27({}, rest, {
     style: [styles31.container, style],
     onPress
@@ -44578,11 +44689,11 @@ var ListItem_default = withTheme(ListItem);
 
 // node_modules/react-native-paper/lib/module/components/List/ListSection.js
 var React59 = __toModule(require_react());
-var import_react_native23 = __toModule(require_dist());
+var import_react_native23 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/List/ListSubheader.js
 var React58 = __toModule(require_react());
-var import_react_native22 = __toModule(require_dist());
+var import_react_native22 = require_dist();
 var import_color8 = __toModule(require_color());
 function _extends28() {
   _extends28 = Object.assign || function(target) {
@@ -44608,7 +44719,7 @@ var ListSubheader = ({
     fonts
   } = theme2;
   const font = fonts.medium;
-  const textColor = import_color8.default(colors.text).alpha(0.54).rgb().string();
+  const textColor = (0, import_color8.default)(colors.text).alpha(0.54).rgb().string();
   return /* @__PURE__ */ React58.createElement(Text_default2, _extends28({
     numberOfLines: 1
   }, rest, {
@@ -44671,7 +44782,7 @@ __export(Drawer_exports, {
 // node_modules/react-native-paper/lib/module/components/Drawer/DrawerItem.js
 var import_color9 = __toModule(require_color());
 var React60 = __toModule(require_react());
-var import_react_native24 = __toModule(require_dist());
+var import_react_native24 = require_dist();
 function _extends30() {
   _extends30 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -44688,7 +44799,7 @@ function _extends30() {
 }
 var DrawerItem = ({
   icon,
-  label,
+  label: label2,
   active,
   theme: theme2,
   style,
@@ -44700,8 +44811,8 @@ var DrawerItem = ({
     colors,
     roundness
   } = theme2;
-  const backgroundColor = active ? import_color9.default(colors.primary).alpha(0.12).rgb().string() : "transparent";
-  const contentColor = active ? colors.primary : import_color9.default(colors.text).alpha(0.68).rgb().string();
+  const backgroundColor = active ? (0, import_color9.default)(colors.primary).alpha(0.12).rgb().string() : "transparent";
+  const contentColor = active ? colors.primary : (0, import_color9.default)(colors.text).alpha(0.68).rgb().string();
   const font = theme2.fonts.medium;
   const labelMargin = icon ? 32 : 0;
   return /* @__PURE__ */ React60.createElement(import_react_native24.View, _extends30({}, rest, {
@@ -44737,7 +44848,7 @@ var DrawerItem = ({
       ...font,
       marginLeft: labelMargin
     }]
-  }, label))));
+  }, label2))));
 };
 DrawerItem.displayName = "Drawer.Item";
 var styles34 = import_react_native24.StyleSheet.create({
@@ -44759,12 +44870,12 @@ var DrawerItem_default = withTheme(DrawerItem);
 // node_modules/react-native-paper/lib/module/components/Drawer/DrawerSection.js
 var import_color11 = __toModule(require_color());
 var React62 = __toModule(require_react());
-var import_react_native26 = __toModule(require_dist());
+var import_react_native26 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/Divider.js
 var React61 = __toModule(require_react());
 var import_color10 = __toModule(require_color());
-var import_react_native25 = __toModule(require_dist());
+var import_react_native25 = require_dist();
 function _extends31() {
   _extends31 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -44794,11 +44905,11 @@ var Divider = ({
 };
 var styles35 = import_react_native25.StyleSheet.create({
   light: {
-    backgroundColor: import_color10.default(black).alpha(0.12).rgb().string(),
+    backgroundColor: (0, import_color10.default)(black).alpha(0.12).rgb().string(),
     height: import_react_native25.StyleSheet.hairlineWidth
   },
   dark: {
-    backgroundColor: import_color10.default(white).alpha(0.12).rgb().string(),
+    backgroundColor: (0, import_color10.default)(white).alpha(0.12).rgb().string(),
     height: import_react_native25.StyleSheet.hairlineWidth
   },
   inset: {
@@ -44833,7 +44944,7 @@ var DrawerSection = ({
     colors,
     fonts
   } = theme2;
-  const titleColor = import_color11.default(colors.text).alpha(0.54).rgb().string();
+  const titleColor = (0, import_color11.default)(colors.text).alpha(0.54).rgb().string();
   const font = fonts.medium;
   return /* @__PURE__ */ React62.createElement(import_react_native26.View, _extends32({
     style: [styles36.container, style]
@@ -44869,7 +44980,7 @@ var DrawerSection_default = withTheme(DrawerSection);
 
 // node_modules/react-native-paper/lib/module/components/Badge.js
 var React63 = __toModule(require_react());
-var import_react_native27 = __toModule(require_dist());
+var import_react_native27 = require_dist();
 function _extends33() {
   _extends33 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -44947,7 +45058,7 @@ var styles37 = import_react_native27.StyleSheet.create({
 
 // node_modules/react-native-paper/lib/module/components/ActivityIndicator.js
 var React64 = __toModule(require_react());
-var import_react_native28 = __toModule(require_dist());
+var import_react_native28 = require_dist();
 function _extends34() {
   _extends34 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -45121,11 +45232,11 @@ var ActivityIndicator_default2 = withTheme(ActivityIndicator2);
 
 // node_modules/react-native-paper/lib/module/components/Banner.js
 var React67 = __toModule(require_react());
-var import_react_native31 = __toModule(require_dist());
+var import_react_native31 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/Surface.js
 var React65 = __toModule(require_react());
-var import_react_native29 = __toModule(require_dist());
+var import_react_native29 = require_dist();
 function _extends35() {
   _extends35 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -45163,7 +45274,7 @@ var Surface_default = withTheme(Surface);
 
 // node_modules/react-native-paper/lib/module/components/Button.js
 var React66 = __toModule(require_react());
-var import_react_native30 = __toModule(require_dist());
+var import_react_native30 = require_dist();
 var import_color12 = __toModule(require_color());
 function _extends36() {
   _extends36 = Object.assign || function(target) {
@@ -45236,7 +45347,7 @@ var Button2 = ({
   let backgroundColor, borderColor, textColor, borderWidth;
   if (mode === "contained") {
     if (disabled) {
-      backgroundColor = import_color12.default(theme2.dark ? white : black).alpha(0.12).rgb().string();
+      backgroundColor = (0, import_color12.default)(theme2.dark ? white : black).alpha(0.12).rgb().string();
     } else if (buttonColor) {
       backgroundColor = buttonColor;
     } else {
@@ -45246,20 +45357,20 @@ var Button2 = ({
     backgroundColor = "transparent";
   }
   if (mode === "outlined") {
-    borderColor = import_color12.default(theme2.dark ? white : black).alpha(0.29).rgb().string();
+    borderColor = (0, import_color12.default)(theme2.dark ? white : black).alpha(0.29).rgb().string();
     borderWidth = import_react_native30.StyleSheet.hairlineWidth;
   } else {
     borderColor = "transparent";
     borderWidth = 0;
   }
   if (disabled) {
-    textColor = import_color12.default(theme2.dark ? white : black).alpha(0.32).rgb().string();
+    textColor = (0, import_color12.default)(theme2.dark ? white : black).alpha(0.32).rgb().string();
   } else if (mode === "contained") {
     let isDark;
     if (typeof dark === "boolean") {
       isDark = dark;
     } else {
-      isDark = backgroundColor === "transparent" ? false : !import_color12.default(backgroundColor).isLight();
+      isDark = backgroundColor === "transparent" ? false : !(0, import_color12.default)(backgroundColor).isLight();
     }
     textColor = isDark ? white : black;
   } else if (buttonColor) {
@@ -45267,7 +45378,7 @@ var Button2 = ({
   } else {
     textColor = colors.primary;
   }
-  const rippleColor = import_color12.default(textColor).alpha(0.32).rgb().string();
+  const rippleColor = (0, import_color12.default)(textColor).alpha(0.32).rgb().string();
   const buttonStyle = {
     backgroundColor,
     borderColor,
@@ -45456,14 +45567,14 @@ var Banner = ({
   }, children)), /* @__PURE__ */ React67.createElement(import_react_native31.View, {
     style: styles40.actions
   }, actions.map(({
-    label,
+    label: label2,
     ...others
   }, i) => /* @__PURE__ */ React67.createElement(Button_default2, _extends37({
     key: i,
     compact: true,
     mode: "text",
     style: styles40.button
-  }, others), label))))));
+  }, others), label2))))));
 };
 var styles40 = import_react_native31.StyleSheet.create({
   container: {
@@ -45507,10 +45618,10 @@ var Banner_default = withTheme(Banner);
 
 // node_modules/react-native-paper/lib/module/components/BottomNavigation.js
 var React71 = __toModule(require_react());
-var import_react_native35 = __toModule(require_dist());
+var import_react_native35 = require_dist();
 
 // node_modules/react-native-iphone-x-helper/index.js
-var import_react_native32 = __toModule(require_dist());
+var import_react_native32 = require_dist();
 function isIphoneX() {
   const dimen = import_react_native32.Dimensions.get("window");
   return import_react_native32.Platform.OS === "ios" && !import_react_native32.Platform.isPad && !import_react_native32.Platform.isTVOS && (dimen.height === 780 || dimen.width === 780 || (dimen.height === 812 || dimen.width === 812) || (dimen.height === 844 || dimen.width === 844) || (dimen.height === 896 || dimen.width === 896) || (dimen.height === 926 || dimen.width === 926));
@@ -45536,7 +45647,7 @@ function getBottomSpace() {
 var import_color13 = __toModule(require_color());
 
 // node_modules/react-native-paper/lib/module/utils/useAnimatedValue.js
-var import_react_native33 = __toModule(require_dist());
+var import_react_native33 = require_dist();
 
 // node_modules/react-native-paper/lib/module/utils/useLazyRef.js
 var React68 = __toModule(require_react());
@@ -45558,7 +45669,7 @@ function useAnimatedValue(initialValue) {
 
 // node_modules/react-native-paper/lib/module/utils/useAnimatedValueArray.js
 var React69 = __toModule(require_react());
-var import_react_native34 = __toModule(require_dist());
+var import_react_native34 = require_dist();
 function useAnimatedValueArray(initialValues) {
   const refs = React69.useRef([]);
   refs.current.length = initialValues.length;
@@ -45798,11 +45909,11 @@ var BottomNavigation = ({
       route
     }) || approxBackgroundColor)
   }) : approxBackgroundColor;
-  const isDark = typeof approxBackgroundColor === "string" ? !import_color13.default(approxBackgroundColor).isLight() : true;
+  const isDark = typeof approxBackgroundColor === "string" ? !(0, import_color13.default)(approxBackgroundColor).isLight() : true;
   const textColor = isDark ? white : black;
   const activeTintColor = typeof activeColor !== "undefined" ? activeColor : textColor;
-  const inactiveTintColor = typeof inactiveColor !== "undefined" ? inactiveColor : import_color13.default(textColor).alpha(0.5).rgb().string();
-  const touchColor = import_color13.default(activeColor || activeTintColor).alpha(0.12).rgb().string();
+  const inactiveTintColor = typeof inactiveColor !== "undefined" ? inactiveColor : (0, import_color13.default)(textColor).alpha(0.5).rgb().string();
+  const touchColor = (0, import_color13.default)(activeColor || activeTintColor).alpha(0.12).rgb().string();
   const maxTabWidth = routes.length > 3 ? MIN_TAB_WIDTH : MAX_TAB_WIDTH;
   const maxTabBarWidth = maxTabWidth * routes.length;
   const tabBarWidth = Math.min(layout.width, maxTabBarWidth);
@@ -46084,11 +46195,11 @@ var styles41 = import_react_native35.StyleSheet.create({
 
 // node_modules/react-native-paper/lib/module/components/Card/Card.js
 var React79 = __toModule(require_react());
-var import_react_native43 = __toModule(require_dist());
+var import_react_native43 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/Card/CardContent.js
 var React72 = __toModule(require_react());
-var import_react_native36 = __toModule(require_dist());
+var import_react_native36 = require_dist();
 function _extends39() {
   _extends39 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -46159,7 +46270,7 @@ var CardContent_default = CardContent;
 
 // node_modules/react-native-paper/lib/module/components/Card/CardActions.js
 var React73 = __toModule(require_react());
-var import_react_native37 = __toModule(require_dist());
+var import_react_native37 = require_dist();
 function _extends40() {
   _extends40 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -46192,7 +46303,7 @@ var CardActions_default = CardActions;
 
 // node_modules/react-native-paper/lib/module/components/Card/CardCover.js
 var React74 = __toModule(require_react());
-var import_react_native38 = __toModule(require_dist());
+var import_react_native38 = require_dist();
 function _extends41() {
   _extends41 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -46260,16 +46371,16 @@ var CardCover_default = withTheme(CardCover);
 
 // node_modules/react-native-paper/lib/module/components/Card/CardTitle.js
 var React78 = __toModule(require_react());
-var import_react_native42 = __toModule(require_dist());
+var import_react_native42 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/Typography/Caption.js
 var React76 = __toModule(require_react());
-var import_react_native40 = __toModule(require_dist());
+var import_react_native40 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/Typography/StyledText.js
 var import_color14 = __toModule(require_color());
 var React75 = __toModule(require_react());
-var import_react_native39 = __toModule(require_dist());
+var import_react_native39 = require_dist();
 function _extends42() {
   _extends42 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -46291,7 +46402,7 @@ var StyledText = ({
   style,
   ...rest
 }) => {
-  const textColor = import_color14.default(theme2.colors.text).alpha(alpha).rgb().string();
+  const textColor = (0, import_color14.default)(theme2.colors.text).alpha(alpha).rgb().string();
   const font = theme2.fonts[family];
   const writingDirection = import_react_native39.I18nManager.isRTL ? "rtl" : "ltr";
   return /* @__PURE__ */ React75.createElement(Text_default2, _extends42({}, rest, {
@@ -46341,7 +46452,7 @@ var styles46 = import_react_native40.StyleSheet.create({
 
 // node_modules/react-native-paper/lib/module/components/Typography/Title.js
 var React77 = __toModule(require_react());
-var import_react_native41 = __toModule(require_dist());
+var import_react_native41 = require_dist();
 function _extends44() {
   _extends44 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -46537,11 +46648,11 @@ var Card_default = withTheme(Card);
 
 // node_modules/react-native-paper/lib/module/components/Checkbox/Checkbox.js
 var React82 = __toModule(require_react());
-var import_react_native46 = __toModule(require_dist());
+var import_react_native46 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/Checkbox/CheckboxIOS.js
 var React80 = __toModule(require_react());
-var import_react_native44 = __toModule(require_dist());
+var import_react_native44 = require_dist();
 var import_color15 = __toModule(require_color());
 function _extends46() {
   _extends46 = Object.assign || function(target) {
@@ -46570,9 +46681,9 @@ var CheckboxIOS = ({
   const checkedColor = disabled ? theme2.colors.disabled : rest.color || theme2.colors.accent;
   let rippleColor;
   if (disabled) {
-    rippleColor = import_color15.default(theme2.colors.text).alpha(0.16).rgb().string();
+    rippleColor = (0, import_color15.default)(theme2.colors.text).alpha(0.16).rgb().string();
   } else {
-    rippleColor = import_color15.default(checkedColor).fade(0.32).rgb().string();
+    rippleColor = (0, import_color15.default)(checkedColor).fade(0.32).rgb().string();
   }
   const icon = indeterminate ? "minus" : "check";
   return /* @__PURE__ */ React80.createElement(TouchableRipple_default, _extends46({}, rest, {
@@ -46614,7 +46725,7 @@ var CheckboxIOSWithTheme = withTheme(CheckboxIOS);
 
 // node_modules/react-native-paper/lib/module/components/Checkbox/CheckboxAndroid.js
 var React81 = __toModule(require_react());
-var import_react_native45 = __toModule(require_dist());
+var import_react_native45 = require_dist();
 var import_color16 = __toModule(require_color());
 function _extends47() {
   _extends47 = Object.assign || function(target) {
@@ -46667,13 +46778,13 @@ var CheckboxAndroid = ({
   const checked = status === "checked";
   const indeterminate = status === "indeterminate";
   const checkedColor = rest.color || theme2.colors.accent;
-  const uncheckedColor = rest.uncheckedColor || import_color16.default(theme2.colors.text).alpha(theme2.dark ? 0.7 : 0.54).rgb().string();
+  const uncheckedColor = rest.uncheckedColor || (0, import_color16.default)(theme2.colors.text).alpha(theme2.dark ? 0.7 : 0.54).rgb().string();
   let rippleColor, checkboxColor;
   if (disabled) {
-    rippleColor = import_color16.default(theme2.colors.text).alpha(0.16).rgb().string();
+    rippleColor = (0, import_color16.default)(theme2.colors.text).alpha(0.16).rgb().string();
     checkboxColor = theme2.colors.disabled;
   } else {
-    rippleColor = import_color16.default(checkedColor).fade(0.32).rgb().string();
+    rippleColor = (0, import_color16.default)(checkedColor).fade(0.32).rgb().string();
     checkboxColor = checked ? checkedColor : uncheckedColor;
   }
   const borderWidth = scaleAnim.interpolate({
@@ -46745,11 +46856,11 @@ var CheckboxWithTheme = withTheme(Checkbox);
 
 // node_modules/react-native-paper/lib/module/components/Checkbox/CheckboxItem.js
 var React83 = __toModule(require_react());
-var import_react_native47 = __toModule(require_dist());
+var import_react_native47 = require_dist();
 var CheckboxItem = ({
   style,
   status,
-  label,
+  label: label2,
   onPress,
   labelStyle,
   theme: theme2,
@@ -46780,7 +46891,7 @@ var CheckboxItem = ({
     style: [styles52.label, {
       color: theme2.colors.text
     }, labelStyle]
-  }, label), checkbox));
+  }, label2), checkbox));
 };
 CheckboxItem.displayName = "Checkbox.Item";
 var CheckboxItem_default = withTheme(CheckboxItem);
@@ -46809,7 +46920,7 @@ var Checkbox_default2 = Checkbox2;
 
 // node_modules/react-native-paper/lib/module/components/Chip.js
 var React84 = __toModule(require_react());
-var import_react_native48 = __toModule(require_dist());
+var import_react_native48 = require_dist();
 var import_color17 = __toModule(require_color());
 function _extends48() {
   _extends48 = Object.assign || function(target) {
@@ -46877,12 +46988,12 @@ var Chip = ({
     backgroundColor = defaultBackgroundColor,
     borderRadius = 16
   } = import_react_native48.StyleSheet.flatten(style) || {};
-  const borderColor = mode === "outlined" ? import_color17.default(selectedColor !== void 0 ? selectedColor : import_color17.default(dark ? white : black)).alpha(0.29).rgb().string() : backgroundColor;
-  const textColor = disabled ? colors.disabled : import_color17.default(selectedColor !== void 0 ? selectedColor : colors.text).alpha(0.87).rgb().string();
-  const iconColor = disabled ? colors.disabled : import_color17.default(selectedColor !== void 0 ? selectedColor : colors.text).alpha(0.54).rgb().string();
+  const borderColor = mode === "outlined" ? (0, import_color17.default)(selectedColor !== void 0 ? selectedColor : (0, import_color17.default)(dark ? white : black)).alpha(0.29).rgb().string() : backgroundColor;
+  const textColor = disabled ? colors.disabled : (0, import_color17.default)(selectedColor !== void 0 ? selectedColor : colors.text).alpha(0.87).rgb().string();
+  const iconColor = disabled ? colors.disabled : (0, import_color17.default)(selectedColor !== void 0 ? selectedColor : colors.text).alpha(0.54).rgb().string();
   const backgroundColorString = typeof backgroundColor === "string" ? backgroundColor : defaultBackgroundColor;
-  const selectedBackgroundColor = (dark ? import_color17.default(backgroundColorString).lighten(mode === "outlined" ? 0.2 : 0.4) : import_color17.default(backgroundColorString).darken(mode === "outlined" ? 0.08 : 0.2)).rgb().string();
-  const underlayColor = selectedColor ? import_color17.default(selectedColor).fade(0.5).rgb().string() : selectedBackgroundColor;
+  const selectedBackgroundColor = (dark ? (0, import_color17.default)(backgroundColorString).lighten(mode === "outlined" ? 0.2 : 0.4) : (0, import_color17.default)(backgroundColorString).darken(mode === "outlined" ? 0.08 : 0.2)).rgb().string();
+  const underlayColor = selectedColor ? (0, import_color17.default)(selectedColor).fade(0.5).rgb().string() : selectedBackgroundColor;
   const accessibilityTraits = ["button"];
   const accessibilityState = {
     selected,
@@ -47018,11 +47129,11 @@ var Chip_default = withTheme(Chip);
 
 // node_modules/react-native-paper/lib/module/components/DataTable/DataTable.js
 var React92 = __toModule(require_react());
-var import_react_native56 = __toModule(require_dist());
+var import_react_native56 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/DataTable/DataTableCell.js
 var React85 = __toModule(require_react());
-var import_react_native49 = __toModule(require_dist());
+var import_react_native49 = require_dist();
 function _extends49() {
   _extends49 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -47063,7 +47174,7 @@ var DataTableCell_default = DataTableCell;
 // node_modules/react-native-paper/lib/module/components/DataTable/DataTableHeader.js
 var React86 = __toModule(require_react());
 var import_color18 = __toModule(require_color());
-var import_react_native50 = __toModule(require_dist());
+var import_react_native50 = require_dist();
 function _extends50() {
   _extends50 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -47084,7 +47195,7 @@ var DataTableHeader = ({
   theme: theme2,
   ...rest
 }) => {
-  const borderBottomColor = import_color18.default(theme2.dark ? white : black).alpha(0.12).rgb().string();
+  const borderBottomColor = (0, import_color18.default)(theme2.dark ? white : black).alpha(0.12).rgb().string();
   return /* @__PURE__ */ React86.createElement(import_react_native50.View, _extends50({}, rest, {
     style: [styles55.header, {
       borderBottomColor
@@ -47104,7 +47215,7 @@ var DataTableHeader_default = withTheme(DataTableHeader);
 
 // node_modules/react-native-paper/lib/module/components/DataTable/DataTableTitle.js
 var React87 = __toModule(require_react());
-var import_react_native51 = __toModule(require_dist());
+var import_react_native51 = require_dist();
 var import_color19 = __toModule(require_color());
 function _extends51() {
   _extends51 = Object.assign || function(target) {
@@ -47140,7 +47251,7 @@ var DataTableTitle = ({
       useNativeDriver: true
     }).start();
   }, [sortDirection, spinAnim]);
-  const textColor = import_color19.default(theme2.colors.text).alpha(0.6).rgb().string();
+  const textColor = (0, import_color19.default)(theme2.colors.text).alpha(0.6).rgb().string();
   const spin = spinAnim.interpolate({
     inputRange: [0, 1],
     outputRange: ["0deg", "180deg"]
@@ -47199,17 +47310,17 @@ var DataTableTitle_default = withTheme(DataTableTitle);
 
 // node_modules/react-native-paper/lib/module/components/DataTable/DataTablePagination.js
 var React90 = __toModule(require_react());
-var import_react_native54 = __toModule(require_dist());
+var import_react_native54 = require_dist();
 var import_color21 = __toModule(require_color());
 
 // node_modules/react-native-paper/lib/module/components/IconButton.js
 var React89 = __toModule(require_react());
-var import_react_native53 = __toModule(require_dist());
+var import_react_native53 = require_dist();
 var import_color20 = __toModule(require_color());
 
 // node_modules/react-native-paper/lib/module/components/CrossFadeIcon.js
 var React88 = __toModule(require_react());
-var import_react_native52 = __toModule(require_dist());
+var import_react_native52 = require_dist();
 var CrossFadeIcon = ({
   color: color39,
   size,
@@ -47323,7 +47434,7 @@ var IconButton = ({
   ...rest
 }) => {
   const iconColor = typeof customColor !== "undefined" ? customColor : theme2.colors.text;
-  const rippleColor = import_color20.default(iconColor).alpha(0.32).rgb().string();
+  const rippleColor = (0, import_color20.default)(iconColor).alpha(0.32).rgb().string();
   const IconComponent = animated ? CrossFadeIcon_default : Icon_default;
   const buttonSize = size * 1.5;
   return /* @__PURE__ */ React89.createElement(TouchableRipple_default, _extends52({
@@ -47390,7 +47501,7 @@ function _extends53() {
   return _extends53.apply(this, arguments);
 }
 var DataTablePagination = ({
-  label,
+  label: label2,
   page,
   numberOfPages,
   onPageChange,
@@ -47398,7 +47509,7 @@ var DataTablePagination = ({
   theme: theme2,
   ...rest
 }) => {
-  const labelColor = import_color21.default(theme2.colors.text).alpha(0.6).rgb().string();
+  const labelColor = (0, import_color21.default)(theme2.colors.text).alpha(0.6).rgb().string();
   return /* @__PURE__ */ React90.createElement(import_react_native54.View, _extends53({}, rest, {
     style: [styles59.container, style]
   }), /* @__PURE__ */ React90.createElement(Text_default2, {
@@ -47406,7 +47517,7 @@ var DataTablePagination = ({
       color: labelColor
     }],
     numberOfLines: 1
-  }, label), /* @__PURE__ */ React90.createElement(IconButton_default, {
+  }, label2), /* @__PURE__ */ React90.createElement(IconButton_default, {
     icon: ({
       size,
       color: color39
@@ -47452,7 +47563,7 @@ var DataTablePagination_default = withTheme(DataTablePagination);
 // node_modules/react-native-paper/lib/module/components/DataTable/DataTableRow.js
 var React91 = __toModule(require_react());
 var import_color22 = __toModule(require_color());
-var import_react_native55 = __toModule(require_dist());
+var import_react_native55 = require_dist();
 function _extends54() {
   _extends54 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -47474,7 +47585,7 @@ var DataTableRow = ({
   children,
   ...rest
 }) => {
-  const borderBottomColor = import_color22.default(theme2.dark ? white : black).alpha(0.12).rgb().string();
+  const borderBottomColor = (0, import_color22.default)(theme2.dark ? white : black).alpha(0.12).rgb().string();
   return /* @__PURE__ */ React91.createElement(TouchableRipple_default, _extends54({}, rest, {
     onPress,
     style: [styles60.container, {
@@ -47534,11 +47645,11 @@ var DataTable_default = DataTable;
 
 // node_modules/react-native-paper/lib/module/components/Dialog/Dialog.js
 var React98 = __toModule(require_react());
-var import_react_native62 = __toModule(require_dist());
+var import_react_native62 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/Modal.js
 var React93 = __toModule(require_react());
-var import_react_native57 = __toModule(require_dist());
+var import_react_native57 = require_dist();
 function _defineProperty27(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {value, enumerable: true, configurable: true, writable: true});
@@ -47700,7 +47811,7 @@ var styles62 = import_react_native57.StyleSheet.create({
 
 // node_modules/react-native-paper/lib/module/components/Dialog/DialogContent.js
 var React94 = __toModule(require_react());
-var import_react_native58 = __toModule(require_dist());
+var import_react_native58 = require_dist();
 function _extends56() {
   _extends56 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -47729,7 +47840,7 @@ var DialogContent_default = DialogContent;
 
 // node_modules/react-native-paper/lib/module/components/Dialog/DialogActions.js
 var React95 = __toModule(require_react());
-var import_react_native59 = __toModule(require_dist());
+var import_react_native59 = require_dist();
 function _extends57() {
   _extends57 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -47762,7 +47873,7 @@ var DialogActions_default = DialogActions;
 
 // node_modules/react-native-paper/lib/module/components/Dialog/DialogTitle.js
 var React96 = __toModule(require_react());
-var import_react_native60 = __toModule(require_dist());
+var import_react_native60 = require_dist();
 function _extends58() {
   _extends58 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -47801,7 +47912,7 @@ var DialogTitle_default = withTheme(DialogTitle);
 
 // node_modules/react-native-paper/lib/module/components/Dialog/DialogScrollArea.js
 var React97 = __toModule(require_react());
-var import_react_native61 = __toModule(require_dist());
+var import_react_native61 = require_dist();
 function _extends59() {
   _extends59 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -47876,7 +47987,7 @@ var Dialog_default = withTheme(Dialog);
 // node_modules/react-native-paper/lib/module/components/FAB/FAB.js
 var import_color23 = __toModule(require_color());
 var React99 = __toModule(require_react());
-var import_react_native63 = __toModule(require_dist());
+var import_react_native63 = require_dist();
 function _extends60() {
   _extends60 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -47894,8 +48005,8 @@ function _extends60() {
 var FAB = ({
   small,
   icon,
-  label,
-  accessibilityLabel = label,
+  label: label2,
+  accessibilityLabel = label2,
   accessibilityState,
   animated = true,
   color: customColor,
@@ -47932,7 +48043,7 @@ var FAB = ({
     }
   }, [visible, scale, visibility]);
   const IconComponent = animated ? CrossFadeIcon_default : Icon_default;
-  const disabledColor = import_color23.default(theme2.dark ? white : black).alpha(0.12).rgb().string();
+  const disabledColor = (0, import_color23.default)(theme2.dark ? white : black).alpha(0.12).rgb().string();
   const {
     backgroundColor = disabled ? disabledColor : theme2.colors.accent
   } = import_react_native63.StyleSheet.flatten(style) || {};
@@ -47940,11 +48051,11 @@ var FAB = ({
   if (typeof customColor !== "undefined") {
     foregroundColor = customColor;
   } else if (disabled) {
-    foregroundColor = import_color23.default(theme2.dark ? white : black).alpha(0.32).rgb().string();
+    foregroundColor = (0, import_color23.default)(theme2.dark ? white : black).alpha(0.32).rgb().string();
   } else {
     foregroundColor = getContrastingColor(backgroundColor, white, "rgba(0, 0, 0, .54)");
   }
-  const rippleColor = import_color23.default(foregroundColor).alpha(0.32).rgb().string();
+  const rippleColor = (0, import_color23.default)(foregroundColor).alpha(0.32).rgb().string();
   return /* @__PURE__ */ React99.createElement(Surface_default, _extends60({}, rest, {
     style: [{
       backgroundColor,
@@ -47971,7 +48082,7 @@ var FAB = ({
     style: styles68.touchable,
     testID
   }, /* @__PURE__ */ React99.createElement(import_react_native63.View, {
-    style: [styles68.content, label ? styles68.extended : small ? styles68.small : styles68.standard],
+    style: [styles68.content, label2 ? styles68.extended : small ? styles68.small : styles68.standard],
     pointerEvents: "none"
   }, icon && loading !== true ? /* @__PURE__ */ React99.createElement(IconComponent, {
     source: icon,
@@ -47980,13 +48091,13 @@ var FAB = ({
   }) : null, loading ? /* @__PURE__ */ React99.createElement(ActivityIndicator_default2, {
     size: 18,
     color: foregroundColor
-  }) : null, label ? /* @__PURE__ */ React99.createElement(Text_default2, {
+  }) : null, label2 ? /* @__PURE__ */ React99.createElement(Text_default2, {
     selectable: false,
     style: [styles68.label, uppercase && styles68.uppercaseLabel, {
       color: foregroundColor,
       ...theme2.fonts.medium
     }]
-  }, label) : null)));
+  }, label2) : null)));
 };
 var styles68 = import_react_native63.StyleSheet.create({
   container: {
@@ -48028,7 +48139,7 @@ var FABWithTheme = withTheme(FAB);
 
 // node_modules/react-native-paper/lib/module/components/FAB/FABGroup.js
 var React100 = __toModule(require_react());
-var import_react_native64 = __toModule(require_dist());
+var import_react_native64 = require_dist();
 var import_color24 = __toModule(require_color());
 var FABGroup = ({
   actions,
@@ -48075,7 +48186,7 @@ var FABGroup = ({
       }))]).start();
     }
   }, [open3, actions, backdrop, scale]);
-  const close = () => onStateChange({
+  const close2 = () => onStateChange({
     open: false
   });
   const toggle = () => onStateChange({
@@ -48084,7 +48195,7 @@ var FABGroup = ({
   const {
     colors
   } = theme2;
-  const labelColor = theme2.dark ? colors.text : import_color24.default(colors.text).fade(0.54).rgb().string();
+  const labelColor = theme2.dark ? colors.text : (0, import_color24.default)(colors.text).fade(0.54).rgb().string();
   const backdropOpacity = open3 ? backdrop.interpolate({
     inputRange: [0, 0.5, 1],
     outputRange: [0, 1, 1]
@@ -48102,7 +48213,7 @@ var FABGroup = ({
     pointerEvents: "box-none",
     style: [styles69.container, style]
   }, /* @__PURE__ */ React100.createElement(import_react_native64.TouchableWithoutFeedback, {
-    onPress: close
+    onPress: close2
   }, /* @__PURE__ */ React100.createElement(import_react_native64.Animated.View, {
     pointerEvents: open3 ? "auto" : "none",
     style: [styles69.backdrop, {
@@ -48129,7 +48240,7 @@ var FABGroup = ({
     }],
     onPress: () => {
       it.onPress();
-      close();
+      close2();
     },
     accessibilityLabel: it.accessibilityLabel !== "undefined" ? it.accessibilityLabel : it.label,
     accessibilityTraits: "button",
@@ -48152,7 +48263,7 @@ var FABGroup = ({
     }, it.style],
     onPress: () => {
       it.onPress();
-      close();
+      close2();
     },
     accessibilityLabel: typeof it.accessibilityLabel !== "undefined" ? it.accessibilityLabel : it.label,
     accessibilityTraits: "button",
@@ -48223,11 +48334,11 @@ var FAB_default2 = FAB2;
 // node_modules/react-native-paper/lib/module/components/HelperText.js
 var React102 = __toModule(require_react());
 var import_color25 = __toModule(require_color());
-var import_react_native66 = __toModule(require_dist());
+var import_react_native66 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/Typography/AnimatedText.js
 var React101 = __toModule(require_react());
-var import_react_native65 = __toModule(require_dist());
+var import_react_native65 = require_dist();
 function _extends61() {
   _extends61 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -48319,7 +48430,7 @@ var HelperText = ({
     colors,
     dark
   } = theme2;
-  const textColor = type === "error" ? colors.error : import_color25.default(colors.text).alpha(dark ? 0.7 : 0.54).rgb().string();
+  const textColor = type === "error" ? colors.error : (0, import_color25.default)(colors.text).alpha(dark ? 0.7 : 0.54).rgb().string();
   return /* @__PURE__ */ React102.createElement(AnimatedText_default, _extends62({
     onLayout: handleTextLayout,
     style: [styles71.text, padding !== "none" ? styles71.padding : {}, {
@@ -48347,7 +48458,7 @@ var HelperText_default = withTheme(HelperText);
 
 // node_modules/react-native-paper/lib/module/components/Menu/Menu.js
 var React106 = __toModule(require_react());
-var import_react_native68 = __toModule(require_dist());
+var import_react_native68 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/Portal/Portal.js
 var React104 = __toModule(require_react());
@@ -48421,7 +48532,7 @@ var Portal_default = withTheme(Portal);
 // node_modules/react-native-paper/lib/module/components/Menu/MenuItem.js
 var import_color26 = __toModule(require_color());
 var React105 = __toModule(require_react());
-var import_react_native67 = __toModule(require_dist());
+var import_react_native67 = require_dist();
 function _defineProperty30(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {value, enumerable: true, configurable: true, writable: true});
@@ -48443,9 +48554,9 @@ var MenuItem = class extends React105.Component {
       testID,
       titleStyle
     } = this.props;
-    const disabledColor = import_color26.default(theme2.dark ? white : black).alpha(0.32).rgb().string();
-    const titleColor = disabled ? disabledColor : import_color26.default(theme2.colors.text).alpha(0.87).rgb().string();
-    const iconColor = disabled ? disabledColor : import_color26.default(theme2.colors.text).alpha(0.54).rgb().string();
+    const disabledColor = (0, import_color26.default)(theme2.dark ? white : black).alpha(0.32).rgb().string();
+    const titleColor = disabled ? disabledColor : (0, import_color26.default)(theme2.colors.text).alpha(0.87).rgb().string();
+    const iconColor = disabled ? disabledColor : (0, import_color26.default)(theme2.colors.text).alpha(0.54).rgb().string();
     return /* @__PURE__ */ React105.createElement(TouchableRipple_default, {
       style: [styles72.container, style],
       onPress,
@@ -48597,7 +48708,7 @@ var Menu = class extends React106.Component {
     _defineProperty31(this, "isBrowser", () => import_react_native68.Platform.OS === "web" && "document" in window);
     _defineProperty31(this, "focusFirstDOMNode", (el) => {
       if (el && this.isBrowser()) {
-        const node = import_react_native68.findNodeHandle(el);
+        const node = (0, import_react_native68.findNodeHandle)(el);
         const focusableNode = node.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
         focusableNode === null || focusableNode === void 0 ? void 0 : focusableNode.focus();
       }
@@ -48871,7 +48982,7 @@ var Menu_default = withTheme(Menu);
 
 // node_modules/react-native-paper/lib/module/components/ProgressBar.js
 var React107 = __toModule(require_react());
-var import_react_native69 = __toModule(require_dist());
+var import_react_native69 = require_dist();
 var import_color27 = __toModule(require_color());
 function _extends63() {
   _extends63 = Object.assign || function(target) {
@@ -48967,7 +49078,7 @@ var ProgressBar2 = ({
     setWidth(event4.nativeEvent.layout.width);
   };
   const tintColor = color39 || theme2.colors.primary;
-  const trackTintColor = import_color27.default(tintColor).alpha(0.38).rgb().string();
+  const trackTintColor = (0, import_color27.default)(tintColor).alpha(0.38).rgb().string();
   return /* @__PURE__ */ React107.createElement(import_react_native69.View, _extends63({
     onLayout
   }, rest, {
@@ -49015,16 +49126,16 @@ var ProgressBar_default2 = withTheme(ProgressBar2);
 
 // node_modules/react-native-paper/lib/module/components/RadioButton/RadioButton.js
 var React111 = __toModule(require_react());
-var import_react_native73 = __toModule(require_dist());
+var import_react_native73 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/RadioButton/RadioButtonAndroid.js
 var React109 = __toModule(require_react());
-var import_react_native71 = __toModule(require_dist());
+var import_react_native71 = require_dist();
 var import_color28 = __toModule(require_color());
 
 // node_modules/react-native-paper/lib/module/components/RadioButton/RadioButtonGroup.js
 var React108 = __toModule(require_react());
-var import_react_native70 = __toModule(require_dist());
+var import_react_native70 = require_dist();
 var RadioButtonContext = /* @__PURE__ */ React108.createContext(null);
 var RadioButtonGroup = ({
   value,
@@ -49119,7 +49230,7 @@ var RadioButtonAndroid = ({
     }
   }, [status, borderAnim, radioAnim, scale]);
   const checkedColor = rest.color || theme2.colors.accent;
-  const uncheckedColor = rest.uncheckedColor || import_color28.default(theme2.colors.text).alpha(theme2.dark ? 0.7 : 0.54).rgb().string();
+  const uncheckedColor = rest.uncheckedColor || (0, import_color28.default)(theme2.colors.text).alpha(theme2.dark ? 0.7 : 0.54).rgb().string();
   let rippleColor, radioColor;
   return /* @__PURE__ */ React109.createElement(RadioButtonContext.Consumer, null, (context) => {
     const checked = isChecked({
@@ -49128,10 +49239,10 @@ var RadioButtonAndroid = ({
       value
     }) === "checked";
     if (disabled) {
-      rippleColor = import_color28.default(theme2.colors.text).alpha(0.16).rgb().string();
+      rippleColor = (0, import_color28.default)(theme2.colors.text).alpha(0.16).rgb().string();
       radioColor = theme2.colors.disabled;
     } else {
-      rippleColor = import_color28.default(checkedColor).fade(0.32).rgb().string();
+      rippleColor = (0, import_color28.default)(checkedColor).fade(0.32).rgb().string();
       radioColor = checked ? checkedColor : uncheckedColor;
     }
     return /* @__PURE__ */ React109.createElement(TouchableRipple_default, _extends64({}, rest, {
@@ -49197,7 +49308,7 @@ var RadioButtonAndroidWithTheme = withTheme(RadioButtonAndroid);
 
 // node_modules/react-native-paper/lib/module/components/RadioButton/RadioButtonIOS.js
 var React110 = __toModule(require_react());
-var import_react_native72 = __toModule(require_dist());
+var import_react_native72 = require_dist();
 var import_color29 = __toModule(require_color());
 function _extends65() {
   _extends65 = Object.assign || function(target) {
@@ -49225,9 +49336,9 @@ var RadioButtonIOS = ({
   const checkedColor = disabled ? theme2.colors.disabled : rest.color || theme2.colors.accent;
   let rippleColor;
   if (disabled) {
-    rippleColor = import_color29.default(theme2.colors.text).alpha(0.16).rgb().string();
+    rippleColor = (0, import_color29.default)(theme2.colors.text).alpha(0.16).rgb().string();
   } else {
-    rippleColor = import_color29.default(checkedColor).fade(0.32).rgb().string();
+    rippleColor = (0, import_color29.default)(checkedColor).fade(0.32).rgb().string();
   }
   return /* @__PURE__ */ React110.createElement(RadioButtonContext.Consumer, null, (context) => {
     const checked = isChecked({
@@ -49291,10 +49402,10 @@ var RadioButtonWithTheme = withTheme(RadioButton);
 
 // node_modules/react-native-paper/lib/module/components/RadioButton/RadioButtonItem.js
 var React112 = __toModule(require_react());
-var import_react_native74 = __toModule(require_dist());
+var import_react_native74 = require_dist();
 var RadioButtonItem = ({
   value,
-  label,
+  label: label2,
   style,
   labelStyle,
   onPress,
@@ -49340,7 +49451,7 @@ var RadioButtonItem = ({
       style: [styles77.label, {
         color: colors.text
       }, labelStyle]
-    }, label), radioButton));
+    }, label2), radioButton));
   });
 };
 RadioButtonItem.displayName = "RadioButton.Item";
@@ -49371,7 +49482,7 @@ var RadioButton_default2 = RadioButton2;
 
 // node_modules/react-native-paper/lib/module/components/Searchbar.js
 var React113 = __toModule(require_react());
-var import_react_native75 = __toModule(require_dist());
+var import_react_native75 = require_dist();
 var import_color30 = __toModule(require_color());
 function _extends66() {
   _extends66 = Object.assign || function(target) {
@@ -49437,8 +49548,8 @@ var Searchbar = /* @__PURE__ */ React113.forwardRef(({
   } = theme2;
   const textColor = colors.text;
   const font = fonts.regular;
-  const iconColor = customIconColor || (dark ? textColor : import_color30.default(textColor).alpha(0.54).rgb().string());
-  const rippleColor = import_color30.default(textColor).alpha(0.32).rgb().string();
+  const iconColor = customIconColor || (dark ? textColor : (0, import_color30.default)(textColor).alpha(0.54).rgb().string());
+  const rippleColor = (0, import_color30.default)(textColor).alpha(0.32).rgb().string();
   return /* @__PURE__ */ React113.createElement(Surface_default, {
     style: [{
       borderRadius: roundness,
@@ -49516,7 +49627,7 @@ var Searchbar_default = withTheme(Searchbar);
 
 // node_modules/react-native-paper/lib/module/components/Snackbar.js
 var React114 = __toModule(require_react());
-var import_react_native76 = __toModule(require_dist());
+var import_react_native76 = require_dist();
 function _extends67() {
   _extends67 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -49666,7 +49777,7 @@ var Snackbar_default = withTheme(Snackbar);
 
 // node_modules/react-native-paper/lib/module/components/Switch.js
 var React115 = __toModule(require_react());
-var import_react_native77 = __toModule(require_dist());
+var import_react_native77 = require_dist();
 var import_color31 = __toModule(require_color());
 function _extends68() {
   _extends68 = Object.assign || function(target) {
@@ -49692,7 +49803,7 @@ var Switch2 = ({
   ...rest
 }) => {
   const checkedColor = color39 || theme2.colors.accent;
-  const onTintColor = import_react_native77.Platform.OS === "ios" ? checkedColor : disabled ? theme2.dark ? import_color31.default(white).alpha(0.1).rgb().string() : import_color31.default(black).alpha(0.12).rgb().string() : import_color31.default(checkedColor).alpha(0.5).rgb().string();
+  const onTintColor = import_react_native77.Platform.OS === "ios" ? checkedColor : disabled ? theme2.dark ? (0, import_color31.default)(white).alpha(0.1).rgb().string() : (0, import_color31.default)(black).alpha(0.12).rgb().string() : (0, import_color31.default)(checkedColor).alpha(0.5).rgb().string();
   const thumbTintColor = import_react_native77.Platform.OS === "ios" ? void 0 : disabled ? theme2.dark ? grey800 : grey400 : value ? checkedColor : theme2.dark ? grey400 : grey50;
   const props = version && version.major === 0 && version.minor <= 56 ? {
     onTintColor,
@@ -49718,12 +49829,12 @@ var Switch_default2 = withTheme(Switch2);
 
 // node_modules/react-native-paper/lib/module/components/Appbar/Appbar.js
 var React120 = __toModule(require_react());
-var import_react_native80 = __toModule(require_dist());
+var import_react_native80 = require_dist();
 var import_color34 = __toModule(require_color());
 
 // node_modules/react-native-paper/lib/module/components/Appbar/AppbarContent.js
 var React116 = __toModule(require_react());
-var import_react_native78 = __toModule(require_dist());
+var import_react_native78 = require_dist();
 var import_color32 = __toModule(require_color());
 function _extends69() {
   _extends69 = Object.assign || function(target) {
@@ -49754,7 +49865,7 @@ var AppbarContent = ({
   const {
     fonts
   } = theme2;
-  const subtitleColor = import_color32.default(titleColor).alpha(0.7).rgb().string();
+  const subtitleColor = (0, import_color32.default)(titleColor).alpha(0.7).rgb().string();
   return /* @__PURE__ */ React116.createElement(import_react_native78.TouchableWithoutFeedback, {
     onPress,
     disabled: !onPress
@@ -49811,7 +49922,7 @@ function _extends70() {
 }
 var AppbarAction = ({
   size = 24,
-  color: iconColor = import_color33.default(black).alpha(0.54).rgb().string(),
+  color: iconColor = (0, import_color33.default)(black).alpha(0.54).rgb().string(),
   icon,
   disabled,
   onPress,
@@ -49834,7 +49945,7 @@ var React119 = __toModule(require_react());
 
 // node_modules/react-native-paper/lib/module/components/Appbar/AppbarBackIcon.js
 var React118 = __toModule(require_react());
-var import_react_native79 = __toModule(require_dist());
+var import_react_native79 = require_dist();
 var AppbarBackIcon = ({
   size,
   color: color39
@@ -49937,7 +50048,7 @@ var Appbar = ({
   if (typeof dark === "boolean") {
     isDark = dark;
   } else {
-    isDark = backgroundColor === "transparent" ? false : typeof backgroundColor === "string" ? !import_color34.default(backgroundColor).isLight() : true;
+    isDark = backgroundColor === "transparent" ? false : typeof backgroundColor === "string" ? !(0, import_color34.default)(backgroundColor).isLight() : true;
   }
   let shouldCenterContent = false;
   let shouldAddLeftSpacing = false;
@@ -50009,7 +50120,7 @@ var AppbarWithTheme = withTheme(Appbar);
 
 // node_modules/react-native-paper/lib/module/components/Appbar/AppbarHeader.js
 var React121 = __toModule(require_react());
-var import_react_native81 = __toModule(require_dist());
+var import_react_native81 = require_dist();
 function _extends73() {
   _extends73 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -50080,11 +50191,11 @@ var Appbar_default2 = Appbar2;
 
 // node_modules/react-native-paper/lib/module/components/TextInput/TextInput.js
 var React129 = __toModule(require_react());
-var import_react_native88 = __toModule(require_dist());
+var import_react_native88 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/TextInput/TextInputOutlined.js
 var React127 = __toModule(require_react());
-var import_react_native86 = __toModule(require_dist());
+var import_react_native86 = require_dist();
 var import_color36 = __toModule(require_color());
 
 // node_modules/react-native-paper/lib/module/components/TextInput/Adornment/TextInputAdornment.js
@@ -50092,7 +50203,7 @@ var import_react42 = __toModule(require_react());
 
 // node_modules/react-native-paper/lib/module/components/TextInput/Adornment/TextInputIcon.js
 var import_react40 = __toModule(require_react());
-var import_react_native82 = __toModule(require_dist());
+var import_react_native82 = require_dist();
 function _extends74() {
   _extends74 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -50182,7 +50293,7 @@ var TextInputIcon_default = TextInputIcon;
 // node_modules/react-native-paper/lib/module/components/TextInput/Adornment/TextInputAffix.js
 var import_react41 = __toModule(require_react());
 var import_color35 = __toModule(require_color());
-var import_react_native83 = __toModule(require_dist());
+var import_react_native83 = require_dist();
 
 // node_modules/react-native-paper/lib/module/components/TextInput/Adornment/enums.js
 var AdornmentType;
@@ -50244,7 +50355,7 @@ var TextInputAffix = ({
     visible,
     paddingHorizontal
   } = import_react41.default.useContext(AffixContext);
-  const textColor = import_color35.default(theme2.colors.text).alpha(theme2.dark ? 0.7 : 0.54).rgb().string();
+  const textColor = (0, import_color35.default)(theme2.colors.text).alpha(theme2.dark ? 0.7 : 0.54).rgb().string();
   const offset = typeof paddingHorizontal === "number" ? paddingHorizontal : AFFIX_OFFSET;
   const style = {
     top: topPosition,
@@ -50425,14 +50536,14 @@ var TextInputAdornment_default = TextInputAdornment;
 
 // node_modules/react-native-paper/lib/module/components/TextInput/Label/InputLabel.js
 var import_react43 = __toModule(require_react());
-var import_react_native84 = __toModule(require_dist());
+var import_react_native84 = require_dist();
 var InputLabel = (props) => {
   const {
     parentState,
     labelBackground
   } = props;
   const {
-    label,
+    label: label2,
     error: error2,
     onLayoutAnimatedText,
     hasActiveOutline,
@@ -50481,7 +50592,7 @@ var InputLabel = (props) => {
       })
     }]
   };
-  return label ? /* @__PURE__ */ import_react43.default.createElement(import_react_native84.Animated.View, {
+  return label2 ? /* @__PURE__ */ import_react43.default.createElement(import_react_native84.Animated.View, {
     pointerEvents: "none",
     style: [import_react_native84.StyleSheet.absoluteFill, {
       opacity: parentState.value || parentState.focused ? parentState.labelLayout.measured ? 1 : 0 : 1
@@ -50502,7 +50613,7 @@ var InputLabel = (props) => {
       })
     }],
     numberOfLines: 1
-  }, label), /* @__PURE__ */ import_react43.default.createElement(AnimatedText_default, {
+  }, label2), /* @__PURE__ */ import_react43.default.createElement(AnimatedText_default, {
     style: [placeholderStyle, {
       top: topPosition
     }, labelStyle, paddingOffset, {
@@ -50510,13 +50621,13 @@ var InputLabel = (props) => {
       opacity: placeholderOpacity
     }],
     numberOfLines: 1
-  }, label)) : null;
+  }, label2)) : null;
 };
 var InputLabel_default = InputLabel;
 
 // node_modules/react-native-paper/lib/module/components/TextInput/Label/LabelBackground.js
 var React126 = __toModule(require_react());
-var import_react_native85 = __toModule(require_dist());
+var import_react_native85 = require_dist();
 var LabelBackground = ({
   parentState,
   labelProps: {
@@ -50524,7 +50635,7 @@ var LabelBackground = ({
     baseLabelTranslateX,
     topPosition,
     hasActiveOutline,
-    label,
+    label: label2,
     backgroundColor
   },
   labelStyle
@@ -50542,7 +50653,7 @@ var LabelBackground = ({
       })
     }]
   };
-  return label ? [/* @__PURE__ */ React126.createElement(import_react_native85.Animated.View, {
+  return label2 ? [/* @__PURE__ */ React126.createElement(import_react_native85.Animated.View, {
     key: "labelBackground-view",
     pointerEvents: "none",
     style: [import_react_native85.StyleSheet.absoluteFill, styles86.view, {
@@ -50563,7 +50674,7 @@ var LabelBackground = ({
       }]
     }],
     numberOfLines: 1
-  }, label)] : null;
+  }, label2)] : null;
 };
 var LabelBackground_default = LabelBackground;
 var styles86 = import_react_native85.StyleSheet.create({
@@ -50633,7 +50744,7 @@ var calculateInputPadding = ({
 var adjustPaddingOut = ({
   pad,
   multiline,
-  label,
+  label: label2,
   scale,
   height,
   fontSize,
@@ -50651,14 +50762,14 @@ var adjustPaddingOut = ({
   }
   if (!isAndroid && multiline) {
     if (dense) {
-      if (label) {
+      if (label2) {
         result += scale < 1 ? Math.min(offset, refFontSize / 2 * scale) : 0;
       } else {
         result += 0;
       }
     }
     if (!dense) {
-      if (label) {
+      if (label2) {
         result += scale < 1 ? Math.min(offset, refFontSize * scale) : Math.min(offset / 2, refFontSize * scale);
       } else {
         result += scale < 1 ? Math.min(offset / 2, refFontSize * scale) : 0;
@@ -50675,7 +50786,7 @@ var adjustPaddingFlat = ({
   pad,
   scale,
   multiline,
-  label,
+  label: label2,
   height,
   offset,
   dense,
@@ -50692,7 +50803,7 @@ var adjustPaddingFlat = ({
   } = styles156;
   const refFontSize = scale * fontSize;
   if (!multiline) {
-    if (label) {
+    if (label2) {
       return {
         paddingTop,
         paddingBottom
@@ -50703,7 +50814,7 @@ var adjustPaddingFlat = ({
       paddingBottom: result
     };
   }
-  if (label) {
+  if (label2) {
     topResult = paddingTop;
     bottomResult = paddingBottom;
     if (!isAndroid) {
@@ -50804,7 +50915,7 @@ var TextInputOutlined = class extends React127.Component {
     const {
       disabled,
       editable,
-      label,
+      label: label2,
       error: error2,
       selectionColor,
       underlineColor,
@@ -50848,7 +50959,7 @@ var TextInputOutlined = class extends React127.Component {
     const fontSize = fontSizeStyle || MAXIMIZED_LABEL_FONT_SIZE;
     let inputTextColor, activeColor, outlineColor, placeholderColor, errorColor;
     if (disabled) {
-      inputTextColor = activeColor = import_color36.default(colors.text).alpha(0.54).rgb().string();
+      inputTextColor = activeColor = (0, import_color36.default)(colors.text).alpha(0.54).rgb().string();
       placeholderColor = outlineColor = colors.disabled;
     } else {
       inputTextColor = colors.text;
@@ -50885,7 +50996,7 @@ var TextInputOutlined = class extends React127.Component {
       dense: dense ? dense : null,
       topPosition,
       fontSize,
-      label,
+      label: label2,
       scale: fontScale,
       isAndroid: import_react_native86.Platform.OS === "android",
       styles: import_react_native86.StyleSheet.flatten(dense ? styles87.inputOutlinedDense : styles87.inputOutlined)
@@ -50898,7 +51009,7 @@ var TextInputOutlined = class extends React127.Component {
     const baseLabelTranslateY = -labelHalfHeight - (topPosition + OUTLINE_MINIMIZED_LABEL_Y_OFFSET);
     const placeholderOpacity = hasActiveOutline ? interpolatePlaceholder(parentState.labeled, hasActiveOutline) : parentState.labelLayout.measured ? 1 : 0;
     const labelProps = {
-      label,
+      label: label2,
       onLayoutAnimatedText,
       placeholderOpacity,
       error: error2,
@@ -50998,7 +51109,7 @@ var TextInputOutlined = class extends React127.Component {
       ...rest,
       ref: innerRef,
       onChangeText,
-      placeholder: label ? parentState.placeholder : this.props.placeholder,
+      placeholder: label2 ? parentState.placeholder : this.props.placeholder,
       placeholderTextColor: placeholderTextColor || placeholderColor,
       editable: !disabled && editable,
       selectionColor: typeof selectionColor === "undefined" ? activeColor : selectionColor,
@@ -51079,7 +51190,7 @@ var styles87 = import_react_native86.StyleSheet.create({
 
 // node_modules/react-native-paper/lib/module/components/TextInput/TextInputFlat.js
 var React128 = __toModule(require_react());
-var import_react_native87 = __toModule(require_dist());
+var import_react_native87 = require_dist();
 var import_color37 = __toModule(require_color());
 function _defineProperty33(obj, key, value) {
   if (key in obj) {
@@ -51100,7 +51211,7 @@ var TextInputFlat = class extends React128.Component {
     const {
       disabled,
       editable,
-      label,
+      label: label2,
       error: error2,
       selectionColor,
       underlineColor,
@@ -51169,7 +51280,7 @@ var TextInputFlat = class extends React128.Component {
     });
     let inputTextColor, activeColor, underlineColorCustom, placeholderColor, errorColor;
     if (disabled) {
-      inputTextColor = activeColor = import_color37.default(colors.text).alpha(0.54).rgb().string();
+      inputTextColor = activeColor = (0, import_color37.default)(colors.text).alpha(0.54).rgb().string();
       placeholderColor = colors.disabled;
       underlineColorCustom = "transparent";
     } else {
@@ -51180,7 +51291,7 @@ var TextInputFlat = class extends React128.Component {
       underlineColorCustom = underlineColor || colors.disabled;
     }
     const containerStyle = {
-      backgroundColor: theme2.dark ? import_color37.default(colors.background).lighten(0.24).rgb().string() : import_color37.default(colors.background).darken(0.06).rgb().string(),
+      backgroundColor: theme2.dark ? (0, import_color37.default)(colors.background).lighten(0.24).rgb().string() : (0, import_color37.default)(colors.background).darken(0.06).rgb().string(),
       borderTopLeftRadius: theme2.roundness,
       borderTopRightRadius: theme2.roundness
     };
@@ -51191,7 +51302,7 @@ var TextInputFlat = class extends React128.Component {
     const labelHalfWidth = labelWidth / 2;
     const labelHalfHeight = labelHeight / 2;
     const baseLabelTranslateX = (import_react_native87.I18nManager.isRTL ? 1 : -1) * (labelHalfWidth - labelScale * labelWidth / 2) + (1 - labelScale) * (import_react_native87.I18nManager.isRTL ? -1 : 1) * paddingLeft2;
-    const minInputHeight = dense ? (label ? MIN_DENSE_HEIGHT_WL : MIN_DENSE_HEIGHT2) - LABEL_PADDING_TOP_DENSE : MIN_HEIGHT2 - LABEL_PADDING_TOP2;
+    const minInputHeight = dense ? (label2 ? MIN_DENSE_HEIGHT_WL : MIN_DENSE_HEIGHT2) - LABEL_PADDING_TOP_DENSE : MIN_HEIGHT2 - LABEL_PADDING_TOP2;
     const inputHeight = calculateInputHeight(labelHeight, height, minInputHeight);
     const topPosition = calculateLabelTopPosition(labelHeight, inputHeight, multiline && height ? 0 : !height ? minInputHeight / 2 : 0);
     if (height && typeof height !== "number") {
@@ -51205,7 +51316,7 @@ var TextInputFlat = class extends React128.Component {
       dense: dense ? dense : null,
       topPosition,
       fontSize,
-      label,
+      label: label2,
       scale: fontScale,
       isAndroid: import_react_native87.Platform.OS === "android",
       styles: import_react_native87.StyleSheet.flatten(dense ? styles88.inputFlatDense : styles88.inputFlat)
@@ -51217,7 +51328,7 @@ var TextInputFlat = class extends React128.Component {
     });
     const baseLabelTranslateY = -labelHalfHeight - (topPosition + MINIMIZED_LABEL_Y_OFFSET);
     const placeholderOpacity = hasActiveOutline ? interpolatePlaceholder(parentState.labeled, hasActiveOutline) : parentState.labelLayout.measured ? 1 : 0;
-    const minHeight = height || (dense ? label ? MIN_DENSE_HEIGHT_WL : MIN_DENSE_HEIGHT2 : MIN_HEIGHT2);
+    const minHeight = height || (dense ? label2 ? MIN_DENSE_HEIGHT_WL : MIN_DENSE_HEIGHT2 : MIN_HEIGHT2);
     const flatHeight = inputHeight + (!height ? dense ? LABEL_PADDING_TOP_DENSE : LABEL_PADDING_TOP2 : 0);
     const iconTopPosition = (flatHeight - ADORNMENT_SIZE) / 2;
     const leftAffixTopPosition = leftLayout.height ? calculateFlatAffixTopPosition({
@@ -51231,7 +51342,7 @@ var TextInputFlat = class extends React128.Component {
       affixHeight: rightLayout.height
     }) : null;
     const labelProps = {
-      label,
+      label: label2,
       onLayoutAnimatedText,
       placeholderOpacity,
       error: error2,
@@ -51304,7 +51415,7 @@ var TextInputFlat = class extends React128.Component {
       ...rest,
       ref: innerRef,
       onChangeText,
-      placeholder: label ? parentState.placeholder : this.props.placeholder,
+      placeholder: label2 ? parentState.placeholder : this.props.placeholder,
       placeholderTextColor: placeholderTextColor !== null && placeholderTextColor !== void 0 ? placeholderTextColor : placeholderColor,
       editable: !disabled && editable,
       selectionColor: typeof selectionColor === "undefined" ? activeColor : selectionColor,
@@ -51664,7 +51775,7 @@ var TextInput_default2 = withTheme(TextInput3);
 
 // node_modules/react-native-paper/lib/module/components/ToggleButton/ToggleButton.js
 var React131 = __toModule(require_react());
-var import_react_native89 = __toModule(require_dist());
+var import_react_native89 = require_dist();
 var import_color38 = __toModule(require_color());
 
 // node_modules/react-native-paper/lib/module/components/ToggleButton/ToggleButtonGroup.js
@@ -51740,7 +51851,7 @@ var ToggleButton = ({
       style: [styles89.content, {
         backgroundColor,
         borderRadius,
-        borderColor: import_color38.default(theme2.dark ? white : black).alpha(0.29).rgb().string()
+        borderColor: (0, import_color38.default)(theme2.dark ? white : black).alpha(0.29).rgb().string()
       }, style]
     }, rest));
   });
@@ -51757,7 +51868,7 @@ var ToggleButtonWithTheme = withTheme(ToggleButton);
 
 // node_modules/react-native-paper/lib/module/components/ToggleButton/ToggleButtonRow.js
 var React132 = __toModule(require_react());
-var import_react_native90 = __toModule(require_dist());
+var import_react_native90 = require_dist();
 var ToggleButtonRow = ({
   value,
   onValueChange,
@@ -51816,7 +51927,7 @@ var ToggleButton_default2 = ToggleButton2;
 
 // node_modules/react-native-paper/lib/module/components/Typography/Headline.js
 var React133 = __toModule(require_react());
-var import_react_native91 = __toModule(require_dist());
+var import_react_native91 = require_dist();
 function _extends78() {
   _extends78 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -51848,7 +51959,7 @@ var styles91 = import_react_native91.StyleSheet.create({
 
 // node_modules/react-native-paper/lib/module/components/Typography/Paragraph.js
 var React134 = __toModule(require_react());
-var import_react_native92 = __toModule(require_dist());
+var import_react_native92 = require_dist();
 function _extends79() {
   _extends79 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -51880,7 +51991,7 @@ var styles92 = import_react_native92.StyleSheet.create({
 
 // node_modules/react-native-paper/lib/module/components/Typography/Subheading.js
 var React135 = __toModule(require_react());
-var import_react_native93 = __toModule(require_dist());
+var import_react_native93 = require_dist();
 function _extends80() {
   _extends80 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -54041,7 +54152,7 @@ var getRouteConfigsFromChildren = (children) => {
         if (children2 != null && typeof children2 !== "function") {
           throw new Error("Got an invalid value for 'children' prop for the screen '".concat(name, "'. It must be a function returning a React Element."));
         }
-        if (component !== void 0 && !import_react_is.isValidElementType(component)) {
+        if (component !== void 0 && !(0, import_react_is.isValidElementType)(component)) {
           throw new Error("Got an invalid value for 'component' prop for the screen '".concat(name, "'. It must be a valid React Component."));
         }
         if (getComponent !== void 0 && typeof getComponent !== "function") {
@@ -54570,7 +54681,7 @@ var createConfigItem = (legacy, screen, routeNames, pattern2, path, parse2) => {
     if (it.startsWith(":")) {
       return "(([^/]+\\/)".concat(it.endsWith("?") ? "?" : "", ")");
     }
-    return "".concat(it === "*" ? ".*" : import_escape_string_regexp.default(it), "\\/");
+    return "".concat(it === "*" ? ".*" : (0, import_escape_string_regexp.default)(it), "\\/");
   }).join(""), ")")) : void 0;
   return {
     screen,
@@ -55356,7 +55467,7 @@ function useDocumentTitle(ref, {
 
 // node_modules/@react-navigation/native/lib/module/useBackButton.js
 var React178 = __toModule(require_react());
-var import_react_native94 = __toModule(require_dist());
+var import_react_native94 = require_dist();
 function useBackButton(ref) {
   React178.useEffect(() => {
     const subscription = import_react_native94.BackHandler.addEventListener("hardwareBackPress", () => {
@@ -55461,11 +55572,11 @@ function useTheme2() {
 
 // node_modules/@react-navigation/native/lib/module/Link.js
 var React183 = __toModule(require_react());
-var import_react_native96 = __toModule(require_dist());
+var import_react_native96 = require_dist();
 
 // node_modules/@react-navigation/native/lib/module/useLinkProps.js
 var React182 = __toModule(require_react());
-var import_react_native95 = __toModule(require_dist());
+var import_react_native95 = require_dist();
 
 // node_modules/@react-navigation/native/lib/module/useLinkTo.js
 var React181 = __toModule(require_react());
@@ -55623,10 +55734,10 @@ var import_setimmediate = __toModule(require_setImmediate());
 var import_react65 = __toModule(require_react());
 
 // node_modules/@react-navigation/stack/lib/module/TransitionConfigs/CardStyleInterpolators.js
-var import_react_native98 = __toModule(require_dist());
+var import_react_native98 = require_dist();
 
 // node_modules/@react-navigation/stack/lib/module/utils/conditional.js
-var import_react_native97 = __toModule(require_dist());
+var import_react_native97 = require_dist();
 var {
   add: add3,
   multiply: multiply3
@@ -55825,7 +55936,7 @@ function forNoAnimation() {
 }
 
 // node_modules/@react-navigation/stack/lib/module/TransitionConfigs/HeaderStyleInterpolators.js
-var import_react_native99 = __toModule(require_dist());
+var import_react_native99 = require_dist();
 var {
   add: add5
 } = import_react_native99.Animated;
@@ -55983,7 +56094,7 @@ function forNoAnimation2() {
 }
 
 // node_modules/@react-navigation/stack/lib/module/TransitionConfigs/TransitionSpecs.js
-var import_react_native100 = __toModule(require_dist());
+var import_react_native100 = require_dist();
 var TransitionIOSSpec = {
   animation: "spring",
   config: {
@@ -56025,7 +56136,7 @@ var ScaleFromCenterAndroidSpec = {
 };
 
 // node_modules/@react-navigation/stack/lib/module/TransitionConfigs/TransitionPresets.js
-var import_react_native101 = __toModule(require_dist());
+var import_react_native101 = require_dist();
 var ANDROID_VERSION_PIE = 28;
 var ANDROID_VERSION_10 = 29;
 var SlideFromRightIOS = {
@@ -56085,19 +56196,19 @@ var ModalTransition = import_react_native101.Platform.select({
 
 // node_modules/@react-navigation/stack/lib/module/navigators/createStackNavigator.js
 var React207 = __toModule(require_react());
-var import_react_native119 = __toModule(require_dist());
+var import_react_native119 = require_dist();
 
 // node_modules/@react-navigation/stack/lib/module/views/Stack/StackView.js
 var React206 = __toModule(require_react());
-var import_react_native118 = __toModule(require_dist());
+var import_react_native118 = require_dist();
 
 // node_modules/react-native-safe-area-context/lib/module/SafeAreaContext.js
 var React186 = __toModule(require_react());
-var import_react_native103 = __toModule(require_dist());
+var import_react_native103 = require_dist();
 
 // node_modules/react-native-safe-area-context/lib/module/NativeSafeAreaProvider.js
 var React185 = __toModule(require_react());
-var import_react_native102 = __toModule(require_dist());
+var import_react_native102 = require_dist();
 var CSSTransitions = {
   WebkitTransition: "webkitTransitionEnd",
   Transition: "transitionEnd",
@@ -56279,7 +56390,7 @@ var initialWindowSafeAreaInsets = null;
 
 // node_modules/@react-navigation/stack/lib/module/views/GestureHandler.js
 var React187 = __toModule(require_react());
-var import_react_native104 = __toModule(require_dist());
+var import_react_native104 = require_dist();
 var Dummy = ({
   children
 }) => /* @__PURE__ */ React187.createElement(React187.Fragment, null, children);
@@ -56296,11 +56407,11 @@ var GestureState = {
 
 // node_modules/@react-navigation/stack/lib/module/views/Stack/CardStack.js
 var React200 = __toModule(require_react());
-var import_react_native114 = __toModule(require_dist());
+var import_react_native114 = require_dist();
 
 // node_modules/@react-navigation/stack/lib/module/views/Screens.js
 var React188 = __toModule(require_react());
-var import_react_native105 = __toModule(require_dist());
+var import_react_native105 = require_dist();
 var _Screens;
 function _extends82() {
   _extends82 = Object.assign || function(target) {
@@ -56379,11 +56490,11 @@ var MaybeScreen = ({
 
 // node_modules/@react-navigation/stack/lib/module/views/Header/HeaderSegment.js
 var React193 = __toModule(require_react());
-var import_react_native109 = __toModule(require_dist());
+var import_react_native109 = require_dist();
 
 // node_modules/@react-navigation/stack/lib/module/views/Header/HeaderBackButton.js
 var React190 = __toModule(require_react());
-var import_react_native107 = __toModule(require_dist());
+var import_react_native107 = require_dist();
 
 // node_modules/@react-navigation/stack/lib/module/views/MaskedView.js
 function MaskedView({
@@ -56394,7 +56505,7 @@ function MaskedView({
 
 // node_modules/@react-navigation/stack/lib/module/views/TouchableItem.js
 var React189 = __toModule(require_react());
-var import_react_native106 = __toModule(require_dist());
+var import_react_native106 = require_dist();
 function _extends83() {
   _extends83 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -56436,7 +56547,7 @@ function HeaderBackButton({
   disabled,
   allowFontScaling,
   backImage,
-  label,
+  label: label2,
   labelStyle,
   labelVisible = import_react_native107.Platform.OS === "ios",
   onLabelLayout,
@@ -56446,7 +56557,7 @@ function HeaderBackButton({
   tintColor: customTintColor,
   titleLayout,
   truncatedLabel = "Back",
-  accessibilityLabel = label && label !== "Back" ? "".concat(label, ", back") : "Go back",
+  accessibilityLabel = label2 && label2 !== "Back" ? "".concat(label2, ", back") : "Go back",
   style
 }) {
   const {
@@ -56464,7 +56575,7 @@ function HeaderBackButton({
     setInitialLabelWidth(e.nativeEvent.layout.x + e.nativeEvent.layout.width);
   };
   const shouldTruncateLabel = () => {
-    return !label || initialLabelWidth && titleLayout && screenLayout && (screenLayout.width - titleLayout.width) / 2 < initialLabelWidth + 26;
+    return !label2 || initialLabelWidth && titleLayout && screenLayout && (screenLayout.width - titleLayout.width) / 2 < initialLabelWidth + 26;
   };
   const renderBackImage = () => {
     if (backImage) {
@@ -56482,7 +56593,7 @@ function HeaderBackButton({
     }
   };
   const renderLabel = () => {
-    const leftLabelText = shouldTruncateLabel() ? truncatedLabel : label;
+    const leftLabelText = shouldTruncateLabel() ? truncatedLabel : label2;
     if (!labelVisible || leftLabelText === void 0) {
       return null;
     }
@@ -56492,7 +56603,7 @@ function HeaderBackButton({
       }] : null
     }, /* @__PURE__ */ React190.createElement(import_react_native107.Animated.Text, {
       accessible: false,
-      onLayout: leftLabelText === label ? handleLabelLayout : void 0,
+      onLayout: leftLabelText === label2 ? handleLabelLayout : void 0,
       style: [styles95.label, tintColor ? {
         color: tintColor
       } : null, labelStyle],
@@ -56610,7 +56721,7 @@ var styles95 = import_react_native107.StyleSheet.create({
 
 // node_modules/@react-navigation/stack/lib/module/views/Header/HeaderBackground.js
 var React191 = __toModule(require_react());
-var import_react_native108 = __toModule(require_dist());
+var import_react_native108 = require_dist();
 function _extends84() {
   _extends84 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -56994,16 +57105,16 @@ var styles97 = import_react_native109.StyleSheet.create({
 
 // node_modules/@react-navigation/stack/lib/module/views/Stack/CardContainer.js
 var React199 = __toModule(require_react());
-var import_react_native113 = __toModule(require_dist());
+var import_react_native113 = require_dist();
 
 // node_modules/@react-navigation/stack/lib/module/views/Stack/Card.js
 var React196 = __toModule(require_react());
-var import_react_native112 = __toModule(require_dist());
+var import_react_native112 = require_dist();
 var import_color39 = __toModule(require_color());
 
 // node_modules/@react-navigation/stack/lib/module/views/Stack/CardSheet.js
 var React194 = __toModule(require_react());
-var import_react_native110 = __toModule(require_dist());
+var import_react_native110 = require_dist();
 function _extends85() {
   _extends85 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -57053,7 +57164,7 @@ var React195 = __toModule(require_react());
 var CardAnimationContext_default = /* @__PURE__ */ React195.createContext(void 0);
 
 // node_modules/@react-navigation/stack/lib/module/utils/getInvertedMultiplier.js
-var import_react_native111 = __toModule(require_dist());
+var import_react_native111 = require_dist();
 function getInvertedMultiplier(gestureDirection) {
   switch (gestureDirection) {
     case "vertical":
@@ -57430,7 +57541,7 @@ var Card2 = class extends React196.Component {
     const {
       backgroundColor
     } = import_react_native112.StyleSheet.flatten(contentStyle || {});
-    const isTransparent = typeof backgroundColor === "string" ? import_color39.default(backgroundColor).alpha() === 0 : false;
+    const isTransparent = typeof backgroundColor === "string" ? (0, import_color39.default)(backgroundColor).alpha() === 0 : false;
     return /* @__PURE__ */ React196.createElement(CardAnimationContext_default.Provider, {
       value: animationContext
     }, /* @__PURE__ */ React196.createElement(import_react_native112.Animated.View, {
@@ -58187,7 +58298,7 @@ var styles101 = import_react_native114.StyleSheet.create({
 
 // node_modules/@react-navigation/stack/lib/module/views/KeyboardManager.js
 var React201 = __toModule(require_react());
-var import_react_native115 = __toModule(require_dist());
+var import_react_native115 = require_dist();
 function _defineProperty37(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {value, enumerable: true, configurable: true, writable: true});
@@ -58267,14 +58378,14 @@ var KeyboardManager_default = KeyboardManager;
 
 // node_modules/@react-navigation/stack/lib/module/views/Header/HeaderContainer.js
 var React204 = __toModule(require_react());
-var import_react_native117 = __toModule(require_dist());
+var import_react_native117 = require_dist();
 
 // node_modules/@react-navigation/stack/lib/module/views/Header/Header.js
 var React203 = __toModule(require_react());
 
 // node_modules/@react-navigation/stack/lib/module/views/Header/HeaderTitle.js
 var React202 = __toModule(require_react());
-var import_react_native116 = __toModule(require_dist());
+var import_react_native116 = require_dist();
 function _extends88() {
   _extends88 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -58879,7 +58990,7 @@ var import_react51 = __toModule(require_react());
 
 // src/components/Background.tsx
 var import_react45 = __toModule(require_react());
-var import_react_native120 = __toModule(require_dist());
+var import_react_native120 = require_dist();
 var Background = ({children}) => /* @__PURE__ */ import_react45.default.createElement(import_react_native120.ImageBackground, {
   source: require_background_dot(),
   resizeMode: "repeat",
@@ -58903,11 +59014,11 @@ var styles105 = import_react_native120.StyleSheet.create({
     justifyContent: "center"
   }
 });
-var Background_default = import_react45.memo(Background);
+var Background_default = (0, import_react45.memo)(Background);
 
 // src/components/Logo.tsx
 var import_react46 = __toModule(require_react());
-var import_react_native121 = __toModule(require_dist());
+var import_react_native121 = require_dist();
 var Logo = () => /* @__PURE__ */ import_react46.default.createElement(import_react_native121.Image, {
   source: require_logo(),
   style: styles106.image
@@ -58919,11 +59030,11 @@ var styles106 = import_react_native121.StyleSheet.create({
     marginBottom: 12
   }
 });
-var Logo_default = import_react46.memo(Logo);
+var Logo_default = (0, import_react46.memo)(Logo);
 
 // src/components/Header.tsx
 var import_react48 = __toModule(require_react());
-var import_react_native122 = __toModule(require_dist());
+var import_react_native122 = require_dist();
 
 // src/core/theme.tsx
 var import_react47 = __toModule(require_react());
@@ -58967,19 +59078,19 @@ var CustomDarkTheme = {
   }
 };
 var theme = CustomDefaultTheme;
-var ThemeContext2 = import_react47.createContext({
+var ThemeContext2 = (0, import_react47.createContext)({
   toggleTheme: () => {
   },
   isThemeDark: false,
   theme: CustomDefaultTheme
 });
 var ThemeProvider3 = ({children}) => {
-  const [isThemeDark, setIsThemeDark] = import_react47.useState(false);
+  const [isThemeDark, setIsThemeDark] = (0, import_react47.useState)(false);
   const theme2 = isThemeDark ? CustomDarkTheme : CustomDefaultTheme;
-  const toggleTheme = import_react47.useCallback(() => {
+  const toggleTheme = (0, import_react47.useCallback)(() => {
     return setIsThemeDark(!isThemeDark);
   }, [isThemeDark]);
-  const preferences = import_react47.useMemo(() => ({
+  const preferences = (0, import_react47.useMemo)(() => ({
     toggleTheme,
     isThemeDark,
     theme: theme2
@@ -59001,11 +59112,11 @@ var styles107 = import_react_native122.StyleSheet.create({
     paddingVertical: 14
   }
 });
-var Header_default2 = import_react48.memo(Header2);
+var Header_default2 = (0, import_react48.memo)(Header2);
 
 // src/components/Button.tsx
 var import_react49 = __toModule(require_react());
-var import_react_native123 = __toModule(require_dist());
+var import_react_native123 = require_dist();
 var Button3 = ({mode, style, children, ...props}) => {
   const theme2 = useTheme();
   return /* @__PURE__ */ import_react49.default.createElement(Button_default2, {
@@ -59030,11 +59141,11 @@ var styles108 = import_react_native123.StyleSheet.create({
     lineHeight: 26
   }
 });
-var Button_default3 = import_react49.memo(Button3);
+var Button_default3 = (0, import_react49.memo)(Button3);
 
 // src/components/Paragraph.tsx
 var import_react50 = __toModule(require_react());
-var import_react_native124 = __toModule(require_dist());
+var import_react_native124 = require_dist();
 var Paragraph2 = ({children}) => /* @__PURE__ */ import_react50.default.createElement(import_react_native124.Text, {
   style: styles109.text
 }, children);
@@ -59047,19 +59158,19 @@ var styles109 = import_react_native124.StyleSheet.create({
     marginBottom: 14
   }
 });
-var Paragraph_default2 = import_react50.memo(Paragraph2);
+var Paragraph_default2 = (0, import_react50.memo)(Paragraph2);
 
 // node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/FontAwesome.ttf
-var FontAwesome_default = "/FontAwesome.COY6VNS2.ttf";
+var FontAwesome_default = "/assets/FontAwesome-COY6VNS2.ttf";
 
 // node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/glyphmaps/FontAwesome.json
-var FontAwesome_default2 = "{}";
+var FontAwesome_default2 = {};
 
 // node_modules/@expo/vector-icons/build/FontAwesome.js
 var FontAwesome_default3 = createIconSet_default(FontAwesome_default2, "FontAwesome", FontAwesome_default);
 
 // src/screens/HomeScreen.tsx
-var MyComponent = () => /* @__PURE__ */ import_react51.default.createElement(MaterialCommunityIcons_default2, {
+var MyComponent = () => /* @__PURE__ */ import_react51.default.createElement(MaterialCommunityIcons_default, {
   name: "camera",
   color: colors_exports.red500,
   size: 20,
@@ -59072,15 +59183,15 @@ var HomeScreen = ({navigation}) => /* @__PURE__ */ import_react51.default.create
   mode: "outlined",
   onPress: () => navigation.navigate("RegisterScreen")
 }, "Sign Up"));
-var HomeScreen_default = import_react51.memo(HomeScreen);
+var HomeScreen_default = (0, import_react51.memo)(HomeScreen);
 
 // src/screens/LoginScreen.tsx
 var import_react54 = __toModule(require_react());
-var import_react_native128 = __toModule(require_dist());
+var import_react_native128 = require_dist();
 
 // src/components/TextInput.tsx
 var import_react52 = __toModule(require_react());
-var import_react_native125 = __toModule(require_dist());
+var import_react_native125 = require_dist();
 var TextInput5 = ({errorText, ...props}) => /* @__PURE__ */ import_react52.default.createElement(import_react_native125.View, {
   style: styles110.container
 }, /* @__PURE__ */ import_react52.default.createElement(TextInput_default2, {
@@ -59107,14 +59218,14 @@ var styles110 = import_react_native125.StyleSheet.create({
     paddingTop: 4
   }
 });
-var TextInput_default3 = import_react52.memo(TextInput5);
+var TextInput_default3 = (0, import_react52.memo)(TextInput5);
 
 // src/components/BackButton.tsx
 var import_react53 = __toModule(require_react());
-var import_react_native127 = __toModule(require_dist());
+var import_react_native127 = require_dist();
 
 // node_modules/react-native-status-bar-height/index.js
-var import_react_native126 = __toModule(require_dist());
+var import_react_native126 = require_dist();
 var STATUSBAR_DEFAULT_HEIGHT = 20;
 var STATUSBAR_X_HEIGHT = 44;
 var STATUSBAR_IP12_HEIGHT = 47;
@@ -59185,14 +59296,14 @@ var styles111 = import_react_native127.StyleSheet.create({
     height: 24
   }
 });
-var BackButton_default = import_react53.memo(BackButton);
+var BackButton_default = (0, import_react53.memo)(BackButton);
 
 // src/core/utils.tsx
-var emailValidator = (email) => {
+var emailValidator = (email2) => {
   const re = /\S+@\S+\.\S+/;
-  if (!email || email.length <= 0)
+  if (!email2 || email2.length <= 0)
     return "Email cannot be empty.";
-  if (!re.test(email))
+  if (!re.test(email2))
     return "Ooops! We need a valid email address.";
   return "";
 };
@@ -59209,13 +59320,13 @@ var nameValidator = (name) => {
 
 // src/screens/LoginScreen.tsx
 var LoginScreen = ({navigation}) => {
-  const [email, setEmail] = import_react54.useState({value: "", error: ""});
-  const [password, setPassword] = import_react54.useState({value: "", error: ""});
+  const [email2, setEmail] = (0, import_react54.useState)({value: "", error: ""});
+  const [password, setPassword] = (0, import_react54.useState)({value: "", error: ""});
   const _onLoginPressed = () => {
-    const emailError = emailValidator(email.value);
+    const emailError = emailValidator(email2.value);
     const passwordError = passwordValidator(password.value);
     if (emailError || passwordError) {
-      setEmail({...email, error: emailError});
+      setEmail({...email2, error: emailError});
       setPassword({...password, error: passwordError});
       return;
     }
@@ -59226,10 +59337,10 @@ var LoginScreen = ({navigation}) => {
   }), /* @__PURE__ */ import_react54.default.createElement(Logo_default, null), /* @__PURE__ */ import_react54.default.createElement(Header_default2, null, "Welcome back."), /* @__PURE__ */ import_react54.default.createElement(TextInput_default3, {
     label: "Email",
     returnKeyType: "next",
-    value: email.value,
+    value: email2.value,
     onChangeText: (text) => setEmail({value: text, error: ""}),
-    error: !!email.error,
-    errorText: email.error,
+    error: !!email2.error,
+    errorText: email2.error,
     autoCapitalize: "none",
     autoCompleteType: "email",
     textContentType: "emailAddress",
@@ -59246,7 +59357,10 @@ var LoginScreen = ({navigation}) => {
     style: styles112.forgotPassword
   }, /* @__PURE__ */ import_react54.default.createElement(import_react_native128.Pressable, {
     onPress: () => navigation.navigate("ForgotPasswordScreen"),
-    style: ({pressed}) => [{opacity: pressed ? 0.6 : 1}, styles112.label]
+    style: ({pressed}) => [
+      {opacity: pressed ? 0.6 : 1},
+      {color: theme.colors.secondary}
+    ]
   }, /* @__PURE__ */ import_react54.default.createElement(import_react_native128.Text, {
     style: styles112.label
   }, "Forgot your password?"))), /* @__PURE__ */ import_react54.default.createElement(Button_default3, {
@@ -59258,7 +59372,10 @@ var LoginScreen = ({navigation}) => {
     style: styles112.label
   }, "Don\u2019t have an account? "), /* @__PURE__ */ import_react54.default.createElement(import_react_native128.Pressable, {
     onPress: () => navigation.navigate("RegisterScreen"),
-    style: ({pressed}) => [{opacity: pressed ? 0.6 : 1}, styles112.label]
+    style: ({pressed}) => [
+      {opacity: pressed ? 0.6 : 1},
+      {color: theme.colors.secondary}
+    ]
   }, /* @__PURE__ */ import_react54.default.createElement(import_react_native128.Text, {
     style: styles112.link
   }, "Sign up"))));
@@ -59281,22 +59398,22 @@ var styles112 = import_react_native128.StyleSheet.create({
     color: theme.colors.primary
   }
 });
-var LoginScreen_default = import_react54.memo(LoginScreen);
+var LoginScreen_default = (0, import_react54.memo)(LoginScreen);
 
 // src/screens/RegisterScreen.tsx
 var import_react55 = __toModule(require_react());
-var import_react_native129 = __toModule(require_dist());
+var import_react_native129 = require_dist();
 var RegisterScreen = ({navigation}) => {
-  const [name, setName] = import_react55.useState({value: "", error: ""});
-  const [email, setEmail] = import_react55.useState({value: "", error: ""});
-  const [password, setPassword] = import_react55.useState({value: "", error: ""});
+  const [name, setName] = (0, import_react55.useState)({value: "", error: ""});
+  const [email2, setEmail] = (0, import_react55.useState)({value: "", error: ""});
+  const [password, setPassword] = (0, import_react55.useState)({value: "", error: ""});
   const _onSignUpPressed = () => {
     const nameError = nameValidator(name.value);
-    const emailError = emailValidator(email.value);
+    const emailError = emailValidator(email2.value);
     const passwordError = passwordValidator(password.value);
     if (emailError || passwordError || nameError) {
       setName({...name, error: nameError});
-      setEmail({...email, error: emailError});
+      setEmail({...email2, error: emailError});
       setPassword({...password, error: passwordError});
       return;
     }
@@ -59314,10 +59431,10 @@ var RegisterScreen = ({navigation}) => {
   }), /* @__PURE__ */ import_react55.default.createElement(TextInput_default3, {
     label: "Email",
     returnKeyType: "next",
-    value: email.value,
+    value: email2.value,
     onChangeText: (text) => setEmail({value: text, error: ""}),
-    error: !!email.error,
-    errorText: email.error,
+    error: !!email2.error,
+    errorText: email2.error,
     autoCapitalize: "none",
     autoCompleteType: "email",
     textContentType: "emailAddress",
@@ -59361,17 +59478,17 @@ var styles113 = import_react_native129.StyleSheet.create({
     color: theme.colors.primary
   }
 });
-var RegisterScreen_default = import_react55.memo(RegisterScreen);
+var RegisterScreen_default = (0, import_react55.memo)(RegisterScreen);
 
 // src/screens/ForgotPasswordScreen.tsx
 var import_react56 = __toModule(require_react());
-var import_react_native130 = __toModule(require_dist());
+var import_react_native130 = require_dist();
 var ForgotPasswordScreen = ({navigation}) => {
-  const [email, setEmail] = import_react56.useState({value: "", error: ""});
+  const [email2, setEmail] = (0, import_react56.useState)({value: "", error: ""});
   const _onSendPressed = () => {
-    const emailError = emailValidator(email.value);
+    const emailError = emailValidator(email2.value);
     if (emailError) {
-      setEmail({...email, error: emailError});
+      setEmail({...email2, error: emailError});
       return;
     }
     navigation.navigate("LoginScreen");
@@ -59381,10 +59498,10 @@ var ForgotPasswordScreen = ({navigation}) => {
   }), /* @__PURE__ */ import_react56.default.createElement(Logo_default, null), /* @__PURE__ */ import_react56.default.createElement(Header_default2, null, "Restore Password"), /* @__PURE__ */ import_react56.default.createElement(TextInput_default3, {
     label: "E-mail address",
     returnKeyType: "done",
-    value: email.value,
+    value: email2.value,
     onChangeText: (text) => setEmail({value: text, error: ""}),
-    error: !!email.error,
-    errorText: email.error,
+    error: !!email2.error,
+    errorText: email2.error,
     autoCapitalize: "none",
     autoCompleteType: "email",
     textContentType: "emailAddress",
@@ -59413,7 +59530,7 @@ var styles114 = import_react_native130.StyleSheet.create({
     width: "100%"
   }
 });
-var ForgotPasswordScreen_default = import_react56.memo(ForgotPasswordScreen);
+var ForgotPasswordScreen_default = (0, import_react56.memo)(ForgotPasswordScreen);
 
 // src/screens/Dashboard.tsx
 var import_react57 = __toModule(require_react());
@@ -59424,7 +59541,7 @@ var Dashboard = ({navigation}) => /* @__PURE__ */ import_react57.default.createE
   mode: "outlined",
   onPress: () => navigation.navigate("HomeScreen")
 }, "Logout"));
-var Dashboard_default = import_react57.memo(Dashboard);
+var Dashboard_default = (0, import_react57.memo)(Dashboard);
 
 // src/navigators/Drawer.tsx
 var import_react64 = __toModule(require_react());
@@ -59434,12 +59551,12 @@ var React240 = __toModule(require_react());
 
 // node_modules/@react-navigation/drawer/lib/module/views/DrawerView.js
 var React239 = __toModule(require_react());
-var import_react_native151 = __toModule(require_dist());
+var import_react_native151 = require_dist();
 var import_react_native_screens2 = __toModule(require_commonjs());
 
 // node_modules/@react-navigation/drawer/lib/module/views/GestureHandler.js
 var React221 = __toModule(require_react());
-var import_react_native131 = __toModule(require_dist());
+var import_react_native131 = require_dist();
 var Dummy2 = ({
   children
 }) => /* @__PURE__ */ React221.createElement(React221.Fragment, null, children);
@@ -59479,7 +59596,7 @@ function SafeAreaProviderCompat2({
 
 // node_modules/@react-navigation/drawer/lib/module/views/ResourceSavingScene.js
 var React223 = __toModule(require_react());
-var import_react_native132 = __toModule(require_dist());
+var import_react_native132 = require_dist();
 var import_react_native_screens = __toModule(require_commonjs());
 function _extends92() {
   _extends92 = Object.assign || function(target) {
@@ -59502,7 +59619,7 @@ function ResourceSavingScene({
   style,
   ...rest
 }) {
-  if (import_react_native_screens.screensEnabled !== null && import_react_native_screens.screensEnabled !== void 0 && import_react_native_screens.screensEnabled() && import_react_native132.Platform.OS !== "web") {
+  if (import_react_native_screens.screensEnabled !== null && import_react_native_screens.screensEnabled !== void 0 && (0, import_react_native_screens.screensEnabled)() && import_react_native132.Platform.OS !== "web") {
     if (import_react_native_screens.shouldUseActivityState) {
       return /* @__PURE__ */ React223.createElement(import_react_native_screens.Screen, _extends92({
         activityState: isVisible ? 2 : 0,
@@ -59549,11 +59666,11 @@ var styles115 = import_react_native132.StyleSheet.create({
 
 // node_modules/@react-navigation/drawer/lib/module/views/Header.js
 var React225 = __toModule(require_react());
-var import_react_native134 = __toModule(require_dist());
+var import_react_native134 = require_dist();
 
 // node_modules/@react-navigation/drawer/lib/module/views/TouchableItem.js
 var React224 = __toModule(require_react());
-var import_react_native133 = __toModule(require_dist());
+var import_react_native133 = require_dist();
 function _extends93() {
   _extends93 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -59792,7 +59909,7 @@ var React227 = __toModule(require_react());
 
 // node_modules/@react-navigation/drawer/lib/module/views/DrawerItem.js
 var React226 = __toModule(require_react());
-var import_react_native135 = __toModule(require_dist());
+var import_react_native135 = require_dist();
 var import_color40 = __toModule(require_color());
 function _extends94() {
   _extends94 = Object.assign || function(target) {
@@ -59844,13 +59961,13 @@ function DrawerItem2(props) {
   } = useTheme2();
   const {
     icon,
-    label,
+    label: label2,
     labelStyle,
     to,
     focused = false,
     activeTintColor = colors.primary,
-    inactiveTintColor = import_color40.default(colors.text).alpha(0.68).rgb().string(),
-    activeBackgroundColor = import_color40.default(activeTintColor).alpha(0.12).rgb().string(),
+    inactiveTintColor = (0, import_color40.default)(colors.text).alpha(0.68).rgb().string(),
+    activeBackgroundColor = (0, import_color40.default)(activeTintColor).alpha(0.12).rgb().string(),
     inactiveBackgroundColor = "transparent",
     style,
     onPress,
@@ -59896,13 +60013,13 @@ function DrawerItem2(props) {
       marginLeft: iconNode ? 32 : 0,
       marginVertical: 5
     }]
-  }, typeof label === "string" ? /* @__PURE__ */ React226.createElement(import_react_native135.Text, {
+  }, typeof label2 === "string" ? /* @__PURE__ */ React226.createElement(import_react_native135.Text, {
     numberOfLines: 1,
     style: [{
       color: color39,
       fontWeight: "500"
     }, labelStyle]
-  }, label) : label({
+  }, label2) : label2({
     color: color39,
     focused
   })))));
@@ -59971,7 +60088,7 @@ function DrawerItemList({
 
 // node_modules/@react-navigation/drawer/lib/module/views/DrawerContentScrollView.js
 var React229 = __toModule(require_react());
-var import_react_native136 = __toModule(require_dist());
+var import_react_native136 = require_dist();
 
 // node_modules/@react-navigation/drawer/lib/module/utils/DrawerPositionContext.js
 var React228 = __toModule(require_react());
@@ -60022,10 +60139,10 @@ function DrawerContent(props) {
 
 // node_modules/@react-navigation/drawer/lib/module/views/Drawer.js
 var React236 = __toModule(require_react());
-var import_react_native149 = __toModule(require_dist());
+var import_react_native149 = require_dist();
 
 // node_modules/react-native-reanimated/lib/module/Animated.js
-var import_react_native147 = __toModule(require_dist());
+var import_react_native147 = require_dist();
 
 // node_modules/react-native-reanimated/lib/module/base.js
 var base_exports = {};
@@ -60112,7 +60229,7 @@ var ReanimatedModuleCompat_default = {
 var ReanimatedModule_default = ReanimatedModuleCompat_default;
 
 // node_modules/react-native-reanimated/lib/module/core/AnimatedNode.js
-var import_react_native137 = __toModule(require_dist());
+var import_react_native137 = require_dist();
 function ownKeys25(object, enumerableOnly) {
   var keys = Object.keys(object);
   if (Object.getOwnPropertySymbols) {
@@ -60350,7 +60467,7 @@ var InternalAnimatedValue = class extends AnimatedNode_default2 {
     return CONSTANT_VALUES.get(number) || new InternalAnimatedValue(number, true);
   }
   constructor(value, constant = false) {
-    import_invariant29.default(value !== null, "Animated.Value cannot be set to the null");
+    (0, import_invariant29.default)(value !== null, "Animated.Value cannot be set to the null");
     super({
       type: "value",
       value: sanitizeValue(value)
@@ -60408,7 +60525,7 @@ function _defineProperty40(obj, key, value) {
 }
 var AnimatedBlock = class extends AnimatedNode_default2 {
   constructor(array) {
-    import_invariant30.default(array.every((el) => el instanceof AnimatedNode_default2), "Reanimated: Animated.block node argument should be an array with elements of type AnimatedNode. One or more of them are not AnimatedNodes");
+    (0, import_invariant30.default)(array.every((el) => el instanceof AnimatedNode_default2), "Reanimated: Animated.block node argument should be an array with elements of type AnimatedNode. One or more of them are not AnimatedNodes");
     super({
       type: "block",
       block: array
@@ -60454,9 +60571,9 @@ function _defineProperty41(obj, key, value) {
 }
 var AnimatedCond = class extends AnimatedNode_default2 {
   constructor(condition, ifBlock, elseBlock) {
-    import_invariant31.default(condition instanceof AnimatedNode_default2, "Reanimated: Animated.cond node first argument should be of type AnimatedNode but got ".concat(condition));
-    import_invariant31.default(ifBlock instanceof AnimatedNode_default2, "Reanimated: Animated.cond node second argument should be of type AnimatedNode but got ".concat(ifBlock));
-    import_invariant31.default(elseBlock instanceof AnimatedNode_default2 || elseBlock === void 0, "Reanimated: Animated.cond node third argument should be of type AnimatedNode or should be undefined but got ".concat(elseBlock));
+    (0, import_invariant31.default)(condition instanceof AnimatedNode_default2, "Reanimated: Animated.cond node first argument should be of type AnimatedNode but got ".concat(condition));
+    (0, import_invariant31.default)(ifBlock instanceof AnimatedNode_default2, "Reanimated: Animated.cond node second argument should be of type AnimatedNode but got ".concat(ifBlock));
+    (0, import_invariant31.default)(elseBlock instanceof AnimatedNode_default2 || elseBlock === void 0, "Reanimated: Animated.cond node third argument should be of type AnimatedNode or should be undefined but got ".concat(elseBlock));
     super({
       type: "cond",
       cond: condition,
@@ -60497,8 +60614,8 @@ function _defineProperty42(obj, key, value) {
 }
 var AnimatedSet = class extends AnimatedNode_default2 {
   constructor(what, value) {
-    import_invariant32.default(what instanceof AnimatedNode_default2, "Reanimated: Animated.set first argument should be of type AnimatedNode but got ".concat(what));
-    import_invariant32.default(value instanceof AnimatedNode_default2, "Reanimated: Animated.set second argument should be of type AnimatedNode, String or Number but got ".concat(value));
+    (0, import_invariant32.default)(what instanceof AnimatedNode_default2, "Reanimated: Animated.set first argument should be of type AnimatedNode but got ".concat(what));
+    (0, import_invariant32.default)(value instanceof AnimatedNode_default2, "Reanimated: Animated.set second argument should be of type AnimatedNode, String or Number but got ".concat(value));
     super({
       type: "set",
       what,
@@ -60506,7 +60623,7 @@ var AnimatedSet = class extends AnimatedNode_default2 {
     }, [value]);
     _defineProperty42(this, "_what", void 0);
     _defineProperty42(this, "_value", void 0);
-    import_invariant32.default(!what._constant, "Value to be set cannot be constant");
+    (0, import_invariant32.default)(!what._constant, "Value to be set cannot be constant");
     this._what = what;
     this._value = value;
   }
@@ -60662,12 +60779,12 @@ var AnimatedParam = class extends AnimatedNode_default2 {
   }
   start() {
     const node = this._getTopNode();
-    import_invariant33.default(node instanceof AnimatedClock_default || node instanceof AnimatedParam, "param: top node should be of type AnimatedClock but got ".concat(node));
+    (0, import_invariant33.default)(node instanceof AnimatedClock_default || node instanceof AnimatedParam, "param: top node should be of type AnimatedClock but got ".concat(node));
     node.start();
   }
   stop() {
     const node = this._getTopNode();
-    import_invariant33.default(node instanceof AnimatedClock_default || node instanceof AnimatedParam, "param: top node should be of type AnimatedClock but got ".concat(node));
+    (0, import_invariant33.default)(node instanceof AnimatedClock_default || node instanceof AnimatedParam, "param: top node should be of type AnimatedClock but got ".concat(node));
     node.stop();
   }
   isRunning() {
@@ -60675,7 +60792,7 @@ var AnimatedParam = class extends AnimatedNode_default2 {
     if (node instanceof AnimatedParam) {
       return node.isRunning();
     }
-    import_invariant33.default(node instanceof AnimatedClock_default, "param: top node should be of type AnimatedClock but got ".concat(node));
+    (0, import_invariant33.default)(node instanceof AnimatedClock_default, "param: top node should be of type AnimatedClock but got ".concat(node));
     return node.isStarted();
   }
 };
@@ -60695,7 +60812,7 @@ function _defineProperty45(obj, key, value) {
 }
 var AnimatedStartClock = class extends AnimatedNode_default2 {
   constructor(clockNode) {
-    import_invariant34.default(clockNode instanceof AnimatedClock_default || clockNode instanceof AnimatedParam, "Reanimated: Animated.startClock argument should be of type AnimatedClock but got ".concat(clockNode));
+    (0, import_invariant34.default)(clockNode instanceof AnimatedClock_default || clockNode instanceof AnimatedParam, "Reanimated: Animated.startClock argument should be of type AnimatedClock but got ".concat(clockNode));
     super({
       type: "clockStart",
       clock: clockNode
@@ -60727,7 +60844,7 @@ function _defineProperty46(obj, key, value) {
 }
 var AnimatedStopClock = class extends AnimatedNode_default2 {
   constructor(clockNode) {
-    import_invariant35.default(clockNode instanceof AnimatedClock_default || clockNode instanceof AnimatedParam, "Reanimated: Animated.stopClock argument should be of type AnimatedClock but got ".concat(clockNode));
+    (0, import_invariant35.default)(clockNode instanceof AnimatedClock_default || clockNode instanceof AnimatedParam, "Reanimated: Animated.stopClock argument should be of type AnimatedClock but got ".concat(clockNode));
     super({
       type: "clockStop",
       clock: clockNode
@@ -60783,7 +60900,7 @@ var import_invariant37 = __toModule(require_invariant2());
 var import_invariant36 = __toModule(require_invariant2());
 
 // node_modules/react-native-reanimated/lib/module/ReanimatedEventEmitter.js
-var import_react_native138 = __toModule(require_dist());
+var import_react_native138 = require_dist();
 var ReanimatedEventEmitter_default = new import_react_native138.NativeEventEmitter(ReanimatedModule_default);
 
 // node_modules/react-native-reanimated/lib/module/core/AnimatedCall.js
@@ -60802,7 +60919,7 @@ function listener(data2) {
 }
 var AnimatedCall = class extends AnimatedNode_default2 {
   constructor(args, jsFunction) {
-    import_invariant36.default(args.every((el) => el instanceof AnimatedNode_default2), "Reanimated: Animated.call node args should be an array with elements of type AnimatedNode. One or more of them are not AnimatedNodes");
+    (0, import_invariant36.default)(args.every((el) => el instanceof AnimatedNode_default2), "Reanimated: Animated.call node args should be an array with elements of type AnimatedNode. One or more of them are not AnimatedNodes");
     super({
       type: "call",
       input: args
@@ -60849,8 +60966,8 @@ function _defineProperty49(obj, key, value) {
 }
 var AnimatedDebug = class extends AnimatedNode_default2 {
   constructor(message, value) {
-    import_invariant37.default(typeof message === "string", "Reanimated: Animated.debug node first argument should be of type string but got ".concat(message));
-    import_invariant37.default(value instanceof AnimatedNode_default2, "Reanimated: Animated.debug node second argument should be of type AnimatedNode but got ".concat(value));
+    (0, import_invariant37.default)(typeof message === "string", "Reanimated: Animated.debug node first argument should be of type string but got ".concat(message));
+    (0, import_invariant37.default)(value instanceof AnimatedNode_default2, "Reanimated: Animated.debug node second argument should be of type AnimatedNode but got ".concat(value));
     super({
       type: "debug",
       message,
@@ -60884,7 +61001,7 @@ function createAnimatedDebug(message, value) {
 }
 
 // node_modules/react-native-reanimated/lib/module/core/AnimatedEvent.js
-var import_react_native140 = __toModule(require_dist());
+var import_react_native140 = require_dist();
 
 // node_modules/react-native-reanimated/lib/module/core/AnimatedOperator.js
 var import_invariant38 = __toModule(require_invariant2());
@@ -60943,8 +61060,8 @@ var OPERATIONS = {
 };
 var AnimatedOperator = class extends AnimatedNode_default2 {
   constructor(operator2, input) {
-    import_invariant38.default(typeof operator2 === "string", "Reanimated: Animated.operator node first argument should be of type String, but got: ".concat(operator2));
-    import_invariant38.default(input.every((el) => el instanceof AnimatedNode_default2 || typeof el === "string" || typeof el === "number"), "Reanimated: Animated.operator node second argument should be one or more of type AnimatedNode, String or Number but got ".concat(input));
+    (0, import_invariant38.default)(typeof operator2 === "string", "Reanimated: Animated.operator node first argument should be of type String, but got: ".concat(operator2));
+    (0, import_invariant38.default)(input.every((el) => el instanceof AnimatedNode_default2 || typeof el === "string" || typeof el === "number"), "Reanimated: Animated.operator node second argument should be one or more of type AnimatedNode, String or Number but got ".concat(input));
     super({
       type: "op",
       op: operator2,
@@ -60962,7 +61079,7 @@ var AnimatedOperator = class extends AnimatedNode_default2 {
   __onEvaluate() {
     if (!this._operation) {
       this._operation = OPERATIONS[this._op];
-      import_invariant38.default(this._operation, "Illegal operator '%s'", this._op);
+      (0, import_invariant38.default)(this._operation, "Illegal operator '%s'", this._op);
     }
     return this._operation(this._input);
   }
@@ -61020,9 +61137,9 @@ function _defineProperty51(obj, key, value) {
 }
 var AnimatedCallFunc = class extends AnimatedNode_default2 {
   constructor(what, args, params) {
-    import_invariant39.default(what instanceof AnimatedNode_default2, "Reanimated: AnimatedCallFunc 'what' argument should be of type AnimatedNode but got ".concat(what));
-    import_invariant39.default(args.every((el) => el instanceof AnimatedNode_default2), "Reanimated: every AnimatedCallFunc 'args' argument should be of type AnimatedNode but got ".concat(args));
-    import_invariant39.default(params.every((el) => el instanceof AnimatedNode_default2), "Reanimated: every AnimatedCallFunc 'params' argument should be of type AnimatedNode but got ".concat(params));
+    (0, import_invariant39.default)(what instanceof AnimatedNode_default2, "Reanimated: AnimatedCallFunc 'what' argument should be of type AnimatedNode but got ".concat(what));
+    (0, import_invariant39.default)(args.every((el) => el instanceof AnimatedNode_default2), "Reanimated: every AnimatedCallFunc 'args' argument should be of type AnimatedNode but got ".concat(args));
+    (0, import_invariant39.default)(params.every((el) => el instanceof AnimatedNode_default2), "Reanimated: every AnimatedCallFunc 'params' argument should be of type AnimatedNode but got ".concat(params));
     super({
       type: "callfunc",
       what,
@@ -61076,7 +61193,7 @@ function _defineProperty52(obj, key, value) {
 }
 var AnimatedFunction = class extends AnimatedNode_default2 {
   constructor(what, ...params) {
-    import_invariant40.default(what instanceof AnimatedNode_default2, "Reanimated: AnimatedCallFunc 'what' argument should be of type AnimatedNode but got ".concat(what));
+    (0, import_invariant40.default)(what instanceof AnimatedNode_default2, "Reanimated: AnimatedCallFunc 'what' argument should be of type AnimatedNode but got ".concat(what));
     super({
       type: "func",
       what
@@ -61136,17 +61253,17 @@ function checkNonDecreasing(name, arr) {
   for (let i = 1; i < arr.length; ++i) {
     if (arr[i] instanceof AnimatedNode_default2 || arr[i - 1] instanceof AnimatedNode_default2)
       continue;
-    import_invariant41.default(arr[i] >= arr[i - 1], "%s must be monotonically non-decreasing. (%s)", name, arr);
+    (0, import_invariant41.default)(arr[i] >= arr[i - 1], "%s must be monotonically non-decreasing. (%s)", name, arr);
   }
 }
 function checkMinElements(name, arr) {
-  import_invariant41.default(arr.length >= 2, "%s must have at least 2 elements. (%s)", name, arr);
+  (0, import_invariant41.default)(arr.length >= 2, "%s must have at least 2 elements. (%s)", name, arr);
 }
 function checkValidNumbers(name, arr) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] instanceof AnimatedNode_default2 || typeof arr[i] !== "number")
       continue;
-    import_invariant41.default(Number.isFinite(arr[i]), "%s cannot include %s. (%s)", name, arr[i], arr);
+    (0, import_invariant41.default)(Number.isFinite(arr[i]), "%s cannot include %s. (%s)", name, arr[i], arr);
   }
 }
 function convertToRadians(outputRange) {
@@ -61169,7 +61286,7 @@ function interpolate2(value, config) {
   checkMinElements("outputRange", outputRange);
   checkValidNumbers("outputRange", outputRange);
   checkNonDecreasing("inputRange", inputRange);
-  import_invariant41.default(inputRange.length === outputRange.length, "inputRange and outputRange must be the same length.");
+  (0, import_invariant41.default)(inputRange.length === outputRange.length, "inputRange and outputRange must be the same length.");
   convertToRadians(outputRange);
   const left2 = extrapolateLeft || extrapolate;
   const right2 = extrapolateRight || extrapolate;
@@ -61190,7 +61307,7 @@ function interpolate2(value, config) {
 }
 
 // node_modules/react-native-reanimated/lib/module/core/AnimatedValue.js
-var import_react_native139 = __toModule(require_dist());
+var import_react_native139 = require_dist();
 
 // node_modules/react-native-reanimated/lib/module/core/AnimatedAlways.js
 var import_invariant42 = __toModule(require_invariant2());
@@ -61204,7 +61321,7 @@ function _defineProperty53(obj, key, value) {
 }
 var AnimatedAlways = class extends AnimatedNode_default2 {
   constructor(what) {
-    import_invariant42.default(what instanceof AnimatedNode_default2, "Reanimated: Animated.always node argument should be of type AnimatedNode but got ".concat(what));
+    (0, import_invariant42.default)(what instanceof AnimatedNode_default2, "Reanimated: Animated.always node argument should be of type AnimatedNode but got ".concat(what));
     super({
       type: "always",
       what
@@ -61365,7 +61482,7 @@ function sanitizeArgMapping(argMapping) {
       }
     }
   };
-  import_invariant43.default(argMapping[0] && argMapping[0].nativeEvent, "Native driven events only support animated values contained inside `nativeEvent`.");
+  (0, import_invariant43.default)(argMapping[0] && argMapping[0].nativeEvent, "Native driven events only support animated values contained inside `nativeEvent`.");
   const ev = argMapping[0].nativeEvent;
   if (typeof ev === "object") {
     traverse(ev, []);
@@ -61418,7 +61535,7 @@ var AnimatedEvent2 = class extends AnimatedNode_default2 {
       this._alwaysNodes[i].__attach();
     }
     this.__attach();
-    const viewTag = import_react_native140.findNodeHandle(viewRef);
+    const viewTag = (0, import_react_native140.findNodeHandle)(viewRef);
     ReanimatedModule_default.attachEvent(viewTag, eventName, this.__nodeID);
   }
   __onEvaluate() {
@@ -61428,7 +61545,7 @@ var AnimatedEvent2 = class extends AnimatedNode_default2 {
     for (let i = 0; i < this._alwaysNodes.length; i++) {
       this._alwaysNodes[i].isNativelyInitialized() && this._alwaysNodes[i].__detach();
     }
-    const viewTag = import_react_native140.findNodeHandle(viewRef);
+    const viewTag = (0, import_react_native140.findNodeHandle)(viewRef);
     ReanimatedModule_default.detachEvent(viewTag, eventName, this.__nodeID);
     this.__detach();
   }
@@ -61442,7 +61559,7 @@ function createAnimatedEvent(argMapping, config) {
 var import_invariant44 = __toModule(require_invariant2());
 var AnimatedConcat = class extends AnimatedNode_default2 {
   constructor(input) {
-    import_invariant44.default(input.every((el) => el instanceof AnimatedNode_default2 || typeof el === "number" || typeof el === "string"), "Reanimated: Animated.concat node arguments should be of type AnimatedNode or String or Number. One or more of them are not of that type. Node: ".concat(input));
+    (0, import_invariant44.default)(input.every((el) => el instanceof AnimatedNode_default2 || typeof el === "number" || typeof el === "string"), "Reanimated: Animated.concat node arguments should be of type AnimatedNode or String or Number. One or more of them are not of that type. Node: ".concat(input));
     super({
       type: "concat",
       input
@@ -61464,7 +61581,6 @@ function createAnimatedConcat(...args) {
 var import_invariant45 = __toModule(require_invariant2());
 var kSplineTableSize2 = 11;
 var kSampleStepSize2 = 1 / (kSplineTableSize2 - 1);
-var float32ArraySupported2 = typeof Float32Array === "function";
 
 // node_modules/react-native-reanimated/lib/module/derived/useCode.js
 var import_react58 = __toModule(require_react());
@@ -61537,7 +61653,7 @@ function acc(v) {
 }
 
 // node_modules/react-native-reanimated/lib/module/derived/color.js
-var import_react_native141 = __toModule(require_dist());
+var import_react_native141 = require_dist();
 var procColor = createAnimatedFunction(function(r, g, b, a) {
   const color39 = add6(multiply5(a, 1 << 24), multiply5(round(r), 1 << 16), multiply5(round(g), 1 << 8), round(b));
   if (import_react_native141.Platform.OS === "android") {
@@ -61574,7 +61690,7 @@ function diffClamp3(a, minVal, maxVal) {
 }
 
 // node_modules/react-native-reanimated/lib/module/derived/interpolateColors.js
-var import_react_native142 = __toModule(require_dist());
+var import_react_native142 = require_dist();
 function red(c) {
   return c >> 16 & 255;
 }
@@ -61627,13 +61743,13 @@ function onChange(value, action) {
 
 // node_modules/react-native-reanimated/lib/module/createAnimatedComponent.js
 var import_react59 = __toModule(require_react());
-var import_react_native145 = __toModule(require_dist());
+var import_react_native145 = require_dist();
 
 // node_modules/react-native-reanimated/lib/module/core/AnimatedProps.js
-var import_react_native144 = __toModule(require_dist());
+var import_react_native144 = require_dist();
 
 // node_modules/react-native-reanimated/lib/module/core/AnimatedStyle.js
-var import_react_native143 = __toModule(require_dist());
+var import_react_native143 = require_dist();
 
 // node_modules/react-native-reanimated/lib/module/core/AnimatedTransform.js
 var import_areEqual = __toModule(require_areEqual());
@@ -61671,7 +61787,7 @@ function extractAnimatedParentNodes(transform) {
 }
 function createOrReuseTransformNode(transform, oldNode) {
   const config = sanitizeTransform(transform);
-  if (oldNode && import_areEqual.default(config, oldNode._config)) {
+  if (oldNode && (0, import_areEqual.default)(config, oldNode._config)) {
     return oldNode;
   }
   return new AnimatedTransform2(transform, config);
@@ -61759,7 +61875,7 @@ function createOrReuseStyleNode(style, oldNode) {
     });
   }
   const config = sanitizeStyle(style);
-  if (oldNode && import_areEqual2.default(config, oldNode._config)) {
+  if (oldNode && (0, import_areEqual2.default)(config, oldNode._config)) {
     return oldNode;
   }
   return new AnimatedStyle2(style, config);
@@ -61851,7 +61967,7 @@ function createOrReusePropsNode(props, callback, oldNode) {
     });
   }
   const config = sanitizeProps(props);
-  if (oldNode && import_areEqual3.default(config, oldNode._config)) {
+  if (oldNode && (0, import_areEqual3.default)(config, oldNode._config)) {
     return oldNode;
   }
   return new AnimatedProps2(props, config, callback);
@@ -61881,8 +61997,8 @@ var AnimatedProps2 = class extends AnimatedNode_default2 {
     return props;
   }
   __detach() {
-    const nativeViewTag = import_react_native144.findNodeHandle(this._animatedView);
-    import_invariant46.default(nativeViewTag != null, "Unable to locate attached view in the native tree");
+    const nativeViewTag = (0, import_react_native144.findNodeHandle)(this._animatedView);
+    (0, import_invariant46.default)(nativeViewTag != null, "Unable to locate attached view in the native tree");
     this._disconnectAnimatedView(nativeViewTag);
     super.__detach();
   }
@@ -61898,8 +62014,8 @@ var AnimatedProps2 = class extends AnimatedNode_default2 {
       return;
     }
     this._animatedView = animatedView;
-    const nativeViewTag = import_react_native144.findNodeHandle(this._animatedView);
-    import_invariant46.default(nativeViewTag != null, "Unable to locate attached view in the native tree");
+    const nativeViewTag = (0, import_react_native144.findNodeHandle)(this._animatedView);
+    (0, import_invariant46.default)(nativeViewTag != null, "Unable to locate attached view in the native tree");
     this._connectAnimatedView(nativeViewTag);
   }
 };
@@ -61936,7 +62052,7 @@ function listener2(data2) {
 function dummyListener() {
 }
 function createAnimatedComponent2(Component19) {
-  import_invariant47.default(typeof Component19 !== "function" || Component19.prototype && Component19.prototype.isReactComponent, "`createAnimatedComponent` does not support stateless functional components; use a class component instead.");
+  (0, import_invariant47.default)(typeof Component19 !== "function" || Component19.prototype && Component19.prototype.isReactComponent, "`createAnimatedComponent` does not support stateless functional components; use a class component instead.");
   class AnimatedComponent extends import_react59.default.Component {
     constructor(props) {
       super(props);
@@ -62033,14 +62149,14 @@ function createAnimatedComponent2(Component19) {
       this._component.setNativeProps(props);
     }
     _attachPropUpdater() {
-      const viewTag = import_react_native145.findNodeHandle(this);
+      const viewTag = (0, import_react_native145.findNodeHandle)(this);
       NODE_MAPPING2.set(viewTag, this);
       if (NODE_MAPPING2.size === 1) {
         ReanimatedEventEmitter_default.addListener("onReanimatedPropsChange", listener2);
       }
     }
     _detachPropUpdater() {
-      const viewTag = import_react_native145.findNodeHandle(this);
+      const viewTag = (0, import_react_native145.findNodeHandle)(this);
       NODE_MAPPING2.delete(viewTag);
       if (NODE_MAPPING2.size === 0) {
         ReanimatedEventEmitter_default.removeAllListeners("onReanimatedPropsChange");
@@ -62469,7 +62585,7 @@ function backwardsCompatibleAnimWrapper(node, animationStateDefaults) {
 
 // node_modules/react-native-reanimated/lib/module/Transitioning.js
 var import_react60 = __toModule(require_react());
-var import_react_native146 = __toModule(require_dist());
+var import_react_native146 = require_dist();
 function _objectWithoutProperties(source, excluded) {
   if (source == null)
     return {};
@@ -62627,7 +62743,7 @@ function createTransitioningComponent(Component19) {
       this.viewRef.current.setNativeProps(props);
     }
     animateNextTransition() {
-      const viewTag = import_react_native146.findNodeHandle(this.viewRef.current);
+      const viewTag = (0, import_react_native146.findNodeHandle)(this.viewRef.current);
       ReanimatedModule_default.animateNextTransition(viewTag, {
         transitions: this.transitions
       });
@@ -62926,7 +63042,7 @@ var Animated_default2 = Animated42;
 
 // node_modules/@react-navigation/drawer/lib/module/views/Overlay.js
 var React235 = __toModule(require_react());
-var import_react_native148 = __toModule(require_dist());
+var import_react_native148 = require_dist();
 function _extends98() {
   _extends98 = Object.assign || function(target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -63416,7 +63532,7 @@ var DrawerOpenContext_default = DrawerOpenContext;
 
 // node_modules/@react-navigation/drawer/lib/module/utils/useWindowDimensions.js
 var React238 = __toModule(require_react());
-var import_react_native150 = __toModule(require_dist());
+var import_react_native150 = require_dist();
 function useWindowDimensions2() {
   const [dimensions2, setDimensions] = React238.useState(() => {
     const {
@@ -63691,7 +63807,7 @@ var createDrawerNavigator_default = createNavigatorFactory(DrawerNavigator);
 
 // src/screens/DrawerContent.tsx
 var import_react62 = __toModule(require_react());
-var import_react_native152 = __toModule(require_dist());
+var import_react_native152 = require_dist();
 function DrawerContent2(props) {
   const theme2 = useTheme();
   const {toggleTheme} = import_react62.default.useContext(ThemeContext2);
@@ -63742,7 +63858,7 @@ function DrawerContent2(props) {
   }, "Obserwuj\u0105cy")))), /* @__PURE__ */ import_react62.default.createElement(Drawer_exports.Section, {
     style: styles122.drawerSection
   }, /* @__PURE__ */ import_react62.default.createElement(DrawerItem2, {
-    icon: ({color: color39, size}) => /* @__PURE__ */ import_react62.default.createElement(MaterialCommunityIcons_default2, {
+    icon: ({color: color39, size}) => /* @__PURE__ */ import_react62.default.createElement(MaterialCommunityIcons_default, {
       name: "account-outline",
       color: color39,
       size
@@ -63751,7 +63867,7 @@ function DrawerContent2(props) {
     onPress: () => {
     }
   }), /* @__PURE__ */ import_react62.default.createElement(DrawerItem2, {
-    icon: ({color: color39, size}) => /* @__PURE__ */ import_react62.default.createElement(MaterialCommunityIcons_default2, {
+    icon: ({color: color39, size}) => /* @__PURE__ */ import_react62.default.createElement(MaterialCommunityIcons_default, {
       name: "tune",
       color: color39,
       size
@@ -63760,7 +63876,7 @@ function DrawerContent2(props) {
     onPress: () => {
     }
   }), /* @__PURE__ */ import_react62.default.createElement(DrawerItem2, {
-    icon: ({color: color39, size}) => /* @__PURE__ */ import_react62.default.createElement(MaterialCommunityIcons_default2, {
+    icon: ({color: color39, size}) => /* @__PURE__ */ import_react62.default.createElement(MaterialCommunityIcons_default, {
       name: "bookmark-outline",
       color: color39,
       size
@@ -63822,7 +63938,7 @@ var styles122 = import_react_native152.StyleSheet.create({
 
 // src/navigators/Stack.tsx
 var import_react63 = __toModule(require_react());
-var import_react_native153 = __toModule(require_dist());
+var import_react_native153 = require_dist();
 var Stack = createStackNavigator_default();
 var StackNavigator2 = () => {
   const theme2 = useTheme();
@@ -63876,11 +63992,11 @@ var React283 = __toModule(require_react());
 
 // src/rnpex/ExampleList.tsx
 var React282 = __toModule(require_react());
-var import_react_native190 = __toModule(require_dist());
+var import_react_native190 = require_dist();
 
 // src/rnpex/Examples/ActivityIndicatorExample.tsx
 var React244 = __toModule(require_react());
-var import_react_native154 = __toModule(require_dist());
+var import_react_native154 = require_dist();
 var ActivityIndicatorExample = () => {
   const [animating, setAnimating] = React244.useState(true);
   const {
@@ -63931,7 +64047,7 @@ var ActivityIndicatorExample_default = ActivityIndicatorExample;
 
 // src/rnpex/Examples/AppbarExample.tsx
 var React245 = __toModule(require_react());
-var import_react_native155 = __toModule(require_dist());
+var import_react_native155 = require_dist();
 var MORE_ICON = import_react_native155.Platform.OS === "ios" ? "dots-horizontal" : "dots-vertical";
 var AppbarExample = ({navigation}) => {
   const {colors} = useTheme();
@@ -64060,7 +64176,7 @@ var styles124 = import_react_native155.StyleSheet.create({
 
 // src/rnpex/Examples/AvatarExample.tsx
 var React246 = __toModule(require_react());
-var import_react_native156 = __toModule(require_dist());
+var import_react_native156 = require_dist();
 var AvatarExample = () => {
   const {colors} = useTheme();
   return /* @__PURE__ */ React246.createElement(import_react_native156.ScrollView, {
@@ -64127,7 +64243,7 @@ var AvatarExample_default = AvatarExample;
 
 // src/rnpex/Examples/BadgeExample.tsx
 var React247 = __toModule(require_react());
-var import_react_native157 = __toModule(require_dist());
+var import_react_native157 = require_dist();
 var BadgeExample = () => {
   const [visible, setVisible] = React247.useState(true);
   const {
@@ -64218,7 +64334,7 @@ var BadgeExample_default = BadgeExample;
 
 // src/rnpex/Examples/BannerExample.tsx
 var React248 = __toModule(require_react());
-var import_react_native158 = __toModule(require_dist());
+var import_react_native158 = require_dist();
 var PHOTOS = Array.from({length: 24}).map((_, i) => `https://unsplash.it/300/300/?random&__id=${i}`);
 var BannerExample = () => {
   const [visible, setVisible] = React248.useState(true);
@@ -64302,7 +64418,7 @@ var BannerExample_default = BannerExample;
 
 // src/rnpex/Examples/BottomNavigationExample.tsx
 var React249 = __toModule(require_react());
-var import_react_native159 = __toModule(require_dist());
+var import_react_native159 = require_dist();
 var PhotoGallery = ({route}) => {
   const PHOTOS2 = Array.from({length: 24}).map((_, i) => `https://unsplash.it/300/300/?random&__id=${route.key}${i}`);
   return /* @__PURE__ */ React249.createElement(import_react_native159.ScrollView, {
@@ -64388,7 +64504,7 @@ var styles128 = import_react_native159.StyleSheet.create({
 
 // src/rnpex/Examples/ButtonExample.tsx
 var React250 = __toModule(require_react());
-var import_react_native160 = __toModule(require_dist());
+var import_react_native160 = require_dist();
 var ButtonExample = () => {
   const {colors} = useTheme();
   return /* @__PURE__ */ React250.createElement(import_react_native160.ScrollView, {
@@ -64550,7 +64666,7 @@ var ButtonExample_default = ButtonExample;
 
 // src/rnpex/Examples/CardExample.tsx
 var React251 = __toModule(require_react());
-var import_react_native161 = __toModule(require_dist());
+var import_react_native161 = require_dist();
 var CardExample = () => {
   const {
     colors: {background}
@@ -64642,7 +64758,7 @@ var CardExample_default = CardExample;
 
 // src/rnpex/Examples/CheckboxExample.tsx
 var React252 = __toModule(require_react());
-var import_react_native162 = __toModule(require_dist());
+var import_react_native162 = require_dist();
 var CheckboxExample = () => {
   const [checkedNormal, setCheckedNormal] = React252.useState(true);
   const [checkedCustom, setCheckedCustom] = React252.useState(true);
@@ -64718,7 +64834,7 @@ var CheckboxExample_default = CheckboxExample;
 
 // src/rnpex/Examples/CheckboxItemExample.tsx
 var React253 = __toModule(require_react());
-var import_react_native163 = __toModule(require_dist());
+var import_react_native163 = require_dist();
 var CheckboxExample2 = () => {
   const [checkedDefault, setCheckedDefault] = React253.useState(true);
   const [checkedAndroid, setCheckedAndroid] = React253.useState(true);
@@ -64761,7 +64877,7 @@ var CheckboxItemExample_default = CheckboxExample2;
 
 // src/rnpex/Examples/ChipExample.tsx
 var React254 = __toModule(require_react());
-var import_react_native164 = __toModule(require_dist());
+var import_react_native164 = require_dist();
 var import_color43 = __toModule(require_color());
 var ChipExample = () => {
   const [visible, setVisible] = React254.useState(false);
@@ -64892,7 +65008,7 @@ var ChipExample = () => {
     style: [
       styles133.chip,
       {
-        backgroundColor: import_color43.default(colors.primary).alpha(0.2).rgb().string()
+        backgroundColor: (0, import_color43.default)(colors.primary).alpha(0.2).rgb().string()
       }
     ],
     selectedColor: colors.primary
@@ -64909,7 +65025,7 @@ var ChipExample = () => {
     style: [
       styles133.chip,
       {
-        backgroundColor: import_color43.default(colors.primary).alpha(0.2).rgb().string()
+        backgroundColor: (0, import_color43.default)(colors.primary).alpha(0.2).rgb().string()
       }
     ],
     selectedColor: colors.primary
@@ -64963,7 +65079,7 @@ var ChipExample_default = ChipExample;
 
 // src/rnpex/Examples/DataTableExample.tsx
 var React255 = __toModule(require_react());
-var import_react_native165 = __toModule(require_dist());
+var import_react_native165 = require_dist();
 var DataTableExample = () => {
   const [sortAscending, setSortAscending] = React255.useState(true);
   const [page, setPage] = React255.useState(0);
@@ -65054,15 +65170,15 @@ var DataTableExample_default = DataTableExample;
 
 // src/rnpex/Examples/DialogExample.tsx
 var React261 = __toModule(require_react());
-var import_react_native169 = __toModule(require_dist());
+var import_react_native169 = require_dist();
 
 // src/rnpex/Examples/Dialogs/DialogWithCustomColors.tsx
 var React256 = __toModule(require_react());
 var DialogWithCustomColors = ({
   visible,
-  close
+  close: close2
 }) => /* @__PURE__ */ React256.createElement(Portal_default, null, /* @__PURE__ */ React256.createElement(Dialog_default, {
-  onDismiss: close,
+  onDismiss: close2,
   style: {backgroundColor: colors_exports.purple900},
   visible
 }, /* @__PURE__ */ React256.createElement(Dialog_default.Title, {
@@ -65071,19 +65187,19 @@ var DialogWithCustomColors = ({
   style: {color: colors_exports.white}
 }, "This is a dialog with custom colors")), /* @__PURE__ */ React256.createElement(Dialog_default.Actions, null, /* @__PURE__ */ React256.createElement(Button_default2, {
   color: colors_exports.white,
-  onPress: close
+  onPress: close2
 }, "OK"))));
 var DialogWithCustomColors_default = DialogWithCustomColors;
 
 // src/rnpex/Examples/Dialogs/DialogWithLoadingIndicator.tsx
 var React257 = __toModule(require_react());
-var import_react_native166 = __toModule(require_dist());
+var import_react_native166 = require_dist();
 var isIOS = import_react_native166.Platform.OS === "ios";
 var DialogWithLoadingIndicator = ({
   visible,
-  close
+  close: close2
 }) => /* @__PURE__ */ React257.createElement(Portal_default, null, /* @__PURE__ */ React257.createElement(Dialog_default, {
-  onDismiss: close,
+  onDismiss: close2,
   visible
 }, /* @__PURE__ */ React257.createElement(Dialog_default.Title, null, "Progress Dialog"), /* @__PURE__ */ React257.createElement(Dialog_default.Content, null, /* @__PURE__ */ React257.createElement(import_react_native166.View, {
   style: {flexDirection: "row", alignItems: "center"}
@@ -65096,12 +65212,12 @@ var DialogWithLoadingIndicator_default = DialogWithLoadingIndicator;
 
 // src/rnpex/Examples/Dialogs/DialogWithLongText.tsx
 var React258 = __toModule(require_react());
-var import_react_native167 = __toModule(require_dist());
+var import_react_native167 = require_dist();
 var DialogWithLongText = ({
   visible,
-  close
+  close: close2
 }) => /* @__PURE__ */ React258.createElement(Portal_default, null, /* @__PURE__ */ React258.createElement(Dialog_default, {
-  onDismiss: close,
+  onDismiss: close2,
   visible,
   style: {maxHeight: 0.6 * import_react_native167.Dimensions.get("window").height}
 }, /* @__PURE__ */ React258.createElement(Dialog_default.Title, null, "Alert"), /* @__PURE__ */ React258.createElement(Dialog_default.ScrollArea, {
@@ -65109,17 +65225,17 @@ var DialogWithLongText = ({
 }, /* @__PURE__ */ React258.createElement(import_react_native167.ScrollView, {
   contentContainerStyle: {paddingHorizontal: 24}
 }, /* @__PURE__ */ React258.createElement(Paragraph_default, null, "Material is the metaphor", "\n", "\n", "A material metaphor is the unifying theory of a rationalized space and a system of motion. The material is grounded in tactile reality, inspired by the study of paper and ink, yet technologically advanced and open to imagination and magic.", "\n", "\n", "Surfaces and edges of the material provide visual cues that are grounded in reality. The use of familiar tactile attributes helps users quickly understand affordances. Yet the flexibility of the material creates new affordances that supersede those in the physical world, without breaking the rules of physics.", "\n", "\n", "The fundamentals of light, surface, and movement are key to conveying how objects move, interact, and exist in space and in relation to each other. Realistic lighting shows seams, divides space, and indicates moving parts.", "\n", "\n", "A material metaphor is the unifying theory of a rationalized space and a system of motion. The material is grounded in tactile reality, inspired by the study of paper and ink, yet technologically advanced and open to imagination and magic.", "\n", "\n", "Surfaces and edges of the material provide visual cues that are grounded in reality. The use of familiar tactile attributes helps users quickly understand affordances. Yet the flexibility of the material creates new affordances that supersede those in the physical world, without breaking the rules of physics.", "\n", "\n", "The fundamentals of light, surface, and movement are key to conveying how objects move, interact, and exist in space and in relation to each other. Realistic lighting shows seams, divides space, and indicates moving parts."))), /* @__PURE__ */ React258.createElement(Dialog_default.Actions, null, /* @__PURE__ */ React258.createElement(Button_default2, {
-  onPress: close
+  onPress: close2
 }, "OK"))));
 var DialogWithLongText_default = DialogWithLongText;
 
 // src/rnpex/Examples/Dialogs/DialogWithRadioBtns.tsx
 var React259 = __toModule(require_react());
-var import_react_native168 = __toModule(require_dist());
-var DialogWithRadioBtns = ({visible, close}) => {
+var import_react_native168 = require_dist();
+var DialogWithRadioBtns = ({visible, close: close2}) => {
   const [checked, setChecked] = React259.useState("normal");
   return /* @__PURE__ */ React259.createElement(Portal_default, null, /* @__PURE__ */ React259.createElement(Dialog_default, {
-    onDismiss: close,
+    onDismiss: close2,
     visible
   }, /* @__PURE__ */ React259.createElement(Dialog_default.Title, null, "Choose an option"), /* @__PURE__ */ React259.createElement(Dialog_default.ScrollArea, {
     style: {maxHeight: 170, paddingHorizontal: 0}
@@ -65168,9 +65284,9 @@ var DialogWithRadioBtns = ({visible, close}) => {
   })), /* @__PURE__ */ React259.createElement(Subheading_default, {
     style: styles135.text
   }, "Option 4")))))), /* @__PURE__ */ React259.createElement(Dialog_default.Actions, null, /* @__PURE__ */ React259.createElement(Button_default2, {
-    onPress: close
+    onPress: close2
   }, "Cancel"), /* @__PURE__ */ React259.createElement(Button_default2, {
-    onPress: close
+    onPress: close2
   }, "Ok"))));
 };
 var DialogWithRadioBtns_default = DialogWithRadioBtns;
@@ -65190,16 +65306,16 @@ var styles135 = import_react_native168.StyleSheet.create({
 var React260 = __toModule(require_react());
 var DialogWithLongText2 = ({
   visible,
-  close
+  close: close2
 }) => /* @__PURE__ */ React260.createElement(Portal_default, null, /* @__PURE__ */ React260.createElement(Dialog_default, {
-  onDismiss: close,
+  onDismiss: close2,
   visible,
   dismissable: false
 }, /* @__PURE__ */ React260.createElement(Dialog_default.Title, null, "Alert"), /* @__PURE__ */ React260.createElement(Dialog_default.Content, null, /* @__PURE__ */ React260.createElement(Paragraph_default, null, "This is an undismissable dialog!!")), /* @__PURE__ */ React260.createElement(Dialog_default.Actions, null, /* @__PURE__ */ React260.createElement(Button_default2, {
   color: colors_exports.teal500,
   disabled: true
 }, "Disagree"), /* @__PURE__ */ React260.createElement(Button_default2, {
-  onPress: close
+  onPress: close2
 }, "Agree"))));
 var UndismissableDialog_default = DialogWithLongText2;
 
@@ -65265,7 +65381,7 @@ var DialogExample_default = DialogExample;
 
 // src/rnpex/Examples/DividerExample.tsx
 var React262 = __toModule(require_react());
-var import_react_native170 = __toModule(require_dist());
+var import_react_native170 = require_dist();
 var items = ["Apple", "Banana", "Coconut", "Lemon", "Mango", "Peach"];
 var DividerExample = () => {
   const {
@@ -65286,7 +65402,7 @@ var DividerExample_default = DividerExample;
 
 // src/rnpex/Examples/FABExample.tsx
 var React263 = __toModule(require_react());
-var import_react_native171 = __toModule(require_dist());
+var import_react_native171 = require_dist();
 var ButtonExample2 = () => {
   const [visible, setVisible] = React263.useState(true);
   const [open3, setOpen] = React263.useState(false);
@@ -65386,7 +65502,7 @@ var FABExample_default = ButtonExample2;
 
 // src/rnpex/Examples/IconButtonExample.tsx
 var React264 = __toModule(require_react());
-var import_react_native172 = __toModule(require_dist());
+var import_react_native172 = require_dist();
 var ButtonExample3 = () => {
   const {colors} = useTheme();
   return /* @__PURE__ */ React264.createElement(import_react_native172.ScrollView, {
@@ -65513,7 +65629,7 @@ var icons = [
 
 // src/rnpex/Examples/ListAccordionExample.tsx
 var React265 = __toModule(require_react());
-var import_react_native173 = __toModule(require_dist());
+var import_react_native173 = require_dist();
 var ListAccordionExample = () => {
   const [expanded, setExpanded] = React265.useState(true);
   const _handlePress = () => {
@@ -65587,7 +65703,7 @@ var ListAccordionExample_default = ListAccordionExample;
 
 // src/rnpex/Examples/ListAccordionGroupExample.tsx
 var React266 = __toModule(require_react());
-var import_react_native174 = __toModule(require_dist());
+var import_react_native174 = require_dist();
 var ListAccordionGroupExample = () => {
   const [expandedId, setExpandedId] = React266.useState(void 0);
   const _onAccordionPress = (newExpandedId) => expandedId === newExpandedId ? setExpandedId(void 0) : setExpandedId(newExpandedId);
@@ -65673,7 +65789,7 @@ var ListAccordionGroupExample_default = ListAccordionGroupExample;
 
 // src/rnpex/Examples/ListSectionExample.tsx
 var React267 = __toModule(require_react());
-var import_react_native175 = __toModule(require_dist());
+var import_react_native175 = require_dist();
 var ListSectionExample = () => {
   const {
     colors: {background}
@@ -65784,7 +65900,7 @@ var ListSectionExample_default = ListSectionExample;
 
 // src/rnpex/Examples/MenuExample.tsx
 var React268 = __toModule(require_react());
-var import_react_native176 = __toModule(require_dist());
+var import_react_native176 = require_dist();
 var MORE_ICON2 = import_react_native176.Platform.OS === "ios" ? "dots-horizontal" : "dots-vertical";
 var MenuExample = ({navigation}) => {
   const [visible, setVisible] = React268.useState({});
@@ -65930,7 +66046,7 @@ var MenuExample_default = MenuExample;
 
 // src/rnpex/Examples/ProgressBarExample.tsx
 var React269 = __toModule(require_react());
-var import_react_native177 = __toModule(require_dist());
+var import_react_native177 = require_dist();
 var ProgressBarExample = () => {
   const [visible, setVisible] = React269.useState(true);
   const [progress, setProgress] = React269.useState(0.3);
@@ -65988,7 +66104,7 @@ var ProgressBarExample_default = ProgressBarExample;
 
 // src/rnpex/Examples/RadioButtonExample.tsx
 var React270 = __toModule(require_react());
-var import_react_native178 = __toModule(require_dist());
+var import_react_native178 = require_dist();
 var RadioButtonExample = () => {
   const [checked, setChecked] = React270.useState("normal");
   const {
@@ -66077,7 +66193,7 @@ var RadioButtonExample_default = RadioButtonExample;
 
 // src/rnpex/Examples/RadioButtonGroupExample.tsx
 var React271 = __toModule(require_react());
-var import_react_native179 = __toModule(require_dist());
+var import_react_native179 = require_dist();
 var RadioButtonGroupExample = () => {
   const [value, setValue] = React271.useState("first");
   const [value2, setValue2] = React271.useState("first");
@@ -66144,7 +66260,7 @@ var RadioButtonGroupExample_default = RadioButtonGroupExample;
 
 // src/rnpex/Examples/SearchbarExample.tsx
 var React272 = __toModule(require_react());
-var import_react_native180 = __toModule(require_dist());
+var import_react_native180 = require_dist();
 var SearchExample = ({navigation}) => {
   const [firstQuery, setFirstQuery] = React272.useState("");
   const [secondQuery, setSecondQuery] = React272.useState("");
@@ -66196,7 +66312,7 @@ var SearchbarExample_default = SearchExample;
 
 // src/rnpex/Examples/SnackbarExample.tsx
 var React273 = __toModule(require_react());
-var import_react_native181 = __toModule(require_dist());
+var import_react_native181 = require_dist();
 var SnackbarExample = () => {
   const [visible, setVisible] = React273.useState(false);
   const {
@@ -66231,7 +66347,7 @@ var SnackbarExample_default = SnackbarExample;
 
 // src/rnpex/Examples/SurfaceExample.tsx
 var React274 = __toModule(require_react());
-var import_react_native182 = __toModule(require_dist());
+var import_react_native182 = require_dist();
 var SurfaceExample = () => {
   const {
     colors: {background}
@@ -66265,7 +66381,7 @@ var SurfaceExample_default = SurfaceExample;
 
 // src/rnpex/Examples/SwitchExample.tsx
 var React275 = __toModule(require_react());
-var import_react_native183 = __toModule(require_dist());
+var import_react_native183 = require_dist();
 var SwitchExample = () => {
   const [valueNormal, setNormalValue] = React275.useState(true);
   const [valueCustom, setCustomValue] = React275.useState(true);
@@ -66356,7 +66472,7 @@ var SwitchExample_default = SwitchExample;
 
 // src/rnpex/Examples/TextExample.tsx
 var React276 = __toModule(require_react());
-var import_react_native184 = __toModule(require_dist());
+var import_react_native184 = require_dist();
 var TextExample = () => {
   const {
     colors: {background}
@@ -66393,7 +66509,7 @@ var TextExample_default = TextExample;
 
 // src/rnpex/Examples/TextInputExample.tsx
 var React277 = __toModule(require_react());
-var import_react_native185 = __toModule(require_dist());
+var import_react_native185 = require_dist();
 
 // node_modules/@expo/vector-icons/FontAwesome.js
 var FontAwesome_default4 = FontAwesome_default3;
@@ -66776,7 +66892,7 @@ var TextInputExample_default = TextInputExample;
 
 // src/rnpex/Examples/ToggleButtonExample.tsx
 var React278 = __toModule(require_react());
-var import_react_native186 = __toModule(require_dist());
+var import_react_native186 = require_dist();
 var ToggleButtonExample = () => {
   const [first, setFirst] = React278.useState("bold");
   const [fruit, setFruit] = React278.useState("watermelon");
@@ -66875,7 +66991,7 @@ var ToggleButtonExample_default = ToggleButtonExample;
 
 // src/rnpex/Examples/TouchableRippleExample.tsx
 var React279 = __toModule(require_react());
-var import_react_native187 = __toModule(require_dist());
+var import_react_native187 = require_dist();
 var RippleExample = () => {
   const {
     colors: {background}
@@ -66906,7 +67022,7 @@ var TouchableRippleExample_default = RippleExample;
 
 // src/rnpex/Examples/ThemeExample.tsx
 var React280 = __toModule(require_react());
-var import_react_native188 = __toModule(require_dist());
+var import_react_native188 = require_dist();
 var Content = () => {
   const theme2 = useTheme();
   return /* @__PURE__ */ React280.createElement(import_react_native188.View, {
@@ -66936,7 +67052,7 @@ var ThemeExample_default = ThemeExample;
 
 // src/rnpex/Examples/RadioButtonItemExample.tsx
 var React281 = __toModule(require_react());
-var import_react_native189 = __toModule(require_dist());
+var import_react_native189 = require_dist();
 var RadioButtonItemExample = () => {
   const [checkedDefault, setCheckedDefault] = React281.useState(true);
   const [checkedAndroid, setCheckedAndroid] = React281.useState(true);
