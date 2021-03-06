@@ -2,109 +2,19 @@ var spawn = require('child_process').spawn
 var servor = require('servor')
 var vectorIcons = require('./plugin')
 var app = require('./app.json')
+
 var prod = !(process.argv[2] === 'dev')
-
-const port = 8081
-
-function openBrowser(callback) {
-  const command = { darwin: 'open', win32: 'cmd', linux: 'xdg-open' }
-  const child = spawn(command[process.platform], ['/c', 'start', `http://localhost:${port}`])
-  //Interagierende-Systeme/openurl2
-  /*   var errorText = ''
-  child.stderr.setEncoding('utf8')
-  child.stderr.on('data', function (data) {
-    errorText += data
-  })
-  child.stderr.on('end', function () {
-    if (errorText.length > 0) {
-      var error = new Error(errorText)
-      if (callback) {
-        callback(error)
-      } else {
-        throw error
-      }
-    } else if (callback) {
-      callback(error)
-    }
-  }) */
-}
 
 function openServor() {
   if (!prod) {
-    const instance = servor({
-      root: './public',
-      reload: true,
-      port,
-    })
+    const port = 8081
+    servor({ root: './public', reload: true, port })
       .then((result, error) => {
         if (error) console.log(result, error)
-        else openBrowser()
+        else spawn('cmd', ['/c', 'start', `http://localhost:${port}`]) //Interagierende-Systeme/openurl2
       })
       .catch(() => process.exit(1))
   }
-}
-
-const icons = {
-  MaterialCommunityIcons: [
-    'camera',
-    'menu',
-    'account-outline',
-    'tune',
-    'bookmark-outline',
-    'pause',
-    'arrow-left',
-    'archive',
-    'email',
-    'label',
-    'delete',
-    'reply',
-    'magnify',
-    'dots-vertical',
-    'folder',
-    'eye',
-    'image-album',
-    'inbox',
-    'heart',
-    'shopping-music',
-    'camera',
-    'chevron-down',
-    'city',
-    'checkbox-marked',
-    'minus-box',
-    'checkbox-blank-outline',
-    'check',
-    'close-circle',
-    'arrow-up',
-    'chevron-left',
-    'chevron-right',
-    'eye-off',
-    'cancel',
-    'format-letter-case',
-    'plus',
-    'star',
-    'bell',
-    'lock',
-    'chevron-up',
-    'calendar',
-    'wallet-giftcard',
-    'equal',
-    'information',
-    'star-outline',
-    'file-pdf',
-    'undo',
-    'redo',
-    'content-cut',
-    'content-copy',
-    'content-paste',
-    'close',
-    'menu',
-    'android',
-    'format-italic',
-    'format-bold',
-    'format-underline',
-    'format-color-text',
-    'heart-outline',
-  ],
 }
 
 require('esbuild')
@@ -123,7 +33,13 @@ require('esbuild')
     format: 'esm',
     bundle: true,
     minify: prod,
-    sourcemap: true, //prod,
+    assetNames: 'assets/[name]-[hash]',
+    chunkNames: 'js/[name]-[hash]',
+    sourcemap: true,
+    //logLevel: 'error',
+    plugins: [vectorIcons(app.extra.icons)],
+    incremental: !prod,
+    publicPath: '/',
     watch: prod
       ? false
       : {
@@ -131,10 +47,6 @@ require('esbuild')
             console.log(error ? error : '...')
           },
         },
-    logLevel: 'error',
-    plugins: [vectorIcons(icons)],
-    incremental: !prod,
-    publicPath: '/',
   })
   .then((result, error) => {
     //result.stop();
