@@ -18,7 +18,9 @@ export default function Examples() {
             ) : (navigation as any).openDrawer ? (
               <Appbar.Action
                 icon="menu"
-                onPress={() => ((navigation as any) as DrawerNavigationProp<{}>).openDrawer()}
+                onPress={() =>
+                  ((navigation as any) as DrawerNavigationProp<Record<string, object>>).openDrawer()
+                }
               />
             ) : null}
             <Appbar.Content title={scene.descriptor.options.title} />
@@ -26,7 +28,7 @@ export default function Examples() {
         ),
       }}>
       <Stack.Screen name="Home" component={ExampleList} options={{ title: 'Examples' }} />
-      {(Object.keys(examples) as Array<keyof typeof examples>).map((id) => (
+      {(Object.keys(examples) as (keyof typeof examples)[]).map((id) => (
         <Stack.Screen
           key={id}
           name={id}

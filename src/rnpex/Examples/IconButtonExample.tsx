@@ -60,6 +60,7 @@ const styles = StyleSheet.create<Style>({
 export default ButtonExample
 
 const icons = [
+  //@ts-ignore
   ...new Set([
     'camera',
     'menu',

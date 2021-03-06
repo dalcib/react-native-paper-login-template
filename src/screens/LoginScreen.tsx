@@ -1,5 +1,5 @@
 import React, { memo, useState } from 'react'
-import { Pressable, StyleSheet, Text, View } from 'react-native'
+import { Pressable, StyleProp, StyleSheet, Text, View, ViewStyle } from 'react-native'
 import Background from '../components/Background'
 import Logo from '../components/Logo'
 import Header from '../components/Header'
@@ -65,7 +65,10 @@ const LoginScreen = ({ navigation }: Props) => {
       <View style={styles.forgotPassword}>
         <Pressable
           onPress={() => navigation.navigate('ForgotPasswordScreen')}
-          style={({ pressed }) => [{ opacity: pressed ? 0.6 : 1 }, styles.label]}>
+          style={({ pressed }) => [
+            { opacity: pressed ? 0.6 : 1 },
+            { color: theme.colors.secondary },
+          ]}>
           <Text style={styles.label}>Forgot your password?</Text>
         </Pressable>
       </View>
@@ -78,7 +81,10 @@ const LoginScreen = ({ navigation }: Props) => {
         <Text style={styles.label}>Don’t have an account? </Text>
         <Pressable
           onPress={() => navigation.navigate('RegisterScreen')}
-          style={({ pressed }) => [{ opacity: pressed ? 0.6 : 1 }, styles.label]}>
+          style={({ pressed }) => [
+            { opacity: pressed ? 0.6 : 1 },
+            { color: theme.colors.secondary },
+          ]}>
           <Text style={styles.link}>Sign up</Text>
         </Pressable>
       </View>

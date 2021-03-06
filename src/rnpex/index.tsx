@@ -121,7 +121,7 @@ export default function PaperExample() {
         const preferences = JSON.parse(prefString || '')
 
         if (preferences) {
-          // eslint-disable-next-line react/no-did-mount-set-state
+          /// eslint-disable-next-line react/no-did-mount-set-state
           setTheme(preferences.theme === 'dark' ? CustomDarkTheme : CustomDefaultTheme)
 
           if (typeof preferences.rtl === 'boolean') {
@@ -184,14 +184,9 @@ export default function PaperExample() {
               onStateChange={(state) =>
                 AsyncStorage.setItem(PERSISTENCE_KEY, JSON.stringify(state))
               }>
-              {
-                /* Platform.OS === 'web' ? (
-                <App />
-              ) : ( */
-                <Drawer.Navigator drawerContent={() => <DrawerContent />}>
-                  <Drawer.Screen name="Home" component={App} />
-                </Drawer.Navigator>
-              }
+              <Drawer.Navigator drawerContent={() => <DrawerContent />}>
+                <Drawer.Screen name="Home" component={App} />
+              </Drawer.Navigator>
               <StatusBar barStyle="light-content" />
             </NavigationContainer>
           </React.Fragment>

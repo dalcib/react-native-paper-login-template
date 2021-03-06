@@ -1,20 +1,20 @@
-import * as React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { Colors, Caption, Searchbar, useTheme } from 'react-native-paper';
-import type { StackNavigationProp } from '@react-navigation/stack';
+import * as React from 'react'
+import { StyleSheet, View } from 'react-native'
+import { Colors, Caption, Searchbar, useTheme } from 'react-native-paper'
+import type { StackNavigationProp } from '@react-navigation/stack'
 
 type Props = {
-  navigation: StackNavigationProp<{}>;
-};
+  navigation: StackNavigationProp<{}>
+}
 
 const SearchExample = ({ navigation }: Props) => {
-  const [firstQuery, setFirstQuery] = React.useState<string>('');
-  const [secondQuery, setSecondQuery] = React.useState<string>('');
-  const [thirdQuery, setThirdQuery] = React.useState<string>('');
+  const [firstQuery, setFirstQuery] = React.useState<string>('')
+  const [secondQuery, setSecondQuery] = React.useState<string>('')
+  const [thirdQuery, setThirdQuery] = React.useState<string>('')
 
   const {
     colors: { background },
-  } = useTheme();
+  } = useTheme()
 
   return (
     <View style={[styles.container, { backgroundColor: background }]}>
@@ -42,10 +42,10 @@ const SearchExample = ({ navigation }: Props) => {
         style={styles.searchbar}
       />
     </View>
-  );
-};
+  )
+}
 
-SearchExample.title = 'Searchbar';
+SearchExample.title = 'Searchbar'
 
 const styles = StyleSheet.create({
   container: {
@@ -59,6 +59,6 @@ const styles = StyleSheet.create({
   searchbar: {
     margin: 4,
   },
-});
+})
 
-export default SearchExample;
+export default SearchExample

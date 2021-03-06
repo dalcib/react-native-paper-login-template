@@ -31,7 +31,9 @@ export const StackNavigator = () => {
             <Appbar.Header theme={{ colors: { primary: theme.colors.surface } }}>
               <Pressable
                 style={({ pressed }) => [{ marginLeft: 10, opacity: pressed ? 0.6 : 1 }]}
-                onPress={() => ((navigation as any) as DrawerNavigationProp<{}>).openDrawer()}>
+                onPress={() =>
+                  ((navigation as any) as DrawerNavigationProp<Record<string, object>>).openDrawer()
+                }>
                 <Avatar.Icon size={40} icon="menu" />
               </Pressable>
 

@@ -13,6 +13,7 @@ const Main = () => {
           <PaperProvider theme={theme}>
             <NavigationContainer
               linking={{ enabled: true, prefixes: ['http://127.0.0.1:5501/public'] }}
+              //@ts-ignore
               theme={theme}>
               <App />
             </NavigationContainer>

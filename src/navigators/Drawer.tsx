@@ -15,6 +15,7 @@ export const DrawerNavigator = () => {
   <NavigationContainer theme={navigationTheme}> */
 
   return (
+    //@ts-ignore
     <Drawer.Navigator drawerContent={(props) => <DrawerContent {...props} />}>
       <Drawer.Screen name="Home" component={StackNavigator} />
     </Drawer.Navigator>
