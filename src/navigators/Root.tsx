@@ -7,6 +7,7 @@ import {
   RegisterScreen,
   ForgotPasswordScreen,
   Dashboard,
+  MDXProvider,
 } from '../screens'
 import { DrawerNavigator } from './Drawer'
 import Examples from './Example'
@@ -22,6 +23,7 @@ const RootStackScreen = () => {
       <RootStack.Screen name="RegisterScreen" component={RegisterScreen} />
       <RootStack.Screen name="ForgotPasswordScreen" component={ForgotPasswordScreen} />
       <RootStack.Screen name="Examples" component={Examples} />
+      <RootStack.Screen name="MDX" component={MDXProvider} />
     </RootStack.Navigator>
   )
 }

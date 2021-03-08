@@ -20,6 +20,9 @@ const Dashboard = ({ navigation }: Props) => (
     <Button mode="outlined" onPress={() => navigation.navigate('Examples')}>
       Examples
     </Button>
+    <Button mode="outlined" onPress={() => navigation.navigate('MDX')}>
+      MDX
+    </Button>
     <Button mode="outlined" onPress={() => navigation.navigate('HomeScreen')}>
       Logout
     </Button>

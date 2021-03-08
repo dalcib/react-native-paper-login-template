@@ -9,7 +9,7 @@ import { Provider as PaperProvider, DarkTheme, DefaultTheme } from 'react-native
 import App from '../navigators/Example'
 import DrawerItems from './DrawerItems'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
-import useRoboto from './Roboto'
+//import useRoboto from './Roboto'
 
 // Add new typescript properties to the theme
 declare global {
@@ -87,7 +87,7 @@ const Drawer = createDrawerNavigator<{ Home: undefined }>()
 
 export default function PaperExample() {
   useKeepAwake()
-  useRoboto()
+  //useRoboto()
 
   const [isReady, setIsReady] = React.useState(false)
   const [initialState, setInitialState] = React.useState<InitialState | undefined>()

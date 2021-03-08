@@ -4,8 +4,12 @@ import { NavigationContainer } from '@react-navigation/native'
 import 'setimmediate'
 import App from './navigators/Root'
 import { ThemeProvider, ThemeContext } from './core/theme'
+import { useFonts, Roboto_400Regular } from '@expo-google-fonts/roboto'
 
 const Main = () => {
+  let [fontsLoaded] = useFonts({
+    Roboto: Roboto_400Regular,
+  })
   return (
     <ThemeProvider>
       <ThemeContext.Consumer>
