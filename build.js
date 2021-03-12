@@ -1,7 +1,7 @@
 var spawn = require('child_process').spawn
-const { resolve } = require('path')
+//const { resolve } = require('path')
 var servor = require('servor')
-var vectorIcons = require('./plugin')
+//var vectorIcons = require('./plugin')
 var app = require('./app.json')
 
 var prod = !(process.argv[2] === 'dev')
@@ -41,9 +41,10 @@ require('esbuild')
     minify: prod,
     assetNames: 'assets/[name]-[hash]',
     sourcemap: true,
-    plugins: [/* aliasPlugin */ require('esbuild-mdx')(), vectorIcons(app.extra.icons)],
+    plugins: [/* aliasPlugin */ require('esbuild-mdx')() /* vectorIcons(app.extra.icons) */],
     incremental: !prod,
     publicPath: '/',
+    mainFields: ['module', 'main'],
     watch: prod
       ? false
       : {
@@ -62,6 +63,6 @@ require('esbuild')
         }) //Interagierende-Systeme/openurl2
         .catch(() => process.exit(1))
     }
-    console.log(error ? error : `[servor] webserver started at localhost:${port}`)
+    console.log(error ? error : !prod ? `[servor] webserver started at localhost:${port}` : '')
   })
   .catch(() => process.exit(1))
