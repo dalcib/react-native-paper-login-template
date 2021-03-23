@@ -1,27 +1,8 @@
 var spawn = require('child_process').spawn
-//const { resolve } = require('path')
 var servor = require('servor')
-//var vectorIcons = require('./plugin')
 var app = require('./app.json')
 
 var prod = !(process.argv[2] === 'dev')
-
-/* const alias = {
-  'react-native': './node_modules/react-native-web/dist/index.js',
-  'react-native-vector-icons/MaterialCommunityIcons/':
-    './node_modules/@expo/vector-icons/MaterialCommunityIcons.js',
-  'MaterialCommunityIcons.ttf': './src/assets/materialdesignicons-webfont.ttf',
-  '@expo/.x/glyphmaps/MaterialCommunityIcons.json': './src/assets/materialdesignicons-webfont.json',
-} 
-
-const aliasPlugin = {
-  name: 'vector-icons',
-  setup(build) {
-    Object.keys(alias).forEach((f) => {
-      build.onResolve({ filter: new RegExp(`^${f}$`) }, () => ({ path: resolve(alias[f]) }))
-    })
-  },
-}*/
 
 require('esbuild')
   .build({
@@ -41,7 +22,7 @@ require('esbuild')
     minify: prod,
     assetNames: 'assets/[name]-[hash]',
     sourcemap: true,
-    plugins: [/* aliasPlugin */ require('esbuild-mdx')() /* vectorIcons(app.extra.icons) */],
+    plugins: [require('esbuild-mdx')()],
     incremental: !prod,
     publicPath: '/',
     mainFields: ['module', 'main'],

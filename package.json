@@ -4,10 +4,9 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web",
     "eject": "expo eject",
-    "dev": "node buildes dev",
-    "prod": "node buildes",
+    "web": "node esbuild",
+    "prod": "node build",
     "analyse": "source-map-explorer public/bundle.js public/bundle.js.map --no-border-checks"
   },
   "dependencies": {
