@@ -3,7 +3,7 @@ var esbuild = require('esbuild')
 const http = require('http')
 var spawn = require('child_process').spawn
 const { readdir } = require('fs').promises
-const { join, parse } = require('path')
+const { join, parse, resolve } = require('path')
 
 var isDev = !(process.argv[2] === 'build')
 process.env.NODE_ENV = isDev ? 'development' : 'production'
@@ -13,6 +13,15 @@ const liveHead = {
   'Content-Type': 'text/event-stream',
   'Cache-Control': 'no-cache',
   Connection: 'keep-alive',
+}
+
+const materialIconsPlugin = {
+  name: 'material-icons',
+  setup(build) {
+    build.onResolve({ filter: /MaterialCommunityIcons\.(ttf|json)/ }, (args) => ({
+      path: resolve(`./src/assets/materialdesignicons-webfont${parse(args.path).ext}`),
+    }))
+  },
 }
 
 esbuild
@@ -33,7 +42,7 @@ esbuild
     minify: !isDev,
     assetNames: 'assets/[name]-[hash]',
     sourcemap: true,
-    plugins: [require('esbuild-mdx')()],
+    plugins: [materialIconsPlugin, require('esbuild-mdx')()],
     incremental: isDev,
     publicPath: '/',
     mainFields: ['module', 'main'],

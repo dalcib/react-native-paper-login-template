@@ -43,15 +43,6 @@ const glyphmaps = [
 
 /*
 
-
-const importMap = {
-  'react-native': './node_modules/react-native-web/dist/index.js',
-  'react-native-vector-icons/MaterialCommunityIcons/':
-    './node_modules/@expo/vector-icons/MaterialCommunityIcons.js',
-  'MaterialCommunityIcons.ttf': './src/assets/materialdesignicons-webfont.ttf',
-  '@expo/glyphmaps/MaterialCommunityIcons.json': './src/assets/materialdesignicons-webfont.json',
-}
-
 const alias = [
   { filter: /^react-native$/, path: './node_modules/react-native-web/dist/index.js' },
   {
@@ -72,8 +63,36 @@ const alias = [
         build.onResolve({ filter }, () => ({ path: resolve(path) }))
       }) */
 
-/*  Object.keys(importMap).forEach((filter) => {
-        build.onResolve({ filter: new RegExp(`^${filter}$`) }, () => ({
-          path: resolve(importMap[filter]),
-        }))
-      }) */
+/* const importMap = {
+  'react-native': './node_modules/react-native-web/dist/index.js',
+  'react-native-vector-icons/MaterialCommunityIcons/':
+    './node_modules/@expo/vector-icons/MaterialCommunityIcons.js',
+  'MaterialCommunityIcons.ttf': './src/assets/materialdesignicons-webfont.ttf',
+  'aterialCommunityIcons.json': './src/assets/materialdesignicons-webfont.json',
+}
+Object.keys(importMap).forEach((filter) => {
+  build.onResolve({ filter: new RegExp(`^${filter}$`) }, () => ({
+    path: resolve(importMap[filter]),
+  }))
+}) */
+
+module.exports = {
+  name: 'vector-icons',
+  setup(build) {
+    build.onResolve({ filter: /MaterialCommunityIcons\.ttf/ }, () => ({
+      path: resolve('./src/assets/materialdesignicons-webfont.ttf'),
+    }))
+    build.onResolve({ filter: /MaterialCommunityIcons\.json/ }, () => ({
+      path: resolve('./src/assets/materialdesignicons-webfont.json'),
+    }))
+  },
+}
+
+module.exports = {
+  name: 'material-icons',
+  setup(build) {
+    build.onResolve({ filter: /MaterialCommunityIcons\.(ttf|json)/ }, (args) => ({
+      path: resolve(`./src/assets/materialdesignicons-webfont${parse(args.path).ext}`),
+    }))
+  },
+}
