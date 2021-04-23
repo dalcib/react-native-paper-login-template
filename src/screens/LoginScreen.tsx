@@ -40,6 +40,7 @@ const LoginScreen = ({ navigation }: Props) => {
       <Header>Welcome back.</Header>
 
       <TextInput
+        textAlign="right"
         label="Email"
         returnKeyType="next"
         value={email.value}
@@ -53,6 +54,7 @@ const LoginScreen = ({ navigation }: Props) => {
       />
 
       <TextInput
+        textAlign="right"
         label="Password"
         returnKeyType="done"
         value={password.value}

@@ -1,28 +1,17 @@
-var app = require('./app.json')
-var esbuild = require('esbuild')
-const http = require('http')
-var spawn = require('child_process').spawn
-const { readdir } = require('fs').promises
-const { join, parse, resolve } = require('path')
+const esbuild = require('esbuild')
+const { createServer, request } = require('http')
+const spawn = require('child_process').spawn
+const { parse, resolve } = require('path')
+let app
+try {
+  app = require('./app.json')
+} catch {
+  app = {}
+}
 
 var isDev = !(process.argv[2] === 'build')
 process.env.NODE_ENV = isDev ? 'development' : 'production'
-
 const clients = []
-const liveHead = {
-  'Content-Type': 'text/event-stream',
-  'Cache-Control': 'no-cache',
-  Connection: 'keep-alive',
-}
-
-const materialIconsPlugin = {
-  name: 'material-icons',
-  setup(build) {
-    build.onResolve({ filter: /MaterialCommunityIcons\.(ttf|json)/ }, (args) => ({
-      path: resolve(`./src/assets/materialdesignicons-webfont${parse(args.path).ext}`),
-    }))
-  },
-}
 
 esbuild
   .build({
@@ -42,10 +31,20 @@ esbuild
     minify: !isDev,
     assetNames: 'assets/[name]-[hash]',
     sourcemap: true,
-    plugins: [materialIconsPlugin, require('esbuild-mdx')()],
+    plugins: [
+      {
+        name: 'material-icons',
+        setup(build) {
+          build.onResolve({ filter: /MaterialCommunityIcons\.(ttf|json)/ }, (args) => ({
+            path: resolve(`./src/assets/materialdesignicons-webfont${parse(args.path).ext}`),
+          }))
+        },
+      },
+      require('esbuild-mdx')(),
+    ],
     incremental: isDev,
     publicPath: '/',
-    mainFields: ['module', 'main'],
+    //inject: ['./src/assets/react-shim.js'],
     banner: isDev
       ? { js: ' (() => new EventSource("/esbuild").onmessage = () => location.reload())();' }
       : {},
@@ -62,23 +61,31 @@ esbuild
 
 isDev &&
   esbuild.serve({ servedir: './public' }, {}).then(() => {
-    http
-      .createServer((req, res) => {
-        const { url, method, headers } = req
-        if (req.url === '/esbuild') return clients.push(res.writeHead(200, liveHead))
-        const path = ~url.split('/').pop().indexOf('.') ? url : '/index.html'
-        req.pipe(
-          http.request({ hostname: '0.0.0.0', port: 8000, path, method, headers }, (prxRes) => {
-            res.writeHead(prxRes.statusCode, prxRes.headers)
-            prxRes.pipe(res, { end: true })
-          }),
-          { end: true }
+    createServer((req, res) => {
+      const { url, method, headers } = req
+      if (req.url === '/esbuild')
+        return clients.push(
+          res.writeHead(200, {
+            'Content-Type': 'text/event-stream',
+            'Cache-Control': 'no-cache',
+            Connection: 'keep-alive',
+          })
         )
-      })
-      .listen(3000)
+      const path = ~url.split('/').pop().indexOf('.') ? url : `/index.html` //for PWA with router
+      req.pipe(
+        request({ hostname: '0.0.0.0', port: 8000, path, method, headers }, (prxRes) => {
+          res.writeHead(prxRes.statusCode, prxRes.headers)
+          prxRes.pipe(res, { end: true })
+        }),
+        { end: true }
+      )
+    }).listen(3000)
+
     setTimeout(() => {
-      if (clients.length === 0) spawn('cmd', ['/c', 'start', `http://localhost:3000`])
-    }, 1000)
+      const op = { darwin: ['open'], linux: ['xdg-open'], win32: ['cmd', '/c', 'start'] }
+      const ptf = process.platform
+      if (clients.length === 0) spawn(op[ptf][0], [...[op[ptf].slice(1)], `http://localhost:3000`])
+    }, 1000) //open the default browser only if it is not opened yet
   })
 
 /* const filePaths = []

@@ -37,6 +37,7 @@ const ForgotPasswordScreen = ({ navigation }: Props) => {
       <Header>Restore Password</Header>
 
       <TextInput
+        textAlign="right"
         label="E-mail address"
         returnKeyType="done"
         value={email.value}

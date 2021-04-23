@@ -19,7 +19,7 @@
     "ios": {
       "supportsTablet": true
     },
-    "entryPoint": "./src/index.js"
+    "entryPoint": "./src/index.tsx"
   },
   "extra": {
     "icons": {
